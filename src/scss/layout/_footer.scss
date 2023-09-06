@@ -1,1 +1,10 @@
+.footer {
+  background-color: $whiteTwo;
+  border: 0.1rem solid $whiteThree;
+  .copy {
+    @include testStyle($openSans, $regular, 1.4rem, $brownishGrey);
+  }
+//   .logo-adalab {
 
+//   }
+}

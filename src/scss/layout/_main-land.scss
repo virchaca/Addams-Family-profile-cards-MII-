@@ -1,0 +1,20 @@
+.main-land {
+  height: 100vh;
+  background-color: $whiteFour;
+
+  .main-title {
+    @include testStyle($merriweather, $blackB, 2rem, $tomato);
+  }
+  .main-par {
+    @include testStyle($openSans, $regular, 1.3rem, $darkGreenBlue);
+  }
+  .main-icons{
+    @include testStyle($openSans, $regular, 1.3rem, $gunmetal);
+  }
+  .main-btn {
+    background-color: $dirtyBlue;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    @include testStyle($openSans, $semiBold, 1.6rem, $whiteTwo);
+  }
+}
