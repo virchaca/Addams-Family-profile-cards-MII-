@@ -4,3 +4,9 @@
     font-size: $fontSize;
     color: $color;
 }
+
+@mixin iconStyle($fontWeight,$fontSize,$color:#e17334) {
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    color: $color;
+}
