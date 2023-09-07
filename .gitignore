@@ -55,3 +55,6 @@ public
 
 # vscode
 .vscode
+
+#desktop
+desktop.ini

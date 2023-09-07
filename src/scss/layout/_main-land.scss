@@ -2,7 +2,7 @@
   background-color: $whiteFour;
 
   .main-title {
-    @include testStyle($merriweather, $blackB, 2rem, $tomato);
+    @include testStyle($merriweather, $blackBold, 2rem, $tomato);
   }
   .main-par {
     @include testStyle($openSans, $regular, 1.3rem, $darkGreenBlue);
