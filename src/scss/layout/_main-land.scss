@@ -10,10 +10,15 @@
   }
   .main-icons{
     @include testStyle($openSans, $regular, 1.3rem, $gunmetal);
+    border-radius: 0.4rem;
+    border: solid 0.2rem $fadedOrange;
   }
   .main-btn {
     background-color: $dirtyBlue;
+    border: solid 0.2rem $dirtyBlue;
+    padding: 0.5rem;
     border-radius: 2rem;
+    text-decoration: none;
     text-transform: uppercase;
     @include testStyle($openSans, $semiBold, 1.6rem, $whiteTwo);
   }
