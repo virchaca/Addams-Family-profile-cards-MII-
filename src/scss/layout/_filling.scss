@@ -1,0 +1,76 @@
+.fullForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    grid-gap: 2rem;
+   
+    .titleFilling {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: flex-end;    
+
+      .imgFilling {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        align-items: flex-end;   
+
+        .imagenFilling {
+          width: 21px;
+          height: 16px;
+        }
+      }
+      .imgUp, .imgDown {
+        width: 20px;
+        height: 16px;
+      }
+    }
+   
+    
+    .fillingForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: none;
+    grid-gap: 0.5rem;
+
+      .fInput {
+        margin-bottom: 1rem;
+        border: 1px solid green;
+        padding: 5px;
+      }
+      .fInput::placeholder {
+        color: rgb(206, 190, 190);
+      }
+
+      .imgF {
+        display: flex;
+        flex-direction: row;
+        grid-gap: 1.8rem;
+
+        .mycheck {
+          appearance: none;
+          width: 30px;
+          height: 30px;
+          margin: 0;
+        }
+      
+        .fButton {
+          background-color: rgb(214, 84, 37);      
+          padding: 5px 20px;
+          border-radius: 3px;
+          border-color: lightgray;
+          
+          .buttonLink {
+            text-decoration: none;
+            color: white;            
+          }
+        }
+       }
+    }
+  }
