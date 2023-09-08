@@ -71,8 +71,9 @@
           background-color: $orange;      
           padding: 0.5rem 2.0rem;
           border-radius: 3px;
-          border-color: $black32;
-          
+          border: 1px solid $orange;
+          box-shadow: 0 0 4px 0 $black32;
+                   
           .buttonLink {
             text-decoration: none;             
             @include testStyle ($openSans, $regular, 1.4rem, $whiteTwo);         
