@@ -22,30 +22,37 @@
         align-items: flex-end;   
 
         .imagenFilling {
-          width: 21px;
-          height: 16px;
+          color: $orange;
         }
       }
       .imgUp, .imgDown {
         width: 20px;
         height: 16px;
       }
+      .fTitle {
+        @include testStyle($openSans, $semiBold, 1.8rem, $gunmetal);
+      }
     }
-   
-    
+       
     .fillingForm {
     display: grid;
     grid-template-columns: 1fr;
     border: none;
     grid-gap: 0.5rem;
 
+      .fLabel {
+        margin-top: 1.5rem;
+        margin-bottom: .5rem;
+        @include testStyle ($openSans, $regular, 1.4rem, $darkGreenBlue);
+      }
+
       .fInput {
-        margin-bottom: 1rem;
-        border: 1px solid green;
-        padding: 5px;
+        border: 1px solid $hospitalGreen;
+        padding: 0.5rem;
       }
       .fInput::placeholder {
         color: rgb(206, 190, 190);
+        @include testStyle ($openSans, $regular, 1.4rem, $pinkishGrey);
       }
 
       .imgF {
@@ -53,22 +60,22 @@
         flex-direction: row;
         grid-gap: 1.8rem;
 
-        .mycheck {
-          appearance: none;
+        .preview {
+          border: 1px solid $hospitalGreen;
           width: 30px;
           height: 30px;
           margin: 0;
         }
       
         .fButton {
-          background-color: rgb(214, 84, 37);      
-          padding: 5px 20px;
+          background-color: $orange;      
+          padding: 0.5rem 2.0rem;
           border-radius: 3px;
-          border-color: lightgray;
+          border-color: $black32;
           
           .buttonLink {
-            text-decoration: none;
-            color: white;            
+            text-decoration: none;             
+            @include testStyle ($openSans, $regular, 1.4rem, $whiteTwo);         
           }
         }
        }
