@@ -1,7 +1,5 @@
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include center-column;
   gap: 1.2rem;
   background-color: $whiteTwo;
   border: 0.1rem solid $whiteThree;

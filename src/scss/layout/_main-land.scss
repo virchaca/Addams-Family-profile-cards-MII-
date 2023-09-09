@@ -1,18 +1,20 @@
 .main-land {
+  @include center-column;
+  justify-content: center;
   background-color: $whiteFour;
   height: 65vh;
-  .main-title {
+  &__title {
     @include testStyle($merriweather, $blackBold, 2rem, $tomato);
   }
-  .main-par {
+  &__par {
     @include testStyle($openSans, $regular, 1.3rem, $darkGreenBlue);
   }
-  .main-icons{
+  &__icons{
     @include testStyle($openSans, $regular, 1.3rem, $gunmetal);
     border-radius: 0.4rem;
     border: solid 0.2rem $fadedOrange;
   }
-  .main-btn {
+  &__btn {
     background-color: $dirtyBlue;
     border: solid 0.2rem $dirtyBlue;
     padding: 0.5rem;
