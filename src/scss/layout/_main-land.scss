@@ -14,6 +14,12 @@
     @include testStyle($openSans, $regular, 1.3rem, $gunmetal);
     border-radius: 0.4rem;
     border: solid 0.2rem $fadedOrange;
+    figure {
+      .fa {
+        color: $orange;
+      }
+    }
+
   }
   &__btn {
     background-color: $dirtyBlue;
