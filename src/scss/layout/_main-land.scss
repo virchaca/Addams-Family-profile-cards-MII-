@@ -1,6 +1,6 @@
 .main-land {
   background-color: $whiteFour;
-
+  height: 65vh;
   .main-title {
     @include testStyle($merriweather, $blackBold, 2rem, $tomato);
   }
