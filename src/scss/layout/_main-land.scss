@@ -1,6 +1,6 @@
 .main-land {
   @include center-column;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: $whiteFour;
   height: 65vh;
   &__title {
@@ -8,6 +8,7 @@
   }
   &__par {
     @include testStyle($openSans, $regular, 1.3rem, $darkGreenBlue);
+    text-align: center;
   }
   &__icons{
     @include testStyle($openSans, $regular, 1.3rem, $gunmetal);
