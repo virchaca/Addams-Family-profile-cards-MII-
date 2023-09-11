@@ -1,10 +1,13 @@
 .footer {
+  @include center-column;
+  gap: 1.2rem;
   background-color: $whiteTwo;
   border: 0.1rem solid $whiteThree;
-  .copy {
+  padding: 1.9rem;
+  &__copy {
     @include testStyle($openSans, $regular, 1.4rem, $brownishGrey);
   }
-//   .logo-adalab {
-
-//   }
+  &__logo {
+    width: 10rem;
+  }
 }

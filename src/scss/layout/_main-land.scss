@@ -1,22 +1,42 @@
 .main-land {
+  @include center-column;
+  justify-content: flex-start;
   background-color: $whiteFour;
-
-  .main-title {
+  &__title {
+    margin-top: 3.5rem;
     @include testStyle($merriweather, $blackBold, 2rem, $tomato);
   }
-  .main-par {
+  &__par {
     @include testStyle($openSans, $regular, 1.3rem, $darkGreenBlue);
+    text-align: center;
+    padding: 0 3rem;
   }
-  .main-icons{
-    @include testStyle($openSans, $regular, 1.3rem, $gunmetal);
+  &__icons{
+    margin-top: 1.8rem;
+    width: 27rem;
+    height: 7.4rem;
     border-radius: 0.4rem;
-    border: solid 0.2rem $fadedOrange;
+    border: solid 0.2rem #e1733456;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    figure {
+      width: 6rem;
+      text-align: center;
+      @include testStyle($openSans, $regular, 1.3rem, $gunmetal);
+      .fa {
+        color: $orange;
+        transform: scale(1.5);
+      }
+    }
+
   }
-  .main-btn {
+  &__btn {
     background-color: $dirtyBlue;
     border: solid 0.2rem $dirtyBlue;
-    padding: 0.5rem;
-    border-radius: 2rem;
+    margin: 4rem 0 3rem;
+    padding: 0.8rem 1.8rem;
+    border-radius: 2.1rem;
     text-decoration: none;
     text-transform: uppercase;
     @include testStyle($openSans, $semiBold, 1.6rem, $whiteTwo);
