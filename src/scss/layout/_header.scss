@@ -1,0 +1,16 @@
+.header {
+    background-color: $whiteFour;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    &__image {
+        &--land {
+            width: 25rem;
+            height: 6.3rem;
+            margin-top: 9.5rem;
+        }
+        &--fill{
+            
+        }
+    }
+}
