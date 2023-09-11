@@ -7,78 +7,85 @@
     margin-bottom: 1rem;
     grid-gap: 2rem;
    
-    .titleFilling {
+  .titleF {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: flex-end;    
+
+    &__img{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      gap: 1rem;
-      align-items: flex-end;    
+      justify-content: flex-start;
+      gap: 1.5rem;
+      align-items: baseline;
 
-      .imgFilling {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 1rem;
-        align-items: flex-end;   
-
-        .imagenFilling {
-          color: $orange;
-        }
-      }
-      .imgUp, .imgDown {
-        width: 20px;
-        height: 16px;
-      }
-      .fTitle {
-        @include testStyle($openSans, $semiBold, 1.8rem, $gunmetal);
+      &--icon {
+        color: $orange;
+        transform: scale(2);
+        padding-bottom: 0.5rem;
       }
     }
-       
-    .fillingForm {
+
+    &__title {
+      @include testStyle($openSans, $semiBold, 1.8rem, $gunmetal);
+    }
+
+    &__arrow {
+      &--up, &--down {
+        color: $gunmetal;
+        transform: scale(2);
+        margin: 0.8rem;
+      }
+    }
+  }       
+  
+  .formF {
     display: grid;
     grid-template-columns: 1fr;
     border: none;
     grid-gap: 0.5rem;
 
-      .fLabel {
-        margin-top: 1.5rem;
-        margin-bottom: .5rem;
-        @include testStyle ($openSans, $regular, 1.4rem, $darkGreenBlue);
-      }
+    &__label {
+      margin-top: 1.5rem;
+      margin-bottom: .5rem;
+      @include testStyle ($openSans, $regular, 1.4rem, $darkGreenBlue);
+    }
 
-      .fInput {
+    &__input {
+      border: 1px solid $hospitalGreen;
+      padding: 0.5rem;
+    }
+    &__input::placeholder {
+      color: rgb(206, 190, 190);
+      @include testStyle ($openSans, $regular, 1.4rem, $pinkishGrey);
+    }
+
+    &__label--img {
+      display: flex;
+      flex-direction: row;
+      grid-gap: 1.8rem;
+
+      .previewF {
         border: 1px solid $hospitalGreen;
-        padding: 0.5rem;
+        width: 30px;
+        height: 30px;
+        margin: 0;
       }
-      .fInput::placeholder {
-        color: rgb(206, 190, 190);
-        @include testStyle ($openSans, $regular, 1.4rem, $pinkishGrey);
-      }
-
-      .imgF {
-        display: flex;
-        flex-direction: row;
-        grid-gap: 1.8rem;
-
-        .preview {
-          border: 1px solid $hospitalGreen;
-          width: 30px;
-          height: 30px;
-          margin: 0;
-        }
       
-        .fButton {
-          background-color: $orange;      
-          padding: 0.5rem 2.0rem;
-          border-radius: 3px;
-          border: 1px solid $orange;
-          box-shadow: 0 0 4px 0 $black32;
+      .btnF {
+        background-color: $orange;      
+        padding: 0.5rem 2.0rem;
+        border-radius: 3px;
+        border: 1px solid $orange;
+        box-shadow: 0 0 4px 0 $black32;
                    
-          .buttonLink {
-            text-decoration: none;             
-            @include testStyle ($openSans, $regular, 1.4rem, $whiteTwo);         
-          }
+        &__Link {
+        text-decoration: none;             
+        @include testStyle ($openSans, $regular, 1.4rem, $whiteTwo);         
         }
-       }
+      }
     }
   }
+}
