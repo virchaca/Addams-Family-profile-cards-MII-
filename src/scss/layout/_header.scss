@@ -1,0 +1,25 @@
+// Comenta la clase que NO quieras aplicar hasta que apliquemos JS
+
+.headerIndex {
+    background-color: $whiteFour;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    .imgIndex {
+        width: 25rem;
+            height: 6.3rem;
+            margin-top: 9.5rem;
+    }
+}
+
+.headerCard{
+    background-color: $whiteFour;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .imgCard{
+        width: 20rem;
+        height: 5rem;
+        margin: 3rem 0;
+    }
+}
