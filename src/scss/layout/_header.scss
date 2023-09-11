@@ -1,16 +1,23 @@
-.header {
+.header__land {
     background-color: $whiteFour;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    &__image {
-        &--land {
-            width: 25rem;
+    &--img {
+        width: 25rem;
             height: 6.3rem;
             margin-top: 9.5rem;
-        }
-        &--fill{
-            
-        }
+    }
+}
+
+.header__fill{
+    background-color: $whiteFour;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--img{
+        width: 2rem;
+        height: 5rem;
+        margin: 3rem 0;
     }
 }
