@@ -1,23 +1,23 @@
 // Comenta la clase que NO quieras aplicar hasta que apliquemos JS
 
-.header__land {
+.headerIndex {
     background-color: $whiteFour;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    &--img {
+    .imgIndex {
         width: 25rem;
             height: 6.3rem;
             margin-top: 9.5rem;
     }
 }
 
-.header__fill{
+.headerCard{
     background-color: $whiteFour;
     display: flex;
     align-items: center;
     justify-content: center;
-    &--img{
+    .imgCard{
         width: 20rem;
         height: 5rem;
         margin: 3rem 0;
