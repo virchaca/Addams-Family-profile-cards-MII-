@@ -2,6 +2,7 @@
   @include center-column;
   justify-content: flex-start;
   background-color: $whiteFour;
+  height: 65vh;
   &__title {
     margin-top: 3.5rem;
     @include testStyle($merriweather, $blackBold, 2rem, $tomato);
