@@ -6,30 +6,29 @@
     align-items: center;
     
     &__button{
-        @include testStyle (0,0,1.2rem,$gunmetal);
+        @include testStyle ($openSans,400,1.2rem,$gunmetal);
         width: 8rem;
         height: 3rem;
         margin: 0 16.5rem 2rem 0;
-        padding: 0.4rem 1.2rem 0.5rem 1rem;
         border-radius: 2rem;
         border: solid 0.1rem $whiteTwo;
         background-color: $silver;
         transition-duration: 0.8s;
         text-transform: uppercase;
-        gap: 0.5rem;
+        cursor: pointer;
         
         &:hover{ 
             background-color: $whiteTwo;
             transform: scale(1.2);
             box-shadow: 0 0.1rem 1rem 0 $black20, 0 0.1rem 3rem 0 $black20;
-        } 
+        }
+        .fa-regular{
+            margin-right:0.8rem;
+        }
     }
     
     &__box{
         background-color: $whiteTwo;
-        width: 24rem;
-        height: 32.9rem;
-        margin: 2rem 0 0;
         padding: 2.1rem 0 1.2rem;
         border-radius: 0.2rem;
         box-shadow: 0 0.1rem 1rem 0 $black20, 0 0.1rem 3rem 0 $black20;
@@ -44,10 +43,10 @@
         border-color:$dirtyBlue;
         vertical-align: baseline;
         &--name{
-            @include testStyle($montserrat, $bold, 1.8rem, $darkGreenBlue);margin-left: 2rem; 
+            @include testStyle($montserrat, 900, 1.8rem, $darkGreenBlue);margin-left: 2rem; 
         } 
         &--profession{
-            @include testStyle ($montserrat, regular, 1.6rem, $gunmetal);margin-left: 2rem; 
+            @include testStyle ($montserrat, 600, 1.6rem, $gunmetal);margin-left: 2rem; 
         }
     }
 }
