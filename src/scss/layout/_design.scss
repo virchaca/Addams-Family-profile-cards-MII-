@@ -5,6 +5,7 @@
     .des__cont{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
 
         &--icon{
             display: flex;
@@ -22,10 +23,10 @@
         }
         
         &--up{
-            display: flex;
+            /*display: flex;
             flex-direction: row;
             align-items: center;
-            padding-left: 15.5rem;
+            */
             @include margin (2rem, 2rem, 1rem, 1rem);
             font-size: 1.8rem;
             @media all and (min-widht:768px){
