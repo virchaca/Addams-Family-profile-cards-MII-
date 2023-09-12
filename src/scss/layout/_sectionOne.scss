@@ -32,10 +32,10 @@
         padding: 2.1rem 0 1.2rem;
         border-radius: 0.2rem;
         box-shadow: 0 0.1rem 1rem 0 $black20, 0 0.1rem 3rem 0 $black20;
+        
         &--img{
             width: 24rem;
             height: 20rem;
-            margin: 1rem 0;
         }
     }
     &__container{
@@ -46,13 +46,15 @@
             @include testStyle($montserrat, 900, 1.8rem, $darkGreenBlue);margin-left: 2rem; 
         } 
         &--profession{
-            @include testStyle ($montserrat, 600, 1.6rem, $gunmetal);margin-left: 2rem; 
+            @include testStyle ($montserrat, 600, 1.6rem, $gunmetal);margin-left: 2rem;
+            margin-bottom: 1rem;
         }
     }
 }
 .icons{
     display: flex;
     flex-direction: row;
+    margin-top: 1rem;
     margin-left: 2rem;
     gap: 1rem;
     
