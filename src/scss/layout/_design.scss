@@ -1,129 +1,156 @@
-.desingSection {
+.desing{
     width: 100vw;
     height: auto;
-    background-color: $white;
 
-    & .desplegableDesing {
+    .des__cont{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
 
-        & .iconDesing {
+        &--icon{
             display: flex;
-            justify-content: left;
-            margin: 0.1rem 0.6rem 1.5rem 0;
-            font-size: 1.1rem;
-            color: $orange;
+            flex-direction: row;
+            align-items: center;
+            @include iconStyle (2rem, 2rem, $orange);
+            @include margin (2rem, 2rem, 1rem, 1rem);
         }
 
-        & .desingText {
-            width: 4rem;
-            height: 1.5rem;
-            margin: 0 4rem 1.3rem 0.6rem;
-            font-family: $openSans;
-            font-size: 1.1rem;
-            font-weight: 37rem;
-            color: $gunmetal;
+        &--title{
+            display: flex;
+            flex-direction: row;
+            @include testStyle ($openSans,$semiBold, 1.8rem, $gunmetal);
+            @include margin (1rem, 2rem, 1rem, 1rem);
         }
         
-        & .chevronUp {
-            width: 1rem;
-            height: 1.1rem;
-            background-color: $white;
-            color:$black;
+        &--up{
+            /*display: flex;
+            flex-direction: row;
+            align-items: center;
+            */
+            @include margin (2rem, 2rem, 1rem, 1rem);
+            font-size: 1.8rem;
+            @media all and (min-widht:768px){
+                display: flex;
+                flex-direction: row;
+                padding-left: 800rem;
+            }
         }
-
     }
 
-    .squareText {
-        & .colorsText {
-            width: 3.8rem;
-            height: 1.1rem;
-            margin: 1.3rem 5.1rem 2rem 0;
-            font-family:$openSans;
-            font-size: 1rem;
-            color: $gunmetal;
+    .sub__text{
+        &--ti{
+            @include margin (2rem, 2rem, 1rem, 1rem);
+            @include testStyle($openSans,$regular,1.4rem,$gunmetal);
+            margin-left: 4rem;
         }
     } 
 
-    .rangeColorOne{ 
+/* first rectangle */
+.rec{
+    
+    .rec__one--rad{
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1.5rem;
+        margin-top: 0.5rem;
+        align-items: center;
+    }
 
-        & .firstRectangle {
+    .rec__one{ 
+        display: flex;
+        flex-direction: row;
+        padding-left: 23rem;
+        @media all and (min-widht:768px){
+            padding-left: 150rem;  
+        }
+        
+
+        &__one{
             display: flex;
             flex-direction: row;
-            padding-top: 1rem;
-            justify-content: right;
+            align-self: flex-end;
+            /*@include margin (3rem, 3rem, 1rem, 1rem);
+            padding-top: 1rem;*/
+        }
+
+        &--one{
+            @include rectangle (30px,25px,$darkGreenBlue);
+        }
+
+        &--two{
+            @include rectangle (30px,25px,$dirtyBlue);
+        }
+
+        &--three{
+            @include rectangle (30px,25px,$hospitalGreen);
+        }
+
+    }
+}   
+
+/* second rectangle */
+    .rect{
+
+        .rec__one--rad{
+            width: 2rem;
+            height: 2rem;
             margin-right: 1.5rem;
+            margin-top: 0.5rem;
+            align-items: center;
         }
 
-        & .firstRectangleColorsOne {
-            width: 1.8rem;
-            height: 1.5rem;
-            background-color:$darkGreenBlue;
-        }
-
-        & .firstRectangleColorsTwo {
-            width: 1.8rem;
-            height: 1.5rem;
-            background-color: $dirtyBlue;
-        }
-
-        &.firstRectangleColorsThree {
-            width: 1.8rem;
-            height: 1.5rem;
-            background-color: $hospitalGreen;
-        }
-
-    }   
-
-    .rangeColorTwo {
-
-        & .secondRectangle {
+        .rect__two{
             display: flex;
             flex-direction: row;
-            padding-top: 1rem;
-            justify-content: right;
-            margin-right: 1.5rem;
-        }
-        & .secondRectangleColorsOne {
-            width: 1.8rem;
-            height: 1.5rem;
-            background-color: #420101;
-        }
-        & .secondRectangleColorsTwo {
-            width: 1.8rem;
-            height: 1.5rem;
-            background-color: #BD1010;
-        }
-        & .secondRectangleColorsThree {
-            width: 1.8rem;
-            height: 1.5rem;
-            background-color: #E95626;
+            padding-left: 23rem;
+            padding-top: 1.5rem;
+        
+            &--tone{
+                display: flex;
+                flex-direction: row;
+                @include rectangle (3rem,3rem,$driedBlood);
+            }
+            &--ttwo{
+                display: flex;
+                flex-direction: row;
+                @include rectangle (3rem,3rem,$rustyRed);
+            }
+            &--tthree{
+                display: flex;
+                flex-direction: row;
+                @include rectangle (3rem,3rem,$tomato);
+            }
         }
     }
 
-    .rangeColorThree {
+
+    /* three rectangle */
+    .ran{
+
+        .rec__one--rad{
+            width: 2rem;
+            height: 2rem;
+            margin-right: 1.5rem;
+            margin-top: 0.5rem;
+            align-items: center;
+        }
         
-        & .thirdRectangle {
+        .ran__three{
             display: flex;
             flex-direction: row;
-            padding-top: 1rem;
-            justify-content: right;
-            margin-right: 1.5rem;
-        }
-        & .thirdRectangleColorsOne {
-            width: 1.8rem;
-            height: 1.5rem;
-            background-color: #3E5B65;
-        }
-        & .thirdRectangleColorsTwo {
-            width: 1.8rem;
-            height: 1.5rem;
-            background-color: #EAB052;
-        }
-        & .thirdRectangleColorsThree {
-            width: 1.8rem;
-            height: 1.5rem;
-            background-color: #A0C0CF;
+            padding-top: 1.5rem;
+            padding-left: 23rem;
+            padding-bottom: 1.5rem;
+        
+            &--oneR{
+                @include rectangle (3rem,3rem, $slate);
+            }
+            &--twoR{
+                @include rectangle (3rem,3rem,$fadedOrange);
+            }
+            &--threeR{
+                @include rectangle (3rem,3rem,$lightGreyBlue);
+            }
         }
         
     }

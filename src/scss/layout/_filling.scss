@@ -33,7 +33,7 @@
     }
 
     &__arrow {
-      &--up, &--down {
+      &--down {
         color: $gunmetal;
         transform: scale(2);
         margin: 0.8rem;
@@ -80,6 +80,7 @@
         border-radius: 3px;
         border: 1px solid $orange;
         box-shadow: 0 0 4px 0 $black32;
+        cursor: pointer;
                    
         &__Link {
         text-decoration: none;             
