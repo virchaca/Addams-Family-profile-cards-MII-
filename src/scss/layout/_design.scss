@@ -30,6 +30,11 @@
             padding-left: 15.5rem;
             @include margin (2rem, 2rem, 1rem, 1rem);
             font-size: 1.8rem;
+            @media all and (min-widht:768px){
+                display: flex;
+                flex-direction: row;
+                padding-left: 800rem;
+            }
         }
     }
 
