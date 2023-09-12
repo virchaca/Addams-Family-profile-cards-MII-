@@ -1,7 +1,6 @@
 .desing{
     width: 100vw;
     height: auto;
-    background-color: $white;
 
     .des__cont{
         display: flex;
@@ -12,48 +11,33 @@
             flex-direction: row;
             align-items: center;
             @include iconStyle (2rem, 2rem, $orange);
-            margin-left: 2rem;
-            margin-right: 2rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            
+            @include margin (2rem, 2rem, 1rem, 1rem);
         }
 
         &--title{
             display: flex;
             flex-direction: row;
             font-family: $openSans;
-            font-size: 2rem;
+            font-size: 1.8rem;
             color: $gunmetal;
-            padding-left: 10px;
-            margin-left: 2rem;
-            margin-right: 2rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            @include margin (1rem, 2rem, 1rem, 1rem);
         }
         
         &--up{
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding-left: 38rem;
-            margin-left: 2rem;
-            margin-right: 2rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            font-size:2rem;
+            padding-left: 15.5rem;
+            @include margin (2rem, 2rem, 1rem, 1rem);
+            font-size: 1.8rem;
         }
-
     }
 
     .sub__text{
         &--ti{
-            margin-left: 2rem;
-            margin-right: 2rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            @include margin (2rem, 2rem, 1rem, 1rem);
             font-family:$openSans;
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             color: $gunmetal;
             margin-left: 4rem;
         }
@@ -73,36 +57,30 @@
     .rec__one{ 
         display: flex;
         flex-direction: row;
-        padding-left: 48rem;
+        padding-left: 23rem;
+        @media all and (min-widht:768px){
+            padding-left: 150rem;  
+        }
         
 
         &__one{
             display: flex;
             flex-direction: row;
             align-self: flex-end;
-            margin-left: 3rem;
-            margin-right: 3rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            @include margin (3rem, 3rem, 1rem, 1rem);
             padding-top: 1rem;
         }
 
         &--one{
-            width: 3rem;
-            height: 3rem;
-            background-color: $darkGreenBlue;
+            @include rectangle (3rem,3rem,$darkGreenBlue);
         }
 
         &--two{
-            width: 3rem;
-            height: 3rem;
-            background-color: $dirtyBlue;
+            @include rectangle (3rem,3rem,$dirtyBlue);
         }
 
         &--three{
-            width: 3rem;
-            height: 3rem;
-            background-color: $hospitalGreen;
+            @include rectangle (3rem,3rem,$hospitalGreen);
         }
 
     }
@@ -122,29 +100,23 @@
         .rect__two{
             display: flex;
             flex-direction: row;
-            padding-left: 48rem;
+            padding-left: 23rem;
             padding-top: 1.5rem;
         
             &--tone{
                 display: flex;
                 flex-direction: row;
-                width: 3rem;
-                height: 3rem;
-                background-color: $driedBlood;
+                @include rectangle (3rem,3rem,$driedBlood);
             }
             &--ttwo{
                 display: flex;
                 flex-direction: row;
-                width: 3rem;
-                height:3rem;
-                background-color: $rustyRed;
+                @include rectangle (3rem,3rem,$rustyRed);
             }
             &--tthree{
                 display: flex;
                 flex-direction: row;
-                width: 3rem;
-                height: 3rem;
-                background-color: $tomato;
+                @include rectangle (3rem,3rem,$tomato);
             }
         }
     }
@@ -165,23 +137,17 @@
             display: flex;
             flex-direction: row;
             padding-top: 1.5rem;
-            padding-left: 48rem;
+            padding-left: 23rem;
             padding-bottom: 1.5rem;
         
             &--oneR{
-                width: 3rem;
-                height: 3rem;
-                background-color: $slate;
+                @include rectangle (3rem,3rem, $slate);
             }
             &--twoR{
-                width: 3rem;
-                height: 3rem;
-                background-color: $fadedOrange;
+                @include rectangle (3rem,3rem,$fadedOrange);
             }
             &--threeR{
-                width: 3rem;
-                height: 3rem;
-                background-color: $lightGreyBlue;
+                @include rectangle (3rem,3rem,$lightGreyBlue);
             }
         }
         
