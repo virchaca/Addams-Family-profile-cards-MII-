@@ -6,6 +6,12 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     grid-gap: 2rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: $pinkishGrey;
+    padding-bottom: 4rem;
+
    
   .titleF {
     display: flex;
@@ -33,11 +39,9 @@
     }
 
     &__arrow {
-      &--down {
-        color: $gunmetal;
-        transform: scale(2);
-        margin: 0.8rem;
-      }
+      color: $gunmetal;
+      transform: scale(2);
+      margin: 0.8rem;
     }
   }       
   
@@ -90,3 +94,21 @@
     }
   }
 }
+
+.collapsed {
+  .titleF /*si las 3 cabeceras tienen distinta clase, meter aqui las tres*/{
+    &__arrow {
+      transform: rotate(180deg) scale(2);
+      /*si el icono tiene distinta clase, meter aqui los tres */
+    }
+  }
+  .formF /*, .form-de-design, .form-de-share*/ {
+    display: none;
+  }
+}
+
+/* ejemplo de mis las variables de la parte fillin para JAVA
+
+const fillHeader = document.querySelector('.js-legend');
+const fillForm = document.querySelector('.js-fill-form');
+*/
