@@ -1,6 +1,5 @@
 .desing{
     width: 100vw;
-    height: auto;
     display:flex;
     flex-direction: column;
 
@@ -8,7 +7,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-            
         justify-content: space-between;
 
         &--icon{
@@ -16,7 +14,7 @@
             align-items: baseline;
             color: $orange;
             font-size: 1.8rem;
-            @include margin(2rem,2rem,1rem,1rem);
+            @include margin (2rem, 2rem, 1rem, 1rem);
         }
 
         &--title{ 
@@ -29,15 +27,10 @@
         
         &--up{
             display:flex;
-            align-items: flex-end;
-            /*display: flex;
-            flex-direction: row;
-            align-items: center;
-            */
-            @include margin (2rem, 2rem, 1rem, 1rem);
+            justify-content: flex-end;
             font-size: 1.8rem;
             color: $gunmetal;
-            gap: 1.5rem;
+            /*padding: 1.5rem;*/
         }
     }
     
@@ -58,19 +51,21 @@
     .rec__one--rad{
         width: 2rem;
         height: 2rem;
-        margin-top: 0.5rem;
+        margin: 1rem;
         align-items: center;
     }
 
     .rec__one{ 
         display: flex;
         flex-direction: row;
-        align-self: flex-end;  
+        justify-content: flex-end;
+        margin-left: 1rem;
+        align-items: center;  
         
         &__one{
             display: flex;
             flex-direction: row;
-            align-self: flex-end;
+            justify-content: flex-end;
         }
 
         &--one{
@@ -95,14 +90,15 @@
         .rec__one--rad{
             width: 2rem;
             height: 2rem;
-            margin-top: 0.5rem;
+            margin: 1rem;
             align-items: center;
         }
 
         .rect__two{
             display: flex;
             flex-direction: row;
-            padding-top: 1.5rem;
+            justify-content: flex-end;
+            align-items: center;
         
             &--tone{
                 display: flex;
@@ -127,17 +123,18 @@
     .ran{
 
         .rec__one--rad{
+            display: flex;
             width: 2rem;
             height: 2rem;
-            margin-top: 0.5rem;
+            margin: 1rem;
             align-items: center;
         }
         
         .ran__three{
             display: flex;
             flex-direction: row;
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
+            justify-content: flex-end;
+            align-items: center;
         
             &--oneR{
                 @include rectangle (3rem,2.5rem, $slate);
@@ -150,6 +147,10 @@
             }
         }
       
+    }
+
+    .hr {
+        background-color: $gunmetal;
     }
 
 }
