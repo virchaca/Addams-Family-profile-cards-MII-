@@ -1,7 +1,10 @@
 .desing{
-    width: 100vw;
     display:flex;
     flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 
     .des__cont{
         display: flex;
@@ -14,7 +17,6 @@
             align-items: baseline;
             color: $orange;
             font-size: 1.8rem;
-            @include margin (2rem, 2rem, 1rem, 1rem);
         }
 
         &--title{ 
@@ -39,18 +41,22 @@
         &--ti{
             @include margin (2rem, 2rem, 1rem, 1rem);
             @include testStyle($openSans,$regular,1.4rem,$gunmetal);
-            margin-left: 4rem;
+            margin-left: 2rem;
         }
     }
  
+.sub__box{
+    display:flex;
+    justify-content: space-between;
 
+}
 
 /* first rectangle */
 .rec{
     
     .rec__one--rad{
-        width: 2rem;
-        height: 2rem;
+        width: 1.7rem;
+        height: 1.7rem;
         margin: 1rem;
         align-items: center;
     }
@@ -88,8 +94,8 @@
     .rect{
 
         .rec__one--rad{
-            width: 2rem;
-            height: 2rem;
+            width: 1.7rem;
+            height: 1.7rem;
             margin: 1rem;
             align-items: center;
         }
@@ -124,8 +130,8 @@
 
         .rec__one--rad{
             display: flex;
-            width: 2rem;
-            height: 2rem;
+            width: 1.7rem;
+            height: 1.7rem;
             margin: 1rem;
             align-items: center;
         }
@@ -150,8 +156,11 @@
     }
 
     .hr {
+        display: flex;
+        flex-direction: row;
         background-color: $gunmetal;
     }
-
 }
+
+
 
