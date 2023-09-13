@@ -4,7 +4,8 @@
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    border: none;
 
     .des__cont{
         display: flex;
@@ -154,13 +155,12 @@
         }
       
     }
-
-    .hr {
-        display: flex;
-        flex-direction: row;
-        background-color: $gunmetal;
-    }
 }
+.line {
+    background-color: $whiteThree;
+    height: 0.01rem;
+    
+  }
 
 
 

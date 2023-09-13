@@ -6,11 +6,8 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     grid-gap: 2rem;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom-color: $pinkishGrey;
-    padding-bottom: 4rem;
+    border:none;
+
 
    
   .titleF {
@@ -105,6 +102,11 @@
   .formF /*, .form-de-design, .form-de-share*/ {
     display: none;
   }
+}
+.line {
+  background-color: $whiteThree;
+  height: 0.01rem;
+  margin-top: 3rem;
 }
 
 /* ejemplo de mis las variables de la parte fillin para JAVA

@@ -43,10 +43,10 @@
         border-color:$dirtyBlue;
         vertical-align: baseline;
         &--name{
-            @include testStyle($montserrat, 900, 1.8rem, $darkGreenBlue);margin-left: 2rem; 
+            @include testStyle($montserrat, $bold, 1.8rem, $darkGreenBlue);margin-left: 2rem; 
         } 
         &--profession{
-            @include testStyle ($montserrat, 600, 1.6rem, $gunmetal);margin-left: 2rem;
+            @include testStyle ($montserrat,$semiBold, 1.6rem, $gunmetal);margin-left: 2rem;
             margin-bottom: 1rem;
         }
     }
