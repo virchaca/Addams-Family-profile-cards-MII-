@@ -10,6 +10,25 @@ const telephoneInput = document.querySelector('.js-input-phone');
 const linkedinInput = document.querySelector('.js-input-linkedin');
 const gitInput = document.querySelector('.js-input-git');
 
+const namePreview = document.querySelector('.js-name');
+
+const jobPreview = document.querySelector('.js-job');
+
+/*****************
+ * funcion en los input para que se active al escribir la usuaria: CHANGE / INPUT / KEYUP
+ *
+ *
+ //namePreview.innerHTML=nameInput.value
+/*function previewCard() {
+  nameInput.input
+}
+<input type="text" id="myInput" oninput="myFunction()">*/
+
+
+function myFunction() {
+  let text = nameInput.value;
+  namePreview.innerHTML = text;
+}
 
 /*********************** */
 const design = document.querySelector('.js-designLegend');
