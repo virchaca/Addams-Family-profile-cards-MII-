@@ -5,10 +5,10 @@
   height: 65vh;
   &__title {
     margin-top: 3.5rem;
-    @include testStyle($merriweather, $blackBold, 2rem, $tomato);
+    @include textStyle($merriweather, $blackBold, 2rem, $tomato);
   }
   &__par {
-    @include testStyle($openSans, $regular, 1.3rem, $darkGreenBlue);
+    @include textStyle($openSans, $regular, 1.3rem, $darkGreenBlue);
     text-align: center;
     padding: 0 3rem;
   }
@@ -24,7 +24,7 @@
     figure {
       width: 6rem;
       text-align: center;
-      @include testStyle($openSans, $regular, 1.3rem, $gunmetal);
+      @include textStyle($openSans, $regular, 1.3rem, $gunmetal);
       .fa {
         color: $orange;
         transform: scale(1.5);
@@ -41,6 +41,6 @@
     border-radius: 2.1rem;
     text-decoration: none;
     text-transform: uppercase;
-    @include testStyle($openSans, $semiBold, 1.6rem, $whiteTwo);
+    @include textStyle($openSans, $semiBold, 1.6rem, $whiteTwo);
   }
 }

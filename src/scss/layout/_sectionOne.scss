@@ -6,7 +6,7 @@
     align-items: center;
     
     &__button{
-        @include testStyle ($openSans,400,1.2rem,$gunmetal);
+        @include textStyle ($openSans,400,1.2rem,$gunmetal);
         width: 8rem;
         height: 3rem;
         margin: 0 16.5rem 2rem 0;
@@ -43,10 +43,10 @@
         border-color:$dirtyBlue;
         vertical-align: baseline;
         &--name{
-            @include testStyle($montserrat, $bold, 1.8rem, $darkGreenBlue);margin-left: 2rem; 
+            @include textStyle($montserrat, $bold, 1.8rem, $darkGreenBlue);margin-left: 2rem; 
         } 
         &--profession{
-            @include testStyle ($montserrat,$semiBold, 1.6rem, $gunmetal);margin-left: 2rem;
+            @include textStyle ($montserrat,$semiBold, 1.6rem, $gunmetal);margin-left: 2rem;
             margin-bottom: 1rem;
         }
     }
@@ -68,7 +68,7 @@
         padding: 0.9rem;
 
         &--item{
-            @include testStyle (0,0,0.9rem,$darkGreenBlue);
+            @include textStyle (0,0,0.9rem,$darkGreenBlue);
         }
     }
 }

@@ -5,7 +5,7 @@
   border: 0.1rem solid $whiteThree;
   padding: 1.9rem;
   &__copy {
-    @include testStyle($openSans, $regular, 1.4rem, $brownishGrey);
+    @include textStyle($openSans, $regular, 1.4rem, $brownishGrey);
   }
   &__logo {
     width: 10rem;

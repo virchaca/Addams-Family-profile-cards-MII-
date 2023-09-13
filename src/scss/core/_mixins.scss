@@ -1,4 +1,4 @@
-@mixin testStyle($fontFamily,$fontWeight,$fontSize,$color) {
+@mixin textStyle($fontFamily,$fontWeight,$fontSize,$color) {
     font-family: $fontFamily;
     font-weight: $fontWeight;
     font-size: $fontSize;
