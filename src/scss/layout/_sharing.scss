@@ -1,7 +1,10 @@
 .section {
+    margin-left: 2.3rem;
+    margin-right: 2rem;
     &__div{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         &__pack{
             display: flex;
             align-items: center;
@@ -9,40 +12,43 @@
                 margin: 0;
                 &--icon{
                     display: flex;
-                    color: #e17334;
-                    padding-left: 23px;
-                    padding-right: 12px;
+                    @include iconStyle($regular, 1.8rem);
+                    padding-right: 1.2rem;
                 }
                 &--arrow{
-                    color: #54585a
+                    @include iconStyle ($regular, 1.8rem, $gunmetal)
                 }
             }
             &--h2 {
-
+                text-transform: uppercase;
+                @include testStyle($openSans, $semiBold, 1.8rem, $gunmetal)
             }
         }
     }
     &__button {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         &__link{
-            background-color: #e17334;
+            background-color: $orange;
             cursor: pointer;
             width: 199px;
             height: 50px;
             border-radius: 12px;
             border: 1px solid $orange;
             box-shadow: 0 0 4px 0 $black32;
-            text-align: center;
-            padding: 13px 17px;
-            font-size: 18px;
-            color: #fff;
-            font-family: "Open Sans",sans-serif;
             text-transform: uppercase;
-            font-weight: 400;
-            margin: 60px auto 30px 60px;
+            // margin: 60px auto 30px 60px;
+            @include testStyle($openSans, $regular, 1.8rem, $whiteTwo);
             &--target{
-
+                @include iconStyle($regular, 2.2rem, $whiteTwo)
             }
         }
-
+    }
+    &__line {
+        background-color: $whiteThree;
+        height: 0.01rem;
+        margin-bottom: 3rem;
     }
 }
