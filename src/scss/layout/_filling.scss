@@ -1,6 +1,4 @@
 .fullForm {
-    display: grid;
-    grid-template-columns: 1fr;
     margin-left: 2.3rem;
     margin-right: 2rem;
     margin-top: 1rem;
@@ -8,14 +6,13 @@
     grid-gap: 2rem;
     border:none;
 
-
-   
   .titleF {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
-    align-items: flex-start;    
+    align-items: flex-start; 
+    cursor: pointer;   
 
     &__img{
       display: flex;
@@ -94,7 +91,7 @@
 .line {
   background-color: $whiteThree;
   height: 0.01rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 /* ejemplo de mis las variables de la parte fillin para JAVA
