@@ -85,3 +85,17 @@ function handleClickShare(event){
 design.addEventListener('click',handleClickDesign);
 fill.addEventListener('click',handleClickFill);
 share.addEventListener('click',handleClickShare);
+
+const inputElement = document.getElementById('fullName');
+const nameElement = document.getElementById('nameh2');
+
+inputElement.addEventListener('input', function() {
+  nameElement.textContent = inputElement.value;
+});
+
+const jobInputElement = document.getElementById('jobPosition');
+const jobElement = document.getElementById('job');
+
+jobInputElement.addEventListener('input', function() {
+  jobElement.textContent = jobInputElement.value;
+});
