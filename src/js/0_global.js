@@ -23,31 +23,25 @@ const shareForm = document.querySelector('.js-share-form');
 
 function collapseDesign(){
   designForm.classList.add('collapsed');
-  //designForm.classList.remove('desing');
 }
 function openDesign(){
   designForm.classList.remove('collapsed');
-  //designForm.classList.add('desing');
 }
 
 
 function collapseFill(){
   fillForm.classList.add('collapsed');
- // fillForm.classList.remove('fullForm');
 }
 function openFill(){
   fillForm.classList.remove('collapsed');
-  //fillForm.classList.add('fullForm');
 }
 
 
 function collapseShare(){
   shareForm.classList.add('collapsed');
- // shareForm.classList.remove('section');
 }
 function openShare(){
   shareForm.classList.remove('collapsed');
-  //shareForm.classList.add('section');
 }
 
 

@@ -1,7 +1,6 @@
 @import 'core/reset';
 @import 'core/variables';
 @import 'core/mixins';
-@import 'core/collapsable';
 
 
 @import 'layout/header';
@@ -10,5 +9,7 @@
 @import 'layout/design';
 @import 'layout/filling';
 @import 'layout/sharing';
+
+@import 'core/collapsable';
 @import 'layout/footer';
 
