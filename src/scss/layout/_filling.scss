@@ -1,7 +1,7 @@
 .fullForm {
     display: grid;
     grid-template-columns: 1fr;
-    margin-left: 2rem;
+    margin-left: 2.3rem;
     margin-right: 2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -37,8 +37,7 @@
 
     &__arrow {
       color: $gunmetal;
-      transform: scale(2);
-      margin: 0.8rem;
+      font-size: 1.8rem;
     }
   }       
   
@@ -92,17 +91,6 @@
   }
 }
 
-.collapsed {
-  .titleF /*si las 3 cabeceras tienen distinta clase, meter aqui las tres*/{
-    &__arrow {
-      transform: rotate(180deg) scale(2);
-      /*si el icono tiene distinta clase, meter aqui los tres */
-    }
-  }
-  .formF /*, .form-de-design, .form-de-share*/ {
-    display: none;
-  }
-}
 .line {
   background-color: $whiteThree;
   height: 0.01rem;

@@ -1,0 +1,17 @@
+.collapsed {
+    .titleF, .des__cont, .section__div {
+      &__arrow {
+        transform: rotate(180deg);
+        /*si el icono tiene distinta clase, meter aqui los tres */
+      }
+      &__pack--fig--arrow {
+        transform: rotate(180deg);
+      }
+      &--up {
+        transform: rotate(180deg);
+      }
+    }
+    .formF, .sub__box, .section__button {
+      display: none;
+    }
+  }
