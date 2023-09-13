@@ -1,30 +1,22 @@
 .fullForm {
-    margin-left: 2.3rem;
-    margin-right: 2rem;
     margin-top: 1rem;
-    margin-bottom: 1rem;
     grid-gap: 2rem;
     border:none;
 
   .titleF {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-    align-items: flex-start; 
     cursor: pointer;   
 
     &__img{
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
-      gap: 1.5rem;
       align-items: baseline;
-
       &--icon {
-        color: $orange;
-        transform: scale(2);
-        padding-bottom: 0.5rem;
+          @include iconStyle($regular, 1.8rem);
+          padding-right: 1rem;
       }
     }
 
@@ -42,17 +34,16 @@
     display: grid;
     grid-template-columns: 1fr;
     border: none;
-    grid-gap: 0.5rem;
+    grid-gap: 0.7rem;
 
     &__label {
-      margin-top: 1.5rem;
-      margin-bottom: .5rem;
+      margin-top: 1.3rem;
       @include testStyle ($openSans, $regular, 1.4rem, $darkGreenBlue);
     }
 
     &__input {
       border: 1px solid $hospitalGreen;
-      padding: 0.5rem;
+      height: 3rem;
     }
     &__input::placeholder {
       color: rgb(206, 190, 190);
@@ -66,19 +57,18 @@
 
       .previewF {
         border: 1px solid $hospitalGreen;
-        width: 30px;
-        height: 30px;
+        width: 3.2rem;
+        height: 3.2rem;
         margin: 0;
       }
       
       .btnF {
-        background-color: $orange;      
+        background-color: $orange; 
         padding: 0.5rem 2.0rem;
         border-radius: 3px;
         border: 1px solid $orange;
         box-shadow: 0 0 4px 0 $black32;
         cursor: pointer;
-                   
         &__Link {
         text-decoration: none;             
         @include testStyle ($openSans, $regular, 1.4rem, $whiteTwo);         
@@ -91,7 +81,7 @@
 .line {
   background-color: $whiteThree;
   height: 0.01rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 /* ejemplo de mis las variables de la parte fillin para JAVA

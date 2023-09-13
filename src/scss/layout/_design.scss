@@ -1,12 +1,5 @@
 .desing{
-   /* display:flex;
-    flex-direction: column;*/
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
     border: none;
-
     .des__cont{
         display: flex;
         flex-direction: row;
@@ -23,10 +16,8 @@
 
         &--title{ 
             display: flex;
-            gap: 1rem;
             @include testStyle ($openSans,$semiBold, 1.8rem, $gunmetal);
-            @include margin(1rem,1rem,1rem,1rem);
-           
+            padding-left: 1rem;
         }
         
         &--up{
@@ -34,16 +25,16 @@
             justify-content: flex-end;
             font-size: 1.8rem;
             color: $gunmetal;
-            /*padding: 1.5rem;*/
         }
     }
     
 
     .sub__text{
         &--ti{
-            @include margin (2rem, 2rem, 1rem, 1rem);
             @include testStyle($openSans,$regular,1.4rem,$gunmetal);
-            margin-left: 2rem;
+            padding-left: 1.9rem;
+            padding-top: 2.2rem;
+
         }
     }
  
@@ -53,6 +44,9 @@
 
 }
 
+.rec__box{
+    padding-top: 3.1rem;
+}
 /* first rectangle */
 .rec{
     
@@ -90,7 +84,6 @@
 
     }
 }
-  
 
 /* second rectangle */
     .rect{
@@ -154,14 +147,13 @@
                 @include rectangle (3rem,2.5rem,$lightGreyBlue);
             }
         }
-      
     }
 }
 .line {
     background-color: $whiteThree;
     height: 0.01rem;
     
-  }
+}
 
 
 

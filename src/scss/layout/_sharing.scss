@@ -1,12 +1,13 @@
 .section {
-    margin-left: 2.3rem;
-    margin-right: 2rem;
+    // margin-left: 2.3rem;
+    // margin-right: 2rem;
     border: none;
     cursor: pointer;
     &__div{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        cursor: pointer;  
         &__pack{
             display: flex;
             align-items: center;
@@ -23,14 +24,16 @@
             }
             &--h2 {
                 text-transform: uppercase;
-                @include testStyle($openSans, $semiBold, 1.8rem, $gunmetal)
+                @include testStyle($openSans, $semiBold, 1.8rem, $gunmetal);
+                padding-top: 1rem;
+                padding-bottom: 1rem;
             }
         }
     }
     &__button {
         display: flex;
         justify-content: center;
-        padding-top: 3rem;
+        padding-top: 2rem;
         padding-bottom: 3rem;
         &__link{
             background-color: $orange;
