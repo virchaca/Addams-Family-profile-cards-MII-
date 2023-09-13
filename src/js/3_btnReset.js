@@ -8,6 +8,6 @@ btnReset.addEventListener('click',(event)=>{
     emailInput.value = '';
     telephoneInput.value = '';
     linkedinInput.value = '';
-    gitInput.value = '';
+    gitInput.value = '';  
 });
 

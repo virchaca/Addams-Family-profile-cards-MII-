@@ -33,7 +33,7 @@ function openDesign(){
 
 function collapseFill(){
   fillForm.classList.add('collapsed');
- // fillForm.classList.remove('fullForm');
+// fillForm.classList.remove('fullForm');
 }
 function openFill(){
   fillForm.classList.remove('collapsed');
@@ -43,7 +43,7 @@ function openFill(){
 
 function collapseShare(){
   shareForm.classList.add('collapsed');
- // shareForm.classList.remove('section');
+// shareForm.classList.remove('section');
 }
 function openShare(){
   shareForm.classList.remove('collapsed');
