@@ -31,7 +31,7 @@ const btnReset = document.querySelector('.js-btn-reset');
 
 
 
-//////////////COLAPSABLE//////////////////
+/************* Colapsables*************/
 
 function collapseDesign(){
   designForm.classList.add('collapsed');
@@ -80,7 +80,7 @@ fill.addEventListener('click',handleClickFill);
 share.addEventListener('click',handleClickShare);
 
 
-///////////////PREVIEW/////////////////////////////
+/*************preview*************/
 
 const inputElement = document.getElementById('fullName');
 const nameElement = document.getElementById('nameh2');
@@ -117,9 +117,11 @@ jobInputElement.addEventListener('input', function() {
 //   }
 // }
 
-////////////Botón Reset/////////////////////////
 
-function handleClickDelete() {
+/************* Botón Reset *************/
+
+function handleClickDelete(event) {
+  event.preventDefault();
   nameInput.value = '';
   jobInput.value = '';
   emailInput.value = '';
