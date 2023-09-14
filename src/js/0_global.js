@@ -21,13 +21,14 @@ const gitInput = document.querySelector('.js-input-git');
 
 const namePreview = document.querySelector('.js-name');
 const jobPreview = document.querySelector('.js-job');
-const phonePreview = document.querySelector('.js-phone');
-const mesagePreview = document.querySelector('.js-mesage');
+const telephonePreview = document.querySelector('.js-phone');
+const emailPreview = document.querySelector('.js-email');
 const linkedinPreview = document.querySelector('.js-linkedin');
 const gitPreview = document.querySelector('.js-gitHub');
 
 
 const btnReset = document.querySelector('.js-btn-reset');
+const btnShare = document.querySelector('js-btn-share');
 
 
 
@@ -103,25 +104,22 @@ jobInputElement.addEventListener('input', function() {
   }
 });
 
-// const phonePreview = document.querySelector('.js-phone');
-// const mesagePreview = document.querySelector('.js-mesage');
-// const linkedinPreview = document.querySelector('.js-linkedin');
-// const gitPreview = document.querySelector('.js-gitHub');
 
-// const telephoneInput = document.querySelector('.js-input-phone');
-// const emailInput = document.querySelector('.js-input-email');
-// const linkedinInput = document.querySelector('.js-input-linkedin');
-// const gitInput = document.querySelector('.js-input-git');
-
-// telephoneInput.addEventListener ('input', function(){
-//   phonePreview = telephone.value;
-//   if (phonePreview === ' ') {
-//     phonePreview.href = 'telephoneInput.value';
-//   } else {
-//     #.href = `tel:${telephonePreview}`;
-//   }
+// telephoneInput.addEventListener('input', function () {
+//   telephonePreview.href = `mailto:${telephoneInput.value}`;
 // });
 
+emailInput.addEventListener('input', function () {
+  emailPreview.href = `mailto:${emailInput.value}`;
+});
+
+linkedinInput.addEventListener('input', function () {
+  linkedinPreview.href = `https://www.linkedin.com/in/${linkedinInput.value}/`;
+});
+
+gitInput.addEventListener('input', function () {
+  gitPreview.href = `https://www.github.com/${gitInput.value}`;
+});
 
 
 
@@ -131,10 +129,14 @@ function handleClickDelete(event) {
   event.preventDefault();
   nameInput.value = '';
   jobInput.value = '';
-  emailInput.value = '';
   telephoneInput.value = '';
+  telephonePreview.href ='#';
+  emailInput.value = '';
+  emailPreview.href ='#';
   linkedinInput.value = '';
+  linkedinPreview.href ='#';
   gitInput.value = '';
+  gitPreview.href = '#';
   namePreview.innerHTML ='Nombre Apellido';
   jobPreview.innerHTML = 'Front-end developer';
 }
