@@ -14,8 +14,8 @@ const shareForm = document.querySelector('.js-share-form');
 
 const nameInput = document.querySelector('.js-input-name');
 const jobInput = document.querySelector('.js-input-job');
-const emailInput = document.querySelector('.js-input-email');
 const telephoneInput = document.querySelector('.js-input-phone');
+const emailInput = document.querySelector('.js-input-email');
 const linkedinInput = document.querySelector('.js-input-linkedin');
 const gitInput = document.querySelector('.js-input-git');
 
@@ -87,35 +87,42 @@ const nameElement = document.getElementById('nameh2');
 
 inputElement.addEventListener('input', function() {
   nameElement.textContent = inputElement.value;
-});
+  if (inputElement.value === ''){
+    namePreview.innerHTML = 'Nombre Apellido';
+  }
+}
+);
 
 const jobInputElement = document.getElementById('jobPosition');
 const jobElement = document.getElementById('job');
 
 jobInputElement.addEventListener('input', function() {
   jobElement.textContent = jobInputElement.value;
+  if (jobInputElement.value === ''){
+    jobPreview.innerHTML = 'Front-end developer';
+  }
 });
 
+// const phonePreview = document.querySelector('.js-phone');
+// const mesagePreview = document.querySelector('.js-mesage');
+// const linkedinPreview = document.querySelector('.js-linkedin');
+// const gitPreview = document.querySelector('.js-gitHub');
 
-// const defaultName = () => (namePreview.innerHTML = 'Nombre Apellido');
-// const defaultJob = () => (jobPreview.innerHTML = 'Front-end developer');
+// const telephoneInput = document.querySelector('.js-input-phone');
+// const emailInput = document.querySelector('.js-input-email');
+// const linkedinInput = document.querySelector('.js-input-linkedin');
+// const gitInput = document.querySelector('.js-input-git');
 
-// const fillName = () => (namePreview.innerHTML = nameInput.value);
-// const fillJob = () => (jobPreview.innerHTML = jobPreview.value);
-
-// function handleInput() {
-//   if (nameInput.value === '') {
-//     defaultName();
+// telephoneInput.addEventListener ('input', function(){
+//   phonePreview = telephone.value;
+//   if (phonePreview === ' ') {
+//     phonePreview.href = 'telephoneInput.value';
 //   } else {
-//     fillName();
+//     #.href = `tel:${telephonePreview}`;
 //   }
+// });
 
-//   if (jobInput.value === '') {
-//     defaultJob();
-//   } else {
-//     fillJob();
-//   }
-// }
+
 
 
 /************* Botón Reset *************/
