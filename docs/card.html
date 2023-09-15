@@ -13,141 +13,189 @@
 </head>
 
 <body>
+
   <header>
-  <img class="pic-title" src="./assets/images/logo-awesome-profile-cards.svg" alt="awsome-cards-logo">
-</header>
-<main>
-      <section class="card">
-        <button class="card__button">
-          <i class="fa-regular fa-trash-can"></i> reset
-        </button>
-    
-        <article class="card__box">
-          <div class="card__container">
-            <h1 class="card__container--name">Nombre Apellido</h1>
-            <h2 class="card__container--profession">Front-end developer</h2>
+    <header class="headerCard">
+        <a href="./index.html"><img class="imgIndex imgCard" src="./assets/images/logo-awesome-profile-cards.svg" alt="awsome-cards-logo"></a>
+    </header>
+  </header>
+
+  <main>
+        <section class="card paletteOne js-card-preview">
+
+            <button class="card__button js-btn-reset" value="reset"><i class="fa-regular fa-trash-can"></i>Reset</button>
+            
+          <article class="card__box">
+            <div class="card__container">
+              <h2 class="card__container--name js-name" id="nameh2">Nombre Apellido</h2>
+              <h3 class="card__container--profession js-job" id="job">Front-end developer</h3>
+            </div>
+      
+            <img
+              class="card__box--img"
+              src="./assets/images/Hermione_Granger.jpg"
+              alt=""/>
+            <nav>
+              <ul class="icons">
+                <li class="icons__border">
+                  <a class="icons__border--item js-phone" href="#"><i class="fa-solid fa-mobile-screen-button fa-2xl"></i></a>
+                </li>
+                <li class="icons__border">
+                  <a class="icons__border--item js-email" href="#">
+                  <i class="fa-regular fa-envelope fa-2xl "></i></a>
+                </li>
+                <li class="icons__border">
+                  <a class="icons__border--item js-linkedin" href="#" target="_blank"
+                    ><i class="fa-brands fa-linkedin-in fa-2xl "></i></a>
+                </li>
+                <li class="icons__border">
+                  <a class="icons__border--item js-gitHub" href="#"
+                    ><i class="fa-brands fa-github-alt fa-2xl "></i></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </section>
+    <section class="sectionIncludes">
+          <fieldset class="desing js-design-form">
+                      
+              <section class="des__cont js-designLegend">
+                  <legend class="des__cont--icon">
+                          <i class="fa-regular fa-object-ungroup"></i>
+                          <h2 class="des__cont--title">DISEÑA</h2>
+                      </legend>
+                  <div class="des__cont--up">
+                      <i class="fa-solid fa-chevron-up"></i>
+                  </div>
+              </section>
+              
+                  <div class="sub__box">
+
+                      <section class="sub__text">
+                          <h2 class="sub__text--ti"> COLORES </h2>
+                      </section>
+
+                      <section class="rec__box">
+
+                          <div class="rec">
+                              <div class="rec__one">
+                                  <div>
+                                      <input class="rec__one--rad js-palette-one"  type="radio" id="radioP" name="radio" value="radio" checked />
+                                      <label for="radioP"></label>
+                                  </div>
+                                  <div class="rec__one--one"></div>
+                                  <div class="rec__one--two"></div>
+                                  <div class="rec__one--three"></div>
+                              </div>
+                          </div>
+                          <div class="rect">
+                              <div class="rect__two">
+                                  <div>
+                                      <input class="rec__one--rad js-palette-two"  type="radio" id="radioP" name="radio" value="radio" />
+                                      <label for="radioP"></label>
+                                  </div>
+                                  <div class="rect__two--tone"></div>
+                                  <div class="rect__two--ttwo"></div>
+                                  <div class="rect__two--tthree"></div>
+                              </div>
+                          </div>
+                          <div class="ran">
+                              <div class="ran__three">
+                                  <div>
+                                      <input class="rec__one--rad js-palette-three"  type="radio" id="radioP" name="radio" value="radio" />
+                                      <label for="radioP"></label>
+                                  </div>
+                                  <div class="ran__three--oneR"></div>
+                                  <div class="ran__three--twoR"></div>
+                                  <div class="ran__three--threeR"></div>
+                              </div>   
+                          </div>
+                      </section>
+                  </div>
+         
+              <div class="line"></div>
+              
+          </fieldset>
+      <fieldset class="fullForm collapsed js-fill-form">
+
+          <div class="titleF js-fillLegend">  
+            <legend class="titleF__img">
+              <i class="fa-regular fa-keyboard titleF__img--icon"></i>
+            <h3 class="titleF__title">RELLENA</h3>
+          </legend>
+            <figure>
+            <i class="fa-solid fa-chevron-up titleF__arrow"></i>
+            </figure>    
           </div>
-    
-          <img
-            class="card__box--img"
-            src="./assets/images/Hermione_Granger.jpg"
-            alt=""
-          />
-          <nav>
-            <ul>
-              <li class="icons">
-                <a class="icons__item" href="#"
-                  ><i class="fa-solid fa-mobile-screen-button"></i
-                ></a>
-              </li>
-              <li>
-                <a class="icons__item" href="#"
-                  ><i class="fa-regular fa-envelope"></i
-                ></a>
-              </li>
-              <li>
-                <a class="icons__item" href="#"
-                  ><i class="fa-brands fa-linkedin-in"></i
-                ></a>
-              </li>
-              <li>
-                <a class="icons__item" href="#"
-                  ><i class="fa-brands fa-github-alt"></i
-                ></a>
-              </li>
-            </ul>
-          </nav>
-        </article>
-      </section>
-    
-  <section class="desingSection">
-      
-      <section class="desplegableDesing">
-          <figure class="iconDesing">
-                  <i class="fa-regular fa-object-ungroup"></i>
-                  <h2 class="desingText">DISEÑA</h2>
-              </figure>
-          <div class="chevronUp">
-              <i class="fa-solid fa-chevron-up"></i>
-          </div>
-      </section>
+          
+              <div class="formF">
 
-      <section class="squareText">
-           <h2 class="colorsText"> COLORES </h2>
-      </section>
+            <label class="formF__label" for="fullName">Nombre completo</label>
+            <input class="formF__input js-input-name" id="fullName" type="text" name="fullName" placeholder="Ej: Sally Jill">
+          
+            <label class="formF__label" for="jobPosition">Puesto</label>
+            <input class="formF__input js-input-job" id="jobPosition" type="text" name="jobPosition" placeholder="Ej: Front-end unicorn">
+          
+            <label class="formF__label" for="image">Imagen de perfil</label>
+            <div class="formF__label--img">
+                <button class="btnF"> <a class="btnF__Link" href="#">Añadir imagen</a>
+                </button>
+                <span class="previewF"></span>
+            </div>
 
-      <div class="rangeColorOne">
-          <section class="firstRectangle">
-              <div class="firstRectangleColorsOne"></div>
-              <div class="firstRectangleColorsThree"></div>
-          </section>
-      </div>
-      
-      <div class="rangeColorTwo">
-          <section class="secondRectangle">
-              <div class="secondRectangleColorsOne"></div>
-              <div class="secondRectangleColorsTwo"></div>
-              <div class="secondRectangleColorsThree"></div>
-          </section>
-      </div>
-
-      <div class="rangeColorThree">
-          <section class="thirdRectangle">
-              <div class="thirdRectangleColorsOne"></div>
-              <div class="thirdRectangleColorsTwo"></div>
-              <div class="thirdRectangleColorsThree"></div>
-          </section>
-      </div>
-      
-  </section>
-  <section class="fullForm">
-
-      <div class="titleFilling">  
-        <div class="imgFilling">
-        <figure class=""><i class="fa-regular fa-keyboard imagenFilling"></i></figure>
-        <h3 class="fTitle">RELLENA</h3></div>
-        <div class="arrowUp"> <img class="imgUp" src="./assets/images/arrowUp.png" alt=""> <img class="imgDown" src="./assets/images/arrowDown.png" alt=""></div>
-      </div>
-      
-      <fieldset class="fillingForm">
-
-       <label class="fLabel" for="fullName">Nombre completo</label>
-       <input class="fInput" id="fullName" type="text" name="fullName" placeholder="Ej: Sally Jill">
-      
-       <label class="fLabel" for="jobPosition">Puesto</label>
-       <input class="fInput" id="jobPosition" type="text" name="jobPosition" placeholder="Ej: Front-end unicorn">
-      
-       <label class="fLabel" for="image">Imagen de perfil</label>
-       <div class="imgF">
-          <button class="fButton"> <a class="buttonLink" href="#">Añadir imagen</a>
-          </button>
-          <span class="preview"></span>
-       </div>
-
-       <label class="fLabel" for="mail">Email</label>
-       <input class="fInput" id="mail" type="mail" name="mail" placeholder="Ej: sally-hill@gamil.com">
-       
-       <label class="fLabel" for="phoneNumber">Teléfono</label>
-       <input class="fInput" id="phoneNumber" type="number" name="phoneNumber" placeholder="Ej: 555-55-55-55">
-       
-       <label class="fLabel" for="Linkedin">Linkedin</label>
-       
-       <input class="fInput" id="Linkedin" type="text" name="Linkedin" placeholder="Ej: linkedin.com/in/sally.hill">
-      
-      
-       <label class="fLabel" for="gitHub">GitHub</label>
-       <input class="fInput" id="gitHub" type="text" name="gitHub" placeholder="Ej: @sally-hill">
-       
+            <label class="formF__label" for="mail">Email</label>
+            <input class="formF__input js-input-email" id="mail" type="mail" name="mail" placeholder="Ej: sally-hill@gmail.com">
+            
+            <label class="formF__label" for="phoneNumber">Teléfono</label>
+            <input class="formF__input js-input-phone" id="phoneNumber" type="number" name="phoneNumber" placeholder="Ej: 555-55-55-55">
+            
+            <label class="formF__label" for="Linkedin">Linkedin</label>
+            
+            <input class="formF__input js-input-linkedin" id="Linkedin" type="text" name="Linkedin" placeholder="Nombre de usuario">
+            
+            
+            <label class="formF__label" for="gitHub">GitHub</label>
+            <input class="formF__input js-input-git" id="gitHub" type="text" name="gitHub" placeholder="Ej: Nombre de usuario">
+            
+            </div>
+        
+          <div class="line"></div>
+          
       </fieldset>
-      
-  </section>
-      
-  
-</main>
+          
+      <fieldset class="section collapsed js-share-form">
+        
+              <div class="section__div js-shareLegend ">
+                  <legend class="section__div__pack">
+                      <figure class="section__div__pack--fig">
+                          <i class="fa fa-solid fa-share-nodes section__div__pack--fig--icon"></i>
+                      </figure>
+                      <h2 class="section__div__pack--h2">Comparte</h2>
+                  </legend>
+                  <figure class="section__div__pack--fig">
+                    <i class="fa-solid fa-chevron-up section__div__pack--fig--arrow"></i>
+                  </figure>
+              </div>
+        
+              <div class="section__button js-btn-share">
+                <button type="submit" value="Enviar" class="section__button__link">
+                  <i class="far fa-address-card section__button__link--target"></i> Crear tarjeta
+                </button>
+              </div>
+              
+              <div class="section__line"></div>
+        
+      </fieldset>
+
+    </section>
+  </main>
+
   <footer class="footer">
-      <span class="copy">Awesome profile-cards @2018</span>
-      <img class="logo-adalab" src="./assets/images/logo-adalab.png" alt="logo-adalab">
+      <span class="footer__copy">Awesome profile-cards @2023</span>
+      <img class="footer__logo" src="./assets/images/logo-adalab.png" alt="logo-adalab">
   </footer>
+  
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
