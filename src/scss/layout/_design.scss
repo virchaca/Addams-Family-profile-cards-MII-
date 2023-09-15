@@ -48,42 +48,44 @@
       width: 1.7rem;
       height: 1.7rem;
       margin: 1rem;
-      align-items: center;
     }
     &__1 {
       display: flex;
+      align-items: center;
       &--color1 {
-        @include rectangle(3rem, 2.5rem, $darkGreenBlue);
+        @include rectangle($darkGreenBlue);
       }
       &--color2 {
-        @include rectangle(3rem, 2.5rem, $dirtyBlue);
+        @include rectangle($dirtyBlue);
       }
       &--color3 {
-        @include rectangle(3rem, 2.5rem, $hospitalGreen);
+        @include rectangle($hospitalGreen);
       }
     }
     &__2 {
       display: flex;
+      align-items: center;
       &--color1 {
-        @include rectangle(3rem, 2.5rem, $driedBlood);
+        @include rectangle($driedBlood);
       }
       &--color2 {
-        @include rectangle(3rem, 2.5rem, $rustyRed);
+        @include rectangle($rustyRed);
       }
       &--color3 {
-        @include rectangle(3rem, 2.5rem, $tomato);
+        @include rectangle($tomato);
       }
     }
     &__3 {
       display: flex;
+      align-items: center;
       &--color1 {
-        @include rectangle(3rem, 2.5rem, $slate);
+        @include rectangle($slate);
       }
       &--color2 {
-        @include rectangle(3rem, 2.5rem, $fadedOrange);
+        @include rectangle($fadedOrange);
       }
       &--color3 {
-        @include rectangle(3rem, 2.5rem, $lightGreyBlue);
+        @include rectangle($lightGreyBlue);
       }
     }
   }

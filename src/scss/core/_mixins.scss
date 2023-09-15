@@ -24,9 +24,9 @@
     margin-bottom: $marginB;
 }
 
-@mixin rectangle ($width, $height, $backGround){
-    width: $width;
-    height: $height;
+@mixin rectangle ($backGround){
+    width: 3rem;
+    height: 2.5rem;
     background-color: $backGround;
 }
     
