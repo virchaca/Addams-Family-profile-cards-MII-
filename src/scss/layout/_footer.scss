@@ -4,10 +4,16 @@
   background-color: $whiteTwo;
   border: 0.1rem solid $whiteThree;
   padding: 1.9rem;
+  
   &__copy {
     @include textStyle($openSans, $regular, 1.4rem, $brownishGrey);
   }
   &__logo {
     width: 10rem;
+  }
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem;
   }
 }
