@@ -9,6 +9,10 @@
     .imgIndex {
         width: 25rem;
         height: 6.3rem;
+        @media (min-width: 768px) {
+            width: 42rem;
+            height: 11rem;
+      }
     } 
 }
 
@@ -16,6 +20,10 @@
     background-color: $whiteTwo;
     display: flex;
     align-items: center;
+    @media (min-width: 768px) {
+        justify-content: flex-start;
+        padding-left: 4rem;
+      }
     .imgCard{
         width: 20rem;
         height: 5rem;
