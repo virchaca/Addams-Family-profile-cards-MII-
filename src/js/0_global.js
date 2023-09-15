@@ -36,36 +36,6 @@ const paletteThree = document.querySelector ('js-palette-three');
 const btnReset = document.querySelector('.js-btn-reset');
 const btnShare = document.querySelector('js-btn-share');
 
-/*************** Colores ************* */
-
-// 1.hacer click addEventlistener sobre los tres botones
-// 2. hacer la funcion manejadora
-// 3. dentro de cada funcion manejadora quitar dos clase y poner una
-
-
-function handlepaletteOne(event){
-  event.preventDefault();
-  cardPreview.classList.add ('paletteOne');
-  cardPreview.classList.remove ('paletteTwo');
-  cardPreview.classList.remove ('paletteThree');
-}
-function handlepaletteTwo(event){
-  event.preventDefault();
-  cardPreview.classList.remove ('paletteOne');
-  cardPreview.classList.add ('paletteTwo');
-  cardPreview.classList.remove ('paletteThree');
-}
-function handlepaletteThree(event){
-  event.preventDefault();
-  cardPreview.classList.remove ('paletteOne');
-  cardPreview.classList.remove('paletteTwo');
-  cardPreview.classList.add ('paletteThree');
-}
-
-paletteOne.addEventListener('click', handlepaletteOne);
-paletteTwo.addEventListener('click', handlepaletteTwo);
-paletteThree.addEventListener('click', handlepaletteThree);
-
 
 /************* Colapsables*************/
 
@@ -177,6 +147,35 @@ emailInput.addEventListener('input', handleInputEmail);
 linkedinInput.addEventListener('input', handleInputLinkedin);
 gitInput.addEventListener('input', handleInputGit);
 
+/*************** Colores ************* */
+
+// 1.hacer click addEventlistener sobre los tres botones
+// 2. hacer la funcion manejadora
+// 3. dentro de cada funcion manejadora quitar dos clase y poner una
+
+
+function handlepaletteOne(event){
+  event.preventDefault();
+  cardPreview.classList.add ('paletteOne');
+  cardPreview.classList.remove ('paletteTwo');
+  cardPreview.classList.remove ('paletteThree');
+}
+function handlepaletteTwo(event){
+  event.preventDefault();
+  cardPreview.classList.remove ('paletteOne');
+  cardPreview.classList.add ('paletteTwo');
+  cardPreview.classList.remove ('paletteThree');
+}
+function handlepaletteThree(event){
+  event.preventDefault();
+  cardPreview.classList.remove ('paletteOne');
+  cardPreview.classList.remove('paletteTwo');
+  cardPreview.classList.add ('paletteThree');
+}
+
+paletteOne.addEventListener('click', handlepaletteOne);
+paletteTwo.addEventListener('click', handlepaletteTwo);
+paletteThree.addEventListener('click', handlepaletteThree);
 
 
 /************* Botón Reset *************/
