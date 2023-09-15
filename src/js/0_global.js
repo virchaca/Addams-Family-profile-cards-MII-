@@ -27,14 +27,14 @@ const linkedinPreview = document.querySelector('.js-linkedin');
 const gitPreview = document.querySelector('.js-gitHub');
 
 
-const cardPreview = document.querySelector ('js-card-preview');
-const paletteOne = document.querySelector ('js-palette-one');
-const paletteTwo = document.querySelector ('js-palette-two');
-const paletteThree = document.querySelector ('js-palette-three');
+const cardPreview = document.querySelector ('.js-card-preview');
+const paletteOne = document.querySelector ('.js-palette-one');
+const paletteTwo = document.querySelector ('.js-palette-two');
+const paletteThree = document.querySelector ('.js-palette-three');
 
 
 const btnReset = document.querySelector('.js-btn-reset');
-const btnShare = document.querySelector('js-btn-share');
+const btnShare = document.querySelector('.js-btn-share');
 
 
 /************* Colapsables*************/
@@ -89,7 +89,7 @@ share.addEventListener('click',handleClickShare);
 /*************preview*************/
 
 const data = {
-  palette: 1,
+  palette: '',
   name: '',
   job: '',
   phone: '',
@@ -173,9 +173,9 @@ function handlepaletteThree(event){
   cardPreview.classList.add ('paletteThree');
 }
 
-paletteOne.addEventListener('click', handlepaletteOne);
-paletteTwo.addEventListener('click', handlepaletteTwo);
-paletteThree.addEventListener('click', handlepaletteThree);
+paletteOne.addEventListener('change', handlepaletteOne);
+paletteTwo.addEventListener('change', handlepaletteTwo);
+paletteThree.addEventListener('change', handlepaletteThree);
 
 
 /************* Botón Reset *************/
