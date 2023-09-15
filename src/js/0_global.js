@@ -27,9 +27,44 @@ const linkedinPreview = document.querySelector('.js-linkedin');
 const gitPreview = document.querySelector('.js-gitHub');
 
 
+const cardPreview = document.querySelector ('js-card-preview');
+const paletteOne = document.querySelector ('js-palette-one');
+const paletteTwo = document.querySelector ('js-palette-two');
+const paletteThree = document.querySelector ('js-palette-three');
+
+
 const btnReset = document.querySelector('.js-btn-reset');
 const btnShare = document.querySelector('js-btn-share');
 
+/*************** Colores ************* */
+
+// 1.hacer click addEventlistener sobre los tres botones
+// 2. hacer la funcion manejadora
+// 3. dentro de cada funcion manejadora quitar dos clase y poner una
+
+
+function handlepaletteOne(event){
+  event.preventDefault();
+  cardPreview.classList.add ('paletteOne');
+  cardPreview.classList.remove ('paletteTwo');
+  cardPreview.classList.remove ('paletteThree');
+}
+function handlepaletteTwo(event){
+  event.preventDefault();
+  cardPreview.classList.remove ('paletteOne');
+  cardPreview.classList.add ('paletteTwo');
+  cardPreview.classList.remove ('paletteThree');
+}
+function handlepaletteThree(event){
+  event.preventDefault();
+  cardPreview.classList.remove ('paletteOne');
+  cardPreview.classList.remove('paletteTwo');
+  cardPreview.classList.add ('paletteThree');
+}
+
+paletteOne.addEventListener('click', handlepaletteOne);
+paletteTwo.addEventListener('click', handlepaletteTwo);
+paletteThree.addEventListener('click', handlepaletteThree);
 
 
 /************* Colapsables*************/
@@ -83,43 +118,64 @@ share.addEventListener('click',handleClickShare);
 
 /*************preview*************/
 
-const inputElement = document.getElementById('fullName');
-const nameElement = document.getElementById('nameh2');
+const data = {
+  palette: 1,
+  name: '',
+  job: '',
+  phone: '',
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: '',
+};
 
-inputElement.addEventListener('input', function() {
-  nameElement.textContent = inputElement.value;
-  if (inputElement.value === ''){
+function updatepreview(){
+  namePreview.innerHTML = data.name;
+  if (nameInput.value === ''){
     namePreview.innerHTML = 'Nombre Apellido';
   }
-}
-);
-
-const jobInputElement = document.getElementById('jobPosition');
-const jobElement = document.getElementById('job');
-
-jobInputElement.addEventListener('input', function() {
-  jobElement.textContent = jobInputElement.value;
-  if (jobInputElement.value === ''){
+  jobPreview.innerHTML = data.job;
+  if (jobInput.value === ''){
     jobPreview.innerHTML = 'Front-end developer';
   }
-});
+  telephonePreview.href = `tel:${data.phone}`;
+  emailPreview.href = `mailto:${data.email}`;
+  linkedinPreview.href = `https://www.linkedin.com/in/${data.linkedin}/`;
+  gitPreview.href = `https://www.github.com/${data.github}`;
+}
 
+function handleInputName() {
+  data.name = nameInput.value;
+  updatepreview();
+}
 
-// telephoneInput.addEventListener('input', function () {
-//   telephonePreview.href = `mailto:${telephoneInput.value}`;
-// });
+function handleInputJob() {
+  data.job = jobInput.value;
+  updatepreview();
+}
+function handleInputPhone() {
+  data.phone = telephoneInput.value;
+  updatepreview();
+}
+function handleInputEmail() {
+  data.email = emailInput.value;
+  updatepreview();
+}
+function handleInputLinkedin() {
+  data.linkedin = linkedinInput.value;
+  updatepreview();
+}
+function handleInputGit() {
+  data.github = gitInput.value;
+  updatepreview();
+}
 
-emailInput.addEventListener('input', function () {
-  emailPreview.href = `mailto:${emailInput.value}`;
-});
-
-linkedinInput.addEventListener('input', function () {
-  linkedinPreview.href = `https://www.linkedin.com/in/${linkedinInput.value}/`;
-});
-
-gitInput.addEventListener('input', function () {
-  gitPreview.href = `https://www.github.com/${gitInput.value}`;
-});
+nameInput.addEventListener('input', handleInputName);
+jobInput.addEventListener('input', handleInputJob);
+telephoneInput.addEventListener('input', handleInputPhone);
+emailInput.addEventListener('input', handleInputEmail);
+linkedinInput.addEventListener('input', handleInputLinkedin);
+gitInput.addEventListener('input', handleInputGit);
 
 
 

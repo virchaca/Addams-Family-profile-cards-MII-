@@ -40,10 +40,10 @@
     }
     &__container{
         border-left: 5px solid;
-        border-color:$dirtyBlue;
+        // border-color:/*$dirtyBlue*/;
         vertical-align: baseline;
         &--name{
-            @include textStyle($montserrat, $bold, 1.8rem, $darkGreenBlue);margin-left: 2rem; 
+            @include textStyle($montserrat, $bold, 1.8rem,color);margin-left: 2rem; 
         } 
         &--profession{
             @include textStyle ($montserrat,$semiBold, 1.6rem, $gunmetal);margin-left: 2rem;
@@ -60,7 +60,7 @@
     
     &__border{
         border-radius: 50%;
-        border: solid 0.2rem $hospitalGreen;
+        border: solid 0.2rem /*$hospitalGreen*/;
         width: 3.2rem; 
         height: 3.2rem;
         display: flex;
@@ -68,7 +68,57 @@
         padding: 0.9rem;
 
         &--item{
-            @include textStyle (0,0,0.9rem,$darkGreenBlue);
+            @include textStyle (0,0,0.9rem,color/*$darkGreenBlue*/);
         }
     }
+}
+
+
+.paletteOne{
+    .card__container{
+        border-color: $dirtyBlue;
+            &--name{
+        color: $darkGreenBlue;
+        }
+    }
+
+    .icons__border{
+        border:solid 0.2rem $hospitalGreen;
+        &--item{
+            color: $darkGreenBlue;
+        }
+    }
+        
+}
+.paletteTwo{
+    .card__container{
+        border-color: $driedBlood;
+            &--name{
+        color: $rustyRed;
+        }
+    }
+
+    .icons__border{
+        border:solid 0.2rem $tomato;
+        &--item{
+            color: $driedBlood;
+        }
+    }
+        
+}
+.paletteThree{
+    .card__container{
+        border-color: $fadedOrange;
+            &--name{
+        color: $slate;
+        }
+    }
+
+    .icons__border{
+        border:solid 0.2rem $lightGreyBlue;
+        &--item{
+            color: $slate;
+        }
+    }
+        
 }
