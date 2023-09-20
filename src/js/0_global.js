@@ -44,6 +44,10 @@ const profileImage = document.querySelector('.js__profile-image');
 
 const profilePreview = document.querySelector('.js__profile-preview');
 
+const createdTarget = document.querySelector('.js-createdTarget');
+const targetWhite = document.querySelector('.js-createdTargetWhite');
+const shareHidden = document.querySelector('.js-hidden');
+
 
 /************* Colapsables*************/
 
@@ -70,10 +74,35 @@ function openShare(){
   shareForm.classList.remove('collapsed');
 }
 
+// Tarjeta creada y twitter
+function hiddenTarget(){
+  createdTarget.classList.add('hidden');
+}
+function viewTarget(){
+  createdTarget.classList.remove('hidden');
+}
+
+function viewTargetWhite(){
+  targetWhite.classList.remove('hidden');
+}
+function hiddenTargetWhite(){
+  targetWhite.classList.add('hidden');
+}
+
+function viewTwitter(){
+  shareHidden.classList.remove('hidden');
+}
+function hiddenTwitter(){
+  shareHidden.classList.add('hidden');
+}
+
 
 function handleClickDesign(event){
   collapseFill();
   collapseShare();
+  hiddenTwitter();
+  hiddenTargetWhite();
+  viewTarget();
   openDesign();
 }
 
@@ -81,6 +110,9 @@ function handleClickFill(event){
   openFill();
   collapseDesign();
   collapseShare();
+  hiddenTwitter();
+  hiddenTargetWhite();
+  viewTarget();
 }
 
 function handleClickShare(event){
@@ -89,10 +121,17 @@ function handleClickShare(event){
   openShare();
 }
 
+function handleClickTarget(){
+  hiddenTarget();
+  viewTargetWhite();
+  viewTwitter();
+}
+
 design.addEventListener('click',handleClickDesign);
 fill.addEventListener('click',handleClickFill);
 share.addEventListener('click',handleClickShare);
 
+createdTarget.addEventListener('click', handleClickTarget);
 
 /*************preview*************/
 
