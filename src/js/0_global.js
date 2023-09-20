@@ -211,6 +211,8 @@ function handleClickDelete(event) {
   cardPreview.classList.add('paletteOne');
   cardPreview.classList.remove('paletteTwo');
   cardPreview.classList.remove('paletteThree');
+  profileImage.style.backgroundImage = '';
+  profilePreview.style.backgroundImage = '';
 }
 
 btnReset.addEventListener('click', handleClickDelete);
