@@ -1,6 +1,4 @@
 .section {
-    // margin-left: 2.3rem;
-    // margin-right: 2rem;
     border: none;
     cursor: pointer;
     &__div{
@@ -38,15 +36,28 @@
         &__link{
             background-color: $orange;
             cursor: pointer;
-            width: 199px;
-            height: 50px;
-            border-radius: 12px;
+            width: 19.9rem;
+            height: 5rem;
+            border-radius: 1.2rem;
             border: 1px solid $orange;
             box-shadow: 0 0 4px 0 $black32;
             text-transform: uppercase;
-            // margin: 60px auto 30px 60px;
             @include textStyle($openSans, $regular, 1.8rem, $whiteTwo);
             &--target{
+                @include iconStyle($regular, 2.2rem, $whiteTwo)
+            }
+        }
+        &__linkGrey {
+            background-color: $white;
+            cursor: pointer;
+            width: 19.9rem;
+            height: 5rem;
+            border-radius: 1.2rem;
+            border: none;
+            box-shadow: 0 0 4px 0 $black32;
+            text-transform: uppercase;
+            @include textStyle($openSans, $regular, 1.8rem, $whiteTwo);
+            &--targetGrey {
                 @include iconStyle($regular, 2.2rem, $whiteTwo)
             }
         }
@@ -59,31 +70,36 @@
 
     &__share {
         text-align: center;
-        margin-top: 20px;
-        margin-bottom: 30px;
+        margin-top: -1rem;
+        margin-bottom: 3rem;
         &--h2 {
             @include textStyle($openSans, $semiBold, 1.8rem, $gunmetal);
         }
         &--link {
             @include textStyle($openSans, $semiBold, 1.2rem, $orange);
             text-decoration: none;
+
         }
         &--btn {
+            width: 18.1rem;
+            height: 3rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 9px;
-            margin-top: 13px;
+            gap: 0.95rem;
+            margin-top: 1.3rem;
             margin-inline: auto;
-            background-color: #00a0f5;
-            width: 200px;
-            height: 35px;
-            border-radius: 3px;
-            color: $whiteTwo;
+            margin-bottom: 3rem;
+            background-color: $azure;
+            border-radius: 0.3rem;
             text-decoration: none;
-
+            box-shadow: 0 0 4px 0 #00000052;
         &--icon {
+            @include textStyle($openSans, $regular, 1.8rem, $whiteTwo);
+        }
+        &--tw {
             @include textStyle($openSans, $regular, 1.4rem, $whiteTwo);
+            padding-bottom: 0.4rem;
         }
         }
     }
