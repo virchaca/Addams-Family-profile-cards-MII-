@@ -36,32 +36,6 @@
 
     &__label {
       @include textStyle ($openSans, $regular, 1.4rem, $darkGreenBlue);
-    }
-
-    &__input {
-      border: 1px solid $hospitalGreen;
-      height: 3rem;
-      margin-top: 0.7rem;
-      margin-bottom: 2rem;
-    }
-    &__input::placeholder {
-      color: rgb(206, 190, 190);
-      @include textStyle ($openSans, $regular, 1.4rem, $pinkishGrey);
-    }
-
-    &__label--img {
-      display: flex;
-      flex-direction: row;
-      grid-gap: 1.8rem;
-      margin-top: 0.7rem;
-      margin-bottom: 2rem;
-      .previewF {
-        border: 1px solid $hospitalGreen;
-        width: 3.2rem;
-        height: 3.2rem;
-        margin: 0;
-      }
-      
       .btnF {
         background-color: $orange; 
         padding: 0.5rem 2.0rem;
@@ -74,6 +48,38 @@
         @include textStyle ($openSans, $regular, 1.4rem, $whiteTwo);         
         }
       }
+       }   
+    &__hiddenFile {
+      display: none;
+    } 
+
+    &__input {
+      border: 1px solid $hospitalGreen;
+      height: 3rem;
+      margin-top: 0.7rem;
+      margin-bottom: 2rem;
+    }
+    &__input::placeholder {
+      color: rgb(206, 190, 190);
+      @include textStyle ($openSans, $regular, 1.4rem, $pinkishGrey);
+    }
+
+    &__container--img {
+      display: flex;
+      flex-direction: row;
+      grid-gap: 1.8rem;
+      margin-top: 0.7rem;
+      margin-bottom: 2rem;
+      .previewF {
+        border: 1px solid $hospitalGreen;
+        width: 3.2rem;
+        height: 3.2rem;
+        margin: 0;
+        background-size: cover;
+        background-position: center;
+      }
+      
+      
     }
   }
 }

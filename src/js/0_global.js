@@ -36,6 +36,14 @@ const paletteThree = document.querySelector ('.js-palette-three');
 const btnReset = document.querySelector('.js-btn-reset');
 const btnShare = document.querySelector('.js-btn-share');
 
+const fr = new FileReader();
+
+const fileField = document.querySelector('.js__profile-upload-btn');
+
+const profileImage = document.querySelector('.js__profile-image');
+
+const profilePreview = document.querySelector('.js__profile-preview');
+
 
 /************* Colapsables*************/
 
@@ -99,6 +107,7 @@ const data = {
   photo: '',
 };
 
+
 function updatepreview(){
   namePreview.innerHTML = data.name;
   if (nameInput.value === ''){
@@ -139,6 +148,10 @@ function handleInputGit() {
   data.github = gitInput.value;
   updatepreview();
 }
+function handleInputPhoto() {
+  data.photo = `url('${fr.result}')`; /*revisar esto*/
+  updatepreview();
+}
 
 nameInput.addEventListener('input', handleInputName);
 jobInput.addEventListener('input', handleInputJob);
@@ -146,7 +159,8 @@ telephoneInput.addEventListener('input', handleInputPhone);
 emailInput.addEventListener('input', handleInputEmail);
 linkedinInput.addEventListener('input', handleInputLinkedin);
 gitInput.addEventListener('input', handleInputGit);
-
+fileField.addEventListener('input', handleInputPhoto);
+console.log(data);
 /*************** Colores ************* */
 
 // 1.hacer click addEventlistener sobre los tres botones

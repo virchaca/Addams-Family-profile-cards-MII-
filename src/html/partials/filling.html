@@ -18,12 +18,18 @@
       <label class="formF__label" for="jobPosition">Puesto</label>
       <input class="formF__input js-input-job" id="jobPosition" type="text" name="jobPosition" placeholder="Ej: Front-end unicorn">
     
-      <label class="formF__label" for="image">Imagen de perfil</label>
-      <div class="formF__label--img">
-          <button class="btnF"> <a class="btnF__Link" href="#">Añadir imagen</a>
-          </button>
-          <span class="previewF"></span>
+
+
+      <label class="formF__label btnF" for="image">Imagen de perfil</label>
+
+      <input type="file" id="image"  class="formF__hiddenFile js__profile-upload-btn"/>
+
+      <div class="formF__container--img ">        
+        <div class="previewF js__profile-preview"></div>
       </div>
+
+    
+
 
       <label class="formF__label" for="mail">Email</label>
       <input class="formF__input js-input-email" id="mail" type="mail" name="mail" placeholder="Ej: sally-hill@gmail.com">
