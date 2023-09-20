@@ -1,124 +1,64 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+# Tarjetas Digitales Personalizables
 
-# Adalab web starter kit
+"Awesome Profile Cards" es una aplicación diseñada para la creación de tarjetas digitales personalizables y virtuales que se pueden compartir fácilmente. Se trata de una aplicación amigable y de uso sencillo que también contribuye al cuidado del medio ambiente. Esto se debe a que la creación de tarjetas digitales ofrece varias ventajas:
 
-Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+- Reducción del consumo de papel: En un momento en el que estamos cada vez más conscientes del impacto ambiental, esta aplicación permite ahorrar papel, ya que no es necesario imprimir las tarjetas.
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+- Menor costo: A diferencia de las tarjetas de visita tradicionales, que implican gastos de impresión, diseño y otros costos, las tarjetas digitales eliminan estos gastos.
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+- Actualizaciones fáciles: Las tarjetas virtuales son muy simples de actualizar. Si tienes un nuevo producto o un logro que quieras compartir, puedes hacerlo de manera rápida y sencilla. Cualquier persona que tenga acceso a tu tarjeta virtual en línea verá automáticamente los cambios que realices.
 
-- Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
+- Facilidad de compartir: Puedes compartir tus tarjetas de visita digitales a través de correo electrónico, GitHub, Facebook, Twitter, LinkedIn y muchas otras plataformas. Esto te brinda múltiples opciones para compartir tu información de contacto de manera eficiente y conveniente.
 
-## Guía de inicio rápido
+## Descripción del Proyecto
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
+Esta aplicación se compone de dos páginas distintas:
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+  1. Página de Inicio o Landing Page:
+En esta página, extendemos una invitación al usuario a crear su propia tarjeta virtual.
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos**.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+   2. Página de Creación de Tarjeta:
+En esta sección, encontramos las siguientes áreas:
 
-```bash
-npm install
-```
+  - Sección "Diseñar": Aquí, el usuario puede seleccionar la paleta de colores que desea  - utilizar para personalizar su tarjeta.
+  - Sección "Rellenar": En esta parte, el usuario debe completar varios campos con sus datos personales, como su nombre completo, cargo, dirección de correo electrónico, número de teléfono, enlaces a su perfil de LinkedIn y GitHub, y una fotografía.
+ - Sección "Compartir": Esta sección permite al usuario crear su tarjeta y proporciona el enlace que se utilizará para compartir la tarjeta en las redes sociales y otros medios.
 
-### Pasos para arrancar el proyecto:
+## Cómo Funciona:
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+  1. Inicio:
 
-```bash
-npm start
-```
+Cuando la página se carga, el usuario será redirigido a la página de inicio, donde verá la "landing page". Para comenzar el proceso de creación de su tarjeta, debe hacer clic en el botón "Comenzar".
 
-Este comando:
+2. Creación de Tarjeta:
 
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+ - Haga clic en la sección "Diseña". Aquí, podrá elegir una paleta de colores que se aplicará a su tarjeta. En la parte derecha de la página, verá una vista previa de su tarjeta con los colores que seleccione.
 
-Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
+ - A continuación, haga clic en la sección "Rellena". En esta área, debe completar todos los campos con sus datos personales, como su nombre completo, cargo, dirección de correo electrónico, número de teléfono, enlaces a sus perfiles de LinkedIn y GitHub. Además, debe cargar una foto que se utilizará en su tarjeta.
 
-### Pasos para publicar el proyecto en GitHub Pages:
+ - Luego, haga clic en la sección "Comparte". Aquí encontrará un botón etiquetado como "Crear tarjeta". Al hacer clic en este botón, su tarjeta se generará automáticamente. Simultáneamente, se creará un enlace que podrá compartir en Twitter haciendo clic en el botón "Compartir en Twitter".
 
-Para generar tu página para producción ejecuta el comando:
+Como puede ver, crear su tarjeta es un proceso fácil y rápido. No pierda más tiempo, vaya y pruebe la aplicación, ¡y al mismo tiempo, contribuya al cuidado del medio ambiente!
 
-```bash
-npm run docs
-```
+## Herramientas usadas
 
-Y a continuación:
+1. **Visual Studio Code** - Editor de código.
+2. **Javascript** - Lenguaje de programación para incorporar interactividad.
+3. **HTML** Lenguaje de marcado para la estructura.
+4. **SASS** - Para añadir estilos.
+5. **Git** - Para el control de versiones.
+6. **Github** - Como repositorio remoto.
+7. **Github Pages** - Para su publicación.
+8. **Adalab web started kit** - Es una plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas, que nos facilita la automatización de tareas, ya que incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más, que nos ayudan a trabajar más cómodamente, debido a la automatización de tareas.
 
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
+## Equipo de desarrollo
 
-Además, los comandos:
+Cristina Rodriguez
 
-```bash
-npm run push-docs
-```
-o
+Virginia Alvarez
 
-```bash
-npm run deploy
-```
+Darling Rayran
 
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
+Laura Luraschi
 
-## Flujo de archivos con Gulp
-
-Estas tareas de Gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
-
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
-
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+Ainhoa de las Heras
