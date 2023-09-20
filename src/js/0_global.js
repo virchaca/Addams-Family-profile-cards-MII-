@@ -160,7 +160,7 @@ emailInput.addEventListener('input', handleInputEmail);
 linkedinInput.addEventListener('input', handleInputLinkedin);
 gitInput.addEventListener('input', handleInputGit);
 fileField.addEventListener('input', handleInputPhoto);
-console.log(data);
+// console.log(data);
 /*************** Colores ************* */
 
 // 1.hacer click addEventlistener sobre los tres botones
