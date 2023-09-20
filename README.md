@@ -53,12 +53,12 @@ Como puede ver, crear su tarjeta es un proceso fácil y rápido. No pierda más 
 
 ## Equipo de desarrollo
 
-Cristina Rodriguez
+[![Autor](https://img.shields.io/badge/-%20Cristina%20Rodriguez%20-%20pink?logo=github&labelColor=grey&color=rgb(240%2C%2093%2C%20215))](https://github.com/crisrodriguezgar)
 
-Virginia Alvarez
+[![Autor](https://img.shields.io/badge/-%20Virginia%20Alvarez%20-%20pink?logo=github&labelColor=grey&color=rgb(75%2C%20230%2C%2054))](https://github.com/virchaca)
 
-Darling Rayran
+[![Autor](https://img.shields.io/badge/-%20Darling%20Rayran%20-%20pink?logo=github&labelColor=grey&color=orange)](https://github.com/darlingrayran)
 
-Laura Luraschi
+[![Autor](https://img.shields.io/badge/-%20Laura%20Luraschi%20-%20pink?logo=github&labelColor=grey&color=rgb(92%2C%20201%2C%20245))](https://github.com/marialauraluraschi)
 
-Ainhoa de las Heras
+[![Autor](https://img.shields.io/badge/-%20Ainhoa%20de%20las%20Heras%20-%20Pink?logo=github&labelColor=grey&color=rgb(60%2C%20211%2C%20211))](https://github.com/Ainhoadlhs)
