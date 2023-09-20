@@ -61,4 +61,4 @@ Darling Rayran
 
 Laura Luraschi
 
-[![Autor](https://ibb.co/VqjNqWS)](https://github.com/Ainhoadlhs)
+Ainhoa de las Heras
