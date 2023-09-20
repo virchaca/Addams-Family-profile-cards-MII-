@@ -35,52 +35,49 @@
     margin-top: 2.5rem;
 
     &__label {
-      @include textStyle ($openSans, $regular, 1.4rem, $darkGreenBlue);
-      .btnF {
+      @include textStyle ($openSans, $regular, 1.4rem, $darkGreenBlue);            
+    }  
+
+    &__img {
+      display: flex;
+      gap: 2rem; 
+      margin-bottom: 1.4rem;   
+
+      &--btnF {
+        @include textStyle ($openSans, $regular, 1.4rem, $whiteTwo); 
+        width: 14rem;
         background-color: $orange; 
-        padding: 0.5rem 2.0rem;
+        padding: 0.5rem 1.5rem;
         border-radius: 3px;
         border: 1px solid $orange;
         box-shadow: 0 0 4px 0 $black32;
-        cursor: pointer;
-        &__Link {
-        text-decoration: none;             
-        @include textStyle ($openSans, $regular, 1.4rem, $whiteTwo);         
+        cursor: pointer;        
         }
-      }
-       }   
-    &__hiddenFile {
-      display: none;
-    } 
+      
+        &--img {             
+          border: 1px solid $hospitalGreen;
+          width: 3.2rem;
+          height: 3.2rem;          
+          background-size: cover;
+          background-position: center;
+        }
+
+        &--hiddenFile {
+        display: none;
+        } 
+      } 
 
     &__input {
       border: 1px solid $hospitalGreen;
       height: 3rem;
       margin-top: 0.7rem;
       margin-bottom: 2rem;
+      padding: 1rem;
     }
     &__input::placeholder {
       color: rgb(206, 190, 190);
       @include textStyle ($openSans, $regular, 1.4rem, $pinkishGrey);
-    }
-
-    &__container--img {
-      display: flex;
-      flex-direction: row;
-      grid-gap: 1.8rem;
-      margin-top: 0.7rem;
-      margin-bottom: 2rem;
-      .previewF {
-        border: 1px solid $hospitalGreen;
-        width: 3.2rem;
-        height: 3.2rem;
-        margin: 0;
-        background-size: cover;
-        background-position: center;
-      }
-      
-      
-    }
+    }   
   }
 }
 
