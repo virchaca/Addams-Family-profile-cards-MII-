@@ -56,4 +56,36 @@
         height: 0.01rem;
         margin-bottom: 3rem;
     }
+
+    &__share {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        &--h2 {
+            @include textStyle($openSans, $semiBold, 1.8rem, $gunmetal);
+        }
+        &--link {
+            @include textStyle($openSans, $semiBold, 1.2rem, $orange);
+            text-decoration: none;
+        }
+        &--btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
+            margin-top: 13px;
+            margin-inline: auto;
+            background-color: #00a0f5;
+            width: 200px;
+            height: 35px;
+            border-radius: 3px;
+            color: $whiteTwo;
+            text-decoration: none;
+
+        &--icon {
+            @include textStyle($openSans, $regular, 1.4rem, $whiteTwo);
+        }
+        }
+    }
 }
+
