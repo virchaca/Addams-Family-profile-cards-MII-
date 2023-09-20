@@ -208,6 +208,11 @@ function handleClickDelete(event) {
   gitPreview.href = '#';
   namePreview.innerHTML ='Nombre Apellido';
   jobPreview.innerHTML = 'Front-end developer';
+  cardPreview.classList.add('paletteOne');
+  cardPreview.classList.remove('paletteTwo');
+  cardPreview.classList.remove('paletteThree');
+  profileImage.style.backgroundImage = '';
+  profilePreview.style.backgroundImage = '';
 }
 
 btnReset.addEventListener('click', handleClickDelete);
