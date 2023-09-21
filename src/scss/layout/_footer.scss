@@ -1,5 +1,6 @@
 .footer {
   height: 19vh;
+  width: 100%;
   @include center-column;
   gap: 1.2rem;
   background-color: $whiteTwo;
@@ -16,5 +17,6 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 2rem 5rem;
+    bottom: 0;
   }
 }
