@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 'use strict';
 
@@ -36,13 +37,13 @@ const paletteThree = document.querySelector ('.js-palette-three');
 const btnReset = document.querySelector('.js-btn-reset');
 const btnShare = document.querySelector('.js-btn-share');
 
-const fr = new FileReader();
+// const fr = new FileReader();
 
-const fileField = document.querySelector('.js__profile-upload-btn');
+// const fileField = document.querySelector('.js__profile-upload-btn');
 
-const profileImage = document.querySelector('.js__profile-image');
+// const profileImage = document.querySelector('.js__profile-image');
 
-const profilePreview = document.querySelector('.js__profile-preview');
+// const profilePreview = document.querySelector('.js__profile-preview');
 
 const createdTarget = document.querySelector('.js-createdTarget');
 const targetWhite = document.querySelector('.js-createdTargetWhite');
@@ -187,10 +188,10 @@ function handleInputGit() {
   data.github = gitInput.value;
   updatepreview();
 }
-function handleInputPhoto() {
-  data.photo = `url('${fr.result}')`; /*revisar esto*/
-  updatepreview();
-}
+// function handleInputPhoto() {
+//   data.photo = `url('${fr.result}')`; /*revisar esto*/
+//   updatepreview();
+// }
 
 nameInput.addEventListener('input', handleInputName);
 jobInput.addEventListener('input', handleInputJob);
@@ -198,7 +199,7 @@ telephoneInput.addEventListener('input', handleInputPhone);
 emailInput.addEventListener('input', handleInputEmail);
 linkedinInput.addEventListener('input', handleInputLinkedin);
 gitInput.addEventListener('input', handleInputGit);
-fileField.addEventListener('input', handleInputPhoto);
+// fileField.addEventListener('input', handleInputPhoto);
 // console.log(data);
 /*************** Colores ************* */
 
@@ -247,9 +248,8 @@ function handleClickDelete(event) {
   gitPreview.href = '#';
   namePreview.innerHTML ='Nombre Apellido';
   jobPreview.innerHTML = 'Front-end developer';
-  cardPreview.classList.add('paletteOne');
-  cardPreview.classList.remove('paletteTwo');
-  cardPreview.classList.remove('paletteThree');
+  handlepaletteOne(event); 
+  paletteOne.checked=true;
   profileImage.style.backgroundImage = '';
   profilePreview.style.backgroundImage = '';
 }
