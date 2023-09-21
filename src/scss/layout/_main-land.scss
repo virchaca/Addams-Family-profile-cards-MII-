@@ -3,6 +3,10 @@
   justify-content: flex-start;
   background-color: $whiteFour;
   height: 53vh;
+  @media (min-width: 768px) {
+    height: 61vh;
+  }
+  
   &__title {
     margin-top: 3.5rem;
     @include textStyle($merriweather, $blackBold, 2rem, $tomato);

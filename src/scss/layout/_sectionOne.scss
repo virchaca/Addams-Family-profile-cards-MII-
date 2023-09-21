@@ -30,6 +30,7 @@
         margin-right: 4rem;
         margin-bottom: 2rem;
         width: 50%;
+        height: 110vh
     }
     @media (min-width: 1024px) {
         width: 60%;
@@ -46,6 +47,9 @@
         transition-duration: 0.8s;
         text-transform: uppercase;
         cursor: pointer;
+        @media (min-width: 768px) {
+            margin-top: 5rem;
+        }
         
         &:hover{ 
             background-color: $whiteTwo;
