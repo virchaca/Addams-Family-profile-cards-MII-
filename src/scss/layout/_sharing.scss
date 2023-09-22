@@ -16,13 +16,13 @@
                     @include iconStyle($regular, 1.8rem, #7b00ac);
                     padding-right: 1.2rem;
                     @media (min-width: 1024px) {
-                        @include iconStyle($regular, 2.5rem, #7b00ac);
+                        @include iconStyle($regular, 2rem, #7b00ac);
                     }
                 }
                 &--arrow{
-                    @include iconStyle ($regular, 1.8rem, #7b00ac);
+                    @include iconStyle ($regular, 2rem, #7b00ac);
                     @media (min-width: 1024px) {
-                        @include iconStyle($regular, 2.5rem, #7b00ac);
+                        @include iconStyle($regular, 2rem, #7b00ac);
                     }
                 }
             }

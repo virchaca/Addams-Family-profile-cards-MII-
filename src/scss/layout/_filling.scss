@@ -7,14 +7,16 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;   
+
     &__img{
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
       align-items: baseline;
       &--icon {
-          @include iconStyle($regular, 1.8rem);
+          font-size: 2rem;
           padding-right: 1rem;
+          color: $purple;
       }
     }
 
@@ -23,8 +25,8 @@
     }
 
     &__arrow {
-      color: $gunmetal;
-      font-size: 1.8rem;
+      color: $purple;
+      font-size: 2rem;
     }
   }       
   
@@ -46,16 +48,16 @@
       &--btnF {
         @include textStyle ($openSans, $regular, 1.4rem, $whiteTwo); 
         width: 14rem;
-        background-color: $orange; 
+        background-color: $purple; 
         padding: 0.5rem 1.5rem;
         border-radius: 3px;
-        border: 1px solid $orange;
+        border: 1px solid $purple;
         box-shadow: 0 0 4px 0 $black32;
         cursor: pointer;        
         }
       
         &--img {             
-          border: 1px solid $hospitalGreen;
+          border: 1px solid $gunmetal;
           width: 3.2rem;
           height: 3.2rem;          
           background-size: cover;
@@ -68,7 +70,7 @@
       } 
 
     &__input {
-      border: 1px solid $hospitalGreen;
+      border: 1px solid $gunmetal;
       height: 3rem;
       margin-top: 0.7rem;
       margin-bottom: 2rem;
@@ -76,7 +78,7 @@
     }
     &__input::placeholder {
       color: rgb(206, 190, 190);
-      @include textStyle ($openSans, $regular, 1.4rem, $pinkishGrey);
+      @include textStyle ($openSans, $regular, 1.4rem, $driedBlood);
     }   
   }
 }
