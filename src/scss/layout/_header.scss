@@ -8,15 +8,15 @@
     height: 28vh;
     .imgIndex {
         width: 25rem;
-        height: 6.3rem;
         @media (min-width: 768px) {
-            width: 42rem;
-            height: 10rem;
+            width: 40rem;
+            padding-top: 5rem;
       }
     } 
 }
 
 .headerCard{
+    background-image: linear-gradient(to right bottom,#d7c1fd,#c0a3e9);
     background-color: $whiteTwo;
     display: flex;
     align-items: center;
@@ -25,8 +25,10 @@
         padding-left: 4rem;
       }
     .imgCard{
-        width: 20rem;
-        height: 5rem;
-        margin: 3rem 4.5rem;
+        width: 15rem;
+        margin: 0.5rem 1.5rem;
+        @media (min-width: 768px){
+            width: 20rem; 
+        }
     }
 }

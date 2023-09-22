@@ -9,17 +9,17 @@
   
   &__title {
     margin-top: 3.5rem;
-    @include textStyle($merriweather, $blackBold, 2rem, $tomato);
+    @include textStyle($merriweather, $blackBold, 2rem, $driedBlood);
     @media (min-width: 768px) {
       font-size:2.4rem;
     }
   }
   &__par {
-    @include textStyle($openSans, $regular, 1.3rem, $darkGreenBlue);
+    @include textStyle($openSans, $regular, 1.3rem, $driedBlood);
     text-align: center;
     padding: 0 3rem;
     @media (min-width: 768px) {
-      @include textStyle($openSans, $regular, 1.6rem, $darkGreenBlue);
+      @include textStyle($openSans, $regular, 1.6rem, $driedBlood);
     }
   }
   &__icons{
@@ -27,7 +27,7 @@
     width: 27rem;
     height: 7.4rem;
     border-radius: 0.4rem;
-    border: solid 0.2rem #e1733456;
+    border: solid 0.2rem $black20;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -36,7 +36,7 @@
       text-align: center;
       @include textStyle($openSans, $regular, 1.3rem, $gunmetal);
       .fa {
-        color: $orange;
+        color: $darkPurple;
         transform: scale(1.5);
       }
     }
@@ -44,13 +44,15 @@
   }
   &__btn {
     cursor: pointer;
-    background-color: $dirtyBlue;
-    border: solid 0.2rem $dirtyBlue;
+    background-color: $whiteThree;
+    
     margin: 4rem 0 3rem;
     padding: 0.8rem 1.8rem;
     border-radius: 2.1rem;
+    color: $whiteFour;
     text-decoration: none;
     text-transform: uppercase;
+    text-shadow: 0.5rem 0 1rem;
     @include textStyle($openSans, $semiBold, 1.6rem, $whiteTwo);
   }
 }
