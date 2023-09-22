@@ -19,7 +19,7 @@
     }
 }
 .sectionOne{
-    background-image: linear-gradient(to bottom, $silver, $paleGrey);
+    background-image: (linear-gradient(to bottom, $silver, $paleGrey));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,7 +66,7 @@
         width: 24rem;
         
         &--img{
-            background-image: url('../images/Hermione_Granger.jpg');
+            // background-image: url('../images/miercoles.png');
             background-size: cover;
             background-position: center;
             width: 24rem;
@@ -112,6 +112,11 @@
 
 
 .paletteOne{
+    .card__box{
+        &--img{
+        background-image: url('../images/miercoles.png');
+        }
+    }
     .card__container{
         border-color: $violet;
             &--name{
@@ -128,6 +133,11 @@
         
 }
 .paletteTwo{
+    .card__box{
+        &--img{
+        background-image: url('../images/morticia.png');
+        }
+    }
     .card__container{
         border-color: $rustyRed;
             &--name{
@@ -144,6 +154,11 @@
         
 }
 .paletteThree{
+    .card__box{
+        &--img{
+        background-image: url('../images/tiolucas.jpg');
+        }
+    }
     .card__container{
         border-color: $beigeF;
             &--name{
@@ -160,6 +175,11 @@
         
 }
 .paletteFour{
+    .card__box{
+        &--img{
+        background-image: url('../images/cosa.jpg');
+        }
+    }
     .card__container{
         border-color: $dirtyBlue;
             &--name{
