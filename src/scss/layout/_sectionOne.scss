@@ -113,16 +113,16 @@
 
 .paletteOne{
     .card__container{
-        border-color: $dirtyBlue;
+        border-color: $violet;
             &--name{
-        color: $darkGreenBlue;
+        color: $darkPurple;
         }
     }
 
     .icons__border{
-        border:solid 0.2rem $hospitalGreen;
+        border:solid 0.2rem $pink;
         &--item{
-            color: $darkGreenBlue;
+            color: $darkPurple;
         }
     }
         
@@ -136,7 +136,7 @@
     }
 
     .icons__border{
-        border:solid 0.2rem $tomato;
+        border:solid 0.2rem $greenHojas;
         &--item{
             color: $driedBlood;
         }
@@ -145,16 +145,32 @@
 }
 .paletteThree{
     .card__container{
-        border-color: $fadedOrange;
+        border-color: $beigeF;
             &--name{
-        color: $slate;
+        color: $redF;
         }
     }
 
     .icons__border{
-        border:solid 0.2rem $lightGreyBlue;
+        border:solid 0.2rem $yellowF;
         &--item{
-            color: $slate;
+            color: $redF;
+        }
+    }
+        
+}
+.paletteFour{
+    .card__container{
+        border-color: $dirtyBlue;
+            &--name{
+        color: $darkGreenBlue;
+        }
+    }
+
+    .icons__border{
+        border:solid 0.2rem $hospitalGreen;
+        &--item{
+            color: $darkGreenBlue;
         }
     }
         

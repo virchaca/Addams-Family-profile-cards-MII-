@@ -32,6 +32,7 @@ const cardPreview = document.querySelector ('.js-card-preview');
 const paletteOne = document.querySelector ('.js-palette-one');
 const paletteTwo = document.querySelector ('.js-palette-two');
 const paletteThree = document.querySelector ('.js-palette-three');
+const paletteFour = document.querySelector ('.js-palette-four');
 
 
 const btnReset = document.querySelector('.js-btn-reset');
@@ -213,23 +214,35 @@ function handlepaletteOne(event){
   cardPreview.classList.add ('paletteOne');
   cardPreview.classList.remove ('paletteTwo');
   cardPreview.classList.remove ('paletteThree');
+  cardPreview.classList.remove ('paletteFour');
 }
 function handlepaletteTwo(event){
   event.preventDefault();
   cardPreview.classList.remove ('paletteOne');
   cardPreview.classList.add ('paletteTwo');
   cardPreview.classList.remove ('paletteThree');
+  cardPreview.classList.remove ('paletteFour');
 }
 function handlepaletteThree(event){
   event.preventDefault();
   cardPreview.classList.remove ('paletteOne');
   cardPreview.classList.remove('paletteTwo');
   cardPreview.classList.add ('paletteThree');
+  cardPreview.classList.remove ('paletteFour');
+}
+
+function handlepaletteFour(event){
+  event.preventDefault();
+  cardPreview.classList.remove ('paletteOne');
+  cardPreview.classList.remove('paletteTwo');
+  cardPreview.classList.remove ('paletteThree');
+  cardPreview.classList.add ('paletteFour');
 }
 
 paletteOne.addEventListener('change', handlepaletteOne);
 paletteTwo.addEventListener('change', handlepaletteTwo);
 paletteThree.addEventListener('change', handlepaletteThree);
+paletteFour.addEventListener('change', handlepaletteFour);
 
 
 /************* Botón Reset *************/
