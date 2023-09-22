@@ -10,8 +10,8 @@
     &--icon {
       display: flex;
       align-items: baseline;
-      color: $orange;
-      font-size: 1.8rem;
+      color: $purple;
+      font-size: 2rem;
     }
 
     &--title {
@@ -23,8 +23,8 @@
     &--up {
       display: flex;
       justify-content: flex-end;
-      font-size: 1.8rem;
-      color: $gunmetal;
+      font-size: 2rem;
+      color: $purple;
     }
   }
 
@@ -53,13 +53,13 @@
       display: flex;
       align-items: center;
       &--color1 {
-        @include rectangle($darkGreenBlue);
+        @include rectangle($darkPurple);
       }
       &--color2 {
-        @include rectangle($dirtyBlue);
+        @include rectangle($violet);
       }
       &--color3 {
-        @include rectangle($hospitalGreen);
+        @include rectangle($pink);
       }
     }
     &__2 {
@@ -72,20 +72,33 @@
         @include rectangle($rustyRed);
       }
       &--color3 {
-        @include rectangle($tomato);
+        @include rectangle($greenHojas);
       }
     }
     &__3 {
       display: flex;
       align-items: center;
       &--color1 {
-        @include rectangle($slate);
+        @include rectangle($redF);
       }
       &--color2 {
-        @include rectangle($fadedOrange);
+        @include rectangle($beigeF);
       }
       &--color3 {
-        @include rectangle($lightGreyBlue);
+        @include rectangle($yellowF);
+      }
+    }
+    &__4 {
+      display: flex;
+      align-items: center;
+      &--color1 {
+        @include rectangle($darkGreenBlue);
+      }
+      &--color2 {
+        @include rectangle($dirtyBlue);
+      }
+      &--color3 {
+        @include rectangle($hospitalGreen);
       }
     }
   }
