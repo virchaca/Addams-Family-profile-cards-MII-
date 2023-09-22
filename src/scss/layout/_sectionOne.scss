@@ -18,7 +18,7 @@
         margin-right: 5rem;
     }
 }
-.card{
+.sectionOne{
     padding: 3.8rem 3.5rem 4rem 4.5rem;
     background-image: linear-gradient(to bottom, $silver, $paleGrey);
     display: flex;
@@ -30,11 +30,13 @@
         margin-right: 4rem;
         margin-bottom: 2rem;
         width: 50%;
+        height: 110vh;
     }
     @media (min-width: 1024px) {
         width: 60%;
     }
- 
+}
+.card{
     &__button{
         @include textStyle ($openSans,400,1.2rem,$gunmetal);
         width: 8rem;
@@ -46,7 +48,6 @@
         transition-duration: 0.8s;
         text-transform: uppercase;
         cursor: pointer;
-        
         &:hover{ 
             background-color: $whiteTwo;
             transform: scale(1.2);
@@ -82,11 +83,10 @@
         &--profession{
             @include textStyle ($montserrat,$semiBold, 1.6rem, $gunmetal);margin-left: 2rem;
             margin-bottom: 1rem;
-        }
-        
+        }  
     }
-}
-.icons{
+
+    .icons{
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
@@ -107,6 +107,7 @@
         }
     }
     
+    }
 }
 
 
