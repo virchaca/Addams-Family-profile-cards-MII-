@@ -13,11 +13,17 @@
                 margin: 0;
                 &--icon{
                     display: flex;
-                    @include iconStyle($regular, 1.8rem);
+                    @include iconStyle($regular, 1.8rem, #7b00ac);
                     padding-right: 1.2rem;
+                    @media (min-width: 1024px) {
+                        @include iconStyle($regular, 2.5rem, #7b00ac);
+                    }
                 }
                 &--arrow{
-                    @include iconStyle ($regular, 1.8rem, $gunmetal)
+                    @include iconStyle ($regular, 1.8rem, #7b00ac);
+                    @media (min-width: 1024px) {
+                        @include iconStyle($regular, 2.5rem, #7b00ac);
+                    }
                 }
             }
             &--h2 {
@@ -25,6 +31,9 @@
                 @include textStyle($openSans, $semiBold, 1.8rem, $gunmetal);
                 padding-top: 1rem;
                 padding-bottom: 1rem;
+                @media (min-width: 1024px) {
+                    @include textStyle($openSans, $semiBold, 2.5rem, $gunmetal);
+                }
             }
         }
     }
@@ -34,12 +43,12 @@
         padding-top: 2rem;
         padding-bottom: 3rem;
         &__link{
-            background-color: $orange;
+            background-color: #7b00ac;
             cursor: pointer;
             width: 19.9rem;
             height: 5rem;
             border-radius: 1.2rem;
-            border: 1px solid $orange;
+            border: 1px solid black;
             box-shadow: 0 0 4px 0 $black32;
             text-transform: uppercase;
             @include textStyle($openSans, $regular, 1.8rem, $whiteTwo);
@@ -63,7 +72,7 @@
         }
     }
     &__line {
-        background-color: $whiteThree;
+        background-color: #7b00ac;
         height: 0.01rem;
         margin-bottom: 3rem;
     }
@@ -74,11 +83,16 @@
         margin-bottom: 3rem;
         &--h2 {
             @include textStyle($openSans, $semiBold, 1.8rem, $gunmetal);
+                @media (min-width: 1024px) {
+                @include textStyle($openSans, $semiBold, 2.5rem, $gunmetal);
+            }
         }
         &--link {
             @include textStyle($openSans, $semiBold, 1.2rem, $orange);
             text-decoration: none;
-
+            @media (min-width: 1024px) {
+                @include textStyle($openSans, $semiBold, 2.5rem, #7b00ac);
+            }
         }
         &--btn {
             width: 18.1rem;
@@ -96,12 +110,12 @@
             box-shadow: 0 0 4px 0 #00000052;
         &--icon {
             @include textStyle($openSans, $regular, 1.8rem, $whiteTwo);
-        }
+            }
         &--tw {
             @include textStyle($openSans, $regular, 1.4rem, $whiteTwo);
             padding-bottom: 0.4rem;
+            }
         }
-        }
+    
     }
-}
-
+}   
