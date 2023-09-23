@@ -31,11 +31,25 @@
 }
 
 @mixin textGlow($color) {
-  text-shadow: 0.25rem 0.25rem 1rem $color, -0.25rem -0.25rem 1rem $color,
-    -0.25rem 0.25rem 1rem $color, 0.25rem -0.25rem 1rem $color;
+  text-shadow: 
+  0.025rem 0.025rem 0.15rem $color, 
+  0.025rem -0.025rem 0.15rem $color,
+  -0.025rem 0.025rem 0.15rem $color, 
+  -0.025rem -0.025rem 0.15rem $color,
+  0.025rem 0 0.1rem $color, 
+  -0.025rem 0 0.1rem $color,
+  0 0.025rem 0.25rem $color, 
+  0 -0.025rem 0.25rem $color;
 }
 @mixin boxGlow($color) {
   background: radial-gradient(transparent, $color);
-  box-shadow: 0.25rem 0.25rem 1rem $color, -0.25rem -0.25rem 1rem $color,
-    -0.25rem 0.25rem 1rem $color, 0.25rem -0.25rem 1rem $color;
+  box-shadow:
+  0.25rem 0.25rem 1rem $color, 
+  0.25rem -0.25rem 1rem $color,
+  -0.25rem 0.25rem 1.5rem $color, 
+  -0.25rem -0.25rem 1.5rem $color,
+  0.25rem 0 0.5rem $color, 
+  -0.25rem 0 0.5rem $color,
+  0 0.25rem 2rem $color, 
+  0 -0.25rem 2rem $color;
 }

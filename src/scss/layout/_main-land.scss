@@ -4,15 +4,12 @@
   background-repeat: no-repeat;
 }
 .main-land {
-  @include textGlow($whiteTwo);
+  @include textGlow($whiteFour);
   @include center-column;
   justify-content: space-evenly;
   height: 51vh;
-  @media (min-width: 768px) {
-    height: 50vh;
-  }
   .box-land {
-    @include boxGlow($whiteTwo);
+    @include boxGlow($whiteFour);
     @include center-column;
     margin: 2rem 5rem 0;
     border-radius: 5rem;
@@ -57,7 +54,8 @@
     border-radius: 20rem;
     text-decoration: none;
     text-transform: uppercase;
-    @include textStyle($openSans, $bold, 1.5rem, $darkPurple);
-    @include boxGlow($whiteTwo);
+    @include textStyle($openSans, $blackBold, 1.6rem, $darkPurple);
+    @include boxGlow($whiteFour);
+    @include textGlow($whiteFour);
   }
 }

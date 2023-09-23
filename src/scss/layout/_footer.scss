@@ -4,14 +4,12 @@
   @include center-column;
   gap: 1.2rem;
   background: linear-gradient(to right bottom, #d7c1fd, #c0a3e9);
-  border: 0.1rem solid $whiteThree;
   padding: 1.9rem;
 
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 5rem;
-    bottom: 0;
+    padding: 2.5rem 5rem;
     height: 6vh;
   }
 
@@ -19,7 +17,6 @@
     @include textStyle($openSans, $regular, 1.4rem, $brownishGrey);
   }
   &__logo {
-    padding: 1rem;
     width: 10rem;
   }
 }
