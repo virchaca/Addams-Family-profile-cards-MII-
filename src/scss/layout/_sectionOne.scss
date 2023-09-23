@@ -1,9 +1,9 @@
 .main{
+    background-image: linear-gradient(to right bottom,#f8effca6,#7152e2ad);
     @media (min-width: 768px) {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        background-image: linear-gradient(to bottom, $whiteFour, $whiteTwo);
     }
 }
 .sectionIncludes{
