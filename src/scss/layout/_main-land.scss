@@ -6,41 +6,47 @@
   @media (min-width: 768px) {
     height: 50vh;
   }
-
-  &__title {
-    margin-top: 3.5rem;
-    @include textStyle($merriweather, $blackBold, 2rem, $driedBlood);
-    @media (min-width: 768px) {
-      font-size: 2.4rem;
+  .box-land {
+    background-color: $black20;
+    @include center-column;
+    margin: 2rem 5rem 0;
+    // border-radius: 50% 50% 0 0;
+    border-radius: 5rem;
+    &__title {
+      padding: 1.5rem 0 0.3rem;
+      @include textStyle($merriweather, $blackBold, 2rem, $driedBlood);
+      @media (min-width: 768px) {
+        font-size: 2.4rem;
+      }
     }
-  }
-  &__par {
-    @include textStyle($openSans, $regular, 1.3rem, $driedBlood);
-    text-align: center;
-    padding: 0 3rem;
-    @media (min-width: 768px) {
-      @include textStyle($openSans, $regular, 1.6rem, $driedBlood);
-    }
-  }
-  &__icons {
-    margin-top: 1.8rem;
-    width: 27rem;
-    height: 7.4rem;
-    border-radius: 0.4rem;
-    border: solid 0.2rem $black20;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    figure {
-      width: 6rem;
+    &__par {
+      @include textStyle($openSans, $regular, 1.3rem, $driedBlood);
       text-align: center;
-      @include textStyle($openSans, $regular, 1.3rem, $gunmetal);
-      .fa {
-        color: $darkPurple;
-        transform: scale(1.5);
+      
+      @media (min-width: 768px) {
+        @include textStyle($openSans, $regular, 1.6rem, $driedBlood);
+        padding: 1rem;
+      }
+    }
+    &__icons {
+      margin-top: 1.8rem;
+      width: 27rem;
+      height: 7.4rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      figure {
+        width: 6rem;
+        text-align: center;
+        @include textStyle($openSans, $regular, 1.3rem, $gunmetal);
+        .fa {
+          color: $darkPurple;
+          transform: scale(1.5);
+        }
       }
     }
   }
+
   &__btn {
     cursor: pointer;
     background-color: $whiteThree;
