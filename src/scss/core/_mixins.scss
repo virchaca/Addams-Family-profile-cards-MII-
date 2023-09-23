@@ -1,32 +1,41 @@
-@mixin textStyle($fontFamily,$fontWeight,$fontSize,$color) {
-    font-family: $fontFamily;
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    color: $color;
+@mixin textStyle($fontFamily, $fontWeight, $fontSize, $color) {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  color: $color;
 }
 
-@mixin iconStyle($fontWeight,$fontSize,$color:#e17334) {
-    font-weight: $fontWeight;
-    font-size: $fontSize;
-    color: $color;
+@mixin iconStyle($fontWeight, $fontSize, $color: #e17334) {
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  color: $color;
 }
 
 @mixin center-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@mixin margin($marginL,$marginR,$marginT,$marginB){
-    margin-left: $marginL;
-    margin-right: $marginR;
-    margin-top: $marginT;
-    margin-bottom: $marginB;
+@mixin margin($marginL, $marginR, $marginT, $marginB) {
+  margin-left: $marginL;
+  margin-right: $marginR;
+  margin-top: $marginT;
+  margin-bottom: $marginB;
 }
 
-@mixin rectangle ($backGround){
-    width: 3rem;
-    height: 2.5rem;
-    background-color: $backGround;
+@mixin rectangle($backGround) {
+  width: 3rem;
+  height: 2.5rem;
+  background-color: $backGround;
 }
-    
+
+@mixin textGlow($color) {
+  text-shadow: 0.25rem 0.25rem 1rem $color, -0.25rem -0.25rem 1rem $color,
+    -0.25rem 0.25rem 1rem $color, 0.25rem -0.25rem 1rem $color;
+}
+@mixin boxGlow($color) {
+  background: radial-gradient(transparent, $color);
+  box-shadow: 0.25rem 0.25rem 1rem $color, -0.25rem -0.25rem 1rem $color,
+    -0.25rem 0.25rem 1rem $color, 0.25rem -0.25rem 1rem $color;
+}

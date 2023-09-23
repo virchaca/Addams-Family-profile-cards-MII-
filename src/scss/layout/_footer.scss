@@ -3,8 +3,7 @@
   width: 100%;
   @include center-column;
   gap: 1.2rem;
-  background-image: linear-gradient(to right bottom, #d7c1fd, #c0a3e9);
-  background-color: $whiteTwo;
+  background: linear-gradient(to right bottom, #d7c1fd, #c0a3e9);
   border: 0.1rem solid $whiteThree;
   padding: 1.9rem;
 
@@ -20,6 +19,7 @@
     @include textStyle($openSans, $regular, 1.4rem, $brownishGrey);
   }
   &__logo {
+    padding: 1rem;
     width: 10rem;
   }
 }

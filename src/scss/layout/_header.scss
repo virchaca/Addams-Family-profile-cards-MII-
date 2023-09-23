@@ -1,7 +1,4 @@
-// Comenta la clase que NO quieras aplicar hasta que apliquemos JS
-
 .headerIndex {
-  background-color: $whiteFour;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -18,8 +15,7 @@
 }
 
 .headerCard {
-  background-image: linear-gradient(to right bottom, #d7c1fd, #c0a3e9);
-  background-color: $whiteTwo;
+  background: linear-gradient(to right bottom, #d7c1fd, #c0a3e9);
   display: flex;
   align-items: center;
   @media (min-width: 768px) {
