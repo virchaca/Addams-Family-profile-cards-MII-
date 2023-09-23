@@ -6,13 +6,12 @@
 .main-land {
   @include center-column;
   justify-content: flex-start;
-  background-color: $whiteFour;
   height: 51vh;
   @media (min-width: 768px) {
     height: 50vh;
   }
   .box-land {
-    background-color: $black20;
+    background-color: rgba(255, 255, 255, 0.699);
     @include center-column;
     margin: 2rem 5rem 0;
     // border-radius: 50% 50% 0 0;

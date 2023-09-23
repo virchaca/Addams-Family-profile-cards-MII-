@@ -1,7 +1,6 @@
 // Comenta la clase que NO quieras aplicar hasta que apliquemos JS
 
 .headerIndex {
-  background-color: $whiteFour;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -25,9 +24,6 @@
   @media (min-width: 768px) {
     justify-content: flex-start;
     padding-left: 4rem;
-  }
-  @media (min-width: 1024px) {
-    height: 111px;
   }
   .imgCard {
     width: 15rem;
