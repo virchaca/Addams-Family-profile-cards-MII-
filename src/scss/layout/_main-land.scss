@@ -9,7 +9,7 @@
   justify-content: space-evenly;
   height: 51vh;
   .box-land {
-    @include boxGlow($whiteFour);
+    @include boxGlow($whiteFour, $whiteTwo);
     @include center-column;
     margin: 2rem 5rem 0;
     border-radius: 5rem;
@@ -55,7 +55,7 @@
     text-decoration: none;
     text-transform: uppercase;
     @include textStyle($openSans, $blackBold, 1.6rem, $darkPurple);
-    @include boxGlow($whiteFour);
+    @include boxGlow($whiteFour, $whiteTwo);
     @include textGlow($whiteFour);
   }
 }
