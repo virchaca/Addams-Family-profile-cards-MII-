@@ -3,17 +3,17 @@
   width: 100%;
   @include center-column;
   gap: 1.2rem;
-  background-image: linear-gradient(to right bottom,#d7c1fd,#c0a3e9);
+  background-image: linear-gradient(to right bottom, #d7c1fd, #c0a3e9);
   background-color: $whiteTwo;
   border: 0.1rem solid $whiteThree;
   padding: 1.9rem;
-  
+
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     padding: 2rem 5rem;
     bottom: 0;
-    height: 11vh;
+    height: 6vh;
   }
 
   &__copy {
@@ -22,5 +22,4 @@
   &__logo {
     width: 10rem;
   }
-  
 }

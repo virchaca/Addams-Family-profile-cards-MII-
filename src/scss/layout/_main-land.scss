@@ -2,16 +2,16 @@
   @include center-column;
   justify-content: flex-start;
   background-color: $whiteFour;
-  height: 53vh;
+  height: 51vh;
   @media (min-width: 768px) {
-    height: 61vh;
+    height: 50vh;
   }
-  
+
   &__title {
     margin-top: 3.5rem;
     @include textStyle($merriweather, $blackBold, 2rem, $driedBlood);
     @media (min-width: 768px) {
-      font-size:2.4rem;
+      font-size: 2.4rem;
     }
   }
   &__par {
@@ -22,7 +22,7 @@
       @include textStyle($openSans, $regular, 1.6rem, $driedBlood);
     }
   }
-  &__icons{
+  &__icons {
     margin-top: 1.8rem;
     width: 27rem;
     height: 7.4rem;
@@ -40,12 +40,11 @@
         transform: scale(1.5);
       }
     }
-
   }
   &__btn {
     cursor: pointer;
     background-color: $whiteThree;
-    
+
     margin: 4rem 0 3rem;
     padding: 0.8rem 1.8rem;
     border-radius: 2.1rem;
