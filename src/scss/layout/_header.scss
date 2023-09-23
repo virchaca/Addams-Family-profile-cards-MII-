@@ -26,6 +26,9 @@
     justify-content: flex-start;
     padding-left: 4rem;
   }
+  @media (min-width: 1024px) {
+    height: 111px;
+  }
   .imgCard {
     width: 15rem;
     margin: 0.5rem 1.5rem;
