@@ -1,3 +1,8 @@
+.bodyImage{
+  background-image: url(../images/arboles.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .main-land {
   @include textGlow($whiteTwo);
   @include center-column;

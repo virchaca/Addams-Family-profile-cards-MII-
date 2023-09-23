@@ -1,9 +1,9 @@
 .main{
+    background-image: linear-gradient(to right bottom,#f8effca6,#7152e2ad);
     @media (min-width: 768px) {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        background-image: linear-gradient(to bottom, $whiteFour, $whiteTwo);
     }
 }
 .sectionIncludes{
@@ -19,10 +19,13 @@
     }
 }
 .sectionOne{
-    background-image: (linear-gradient(to bottom, $silver, $paleGrey));
+    background-image:  url(../images/arboles.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     @media (min-width: 768px) {
         border-radius: 0.4rem;
         margin-top: 2rem;
@@ -33,6 +36,10 @@
     }
     @media (min-width: 1024px) {
         width: 60%;
+        background-image:  url(../images/cementerio.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        // height: 900px;
     }
 }
 .card{

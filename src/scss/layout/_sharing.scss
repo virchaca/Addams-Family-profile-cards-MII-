@@ -16,13 +16,13 @@
                     @include iconStyle($regular, 1.8rem, #7b00ac);
                     padding-right: 1.2rem;
                     @media (min-width: 1024px) {
-                        @include iconStyle($regular, 2rem, #7b00ac);
+                        @include iconStyle($regular, 1.8rem, #7b00ac);
                     }
                 }
                 &--arrow{
-                    @include iconStyle ($regular, 2rem, #7b00ac);
+                    @include iconStyle ($regular, 1.8rem, #7b00ac);
                     @media (min-width: 1024px) {
-                        @include iconStyle($regular, 2rem, #7b00ac);
+                        @include iconStyle($regular, 1.8rem, #7b00ac);
                     }
                 }
             }
@@ -32,7 +32,7 @@
                 padding-top: 1rem;
                 padding-bottom: 1rem;
                 @media (min-width: 1024px) {
-                    @include textStyle($openSans, $semiBold, 2.5rem, $gunmetal);
+                    @include textStyle($openSans, $semiBold, 1.8rem, $gunmetal);
                 }
             }
         }
