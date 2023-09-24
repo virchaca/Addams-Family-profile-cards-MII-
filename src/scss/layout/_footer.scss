@@ -1,6 +1,8 @@
 .footer {
   height: 19vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
   @include center-column;
   gap: 1.2rem;
   background: linear-gradient(to right bottom, #d7c1fd, #c0a3e9);
@@ -17,6 +19,6 @@
     @include textStyle($openSans, $regular, 1.4rem, $brownishGrey);
   }
   &__logo {
-    width: 10rem;
+    width: 15rem;
   }
 }
