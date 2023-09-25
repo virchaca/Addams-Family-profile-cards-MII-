@@ -10,9 +10,10 @@
   height: 51vh;
   .box-land {
     @include boxGlow($whiteFour, $whiteTwo);
+    @include textGlow(#d5b9c9);
     @include center-column;
     margin: 2rem 5rem 0;
-    border-radius: 5rem;
+    border-radius: 1rem;
     &__title {
       padding: 1.5rem 0 0.3rem;
       @include textStyle($merriweather, $blackBold, 2rem, $darkPurple);
@@ -39,10 +40,11 @@
       figure {
         width: 6rem;
         text-align: center;
-        @include textStyle($openSans, $regular, 1.3rem, $darkPurple);
+        @include textStyle($openSans, $regular, 1.5rem, $darkPurple);
         .fa {
           color: $darkPurple;
-          transform: scale(1.5);
+          font-size: 2.5rem;
+          @include textGlow($white);
         }
       }
     }
@@ -55,7 +57,7 @@
     text-decoration: none;
     text-transform: uppercase;
     @include textStyle($openSans, $blackBold, 1.6rem, $darkPurple);
-    @include boxGlow($whiteFour, $whiteTwo);
-    @include textGlow($whiteFour);
+    @include boxGlowTwo($whiteFour, $whiteTwo);
+    @include textGlow(#d5b9c9);
   }
 }

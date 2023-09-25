@@ -206,5 +206,5 @@
         
 }
 .ghost {
-    @include boxGlow($darkPurple, $white);
+    @include boxGlow($black20, $white);
 }
