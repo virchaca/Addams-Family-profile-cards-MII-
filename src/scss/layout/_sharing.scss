@@ -82,16 +82,16 @@
         margin-top: -1rem;
         margin-bottom: 3rem;
         &--h2 {
-            @include textStyle($openSans, $semiBold, 1.8rem, $gunmetal);
+            @include textStyle($openSans, $semiBold, 1.5rem, $gunmetal);
                 @media (min-width: 1024px) {
-                @include textStyle($openSans, $semiBold, 2.5rem, $gunmetal);
+                @include textStyle($openSans, $semiBold, 1.2rem, $gunmetal);
             }
         }
         &--link {
-            @include textStyle($openSans, $semiBold, 1.2rem, $orange);
+            @include textStyle($openSans, $semiBold, 1.2rem, #7b00ac);
             text-decoration: none;
             @media (min-width: 1024px) {
-                @include textStyle($openSans, $semiBold, 2.5rem, #7b00ac);
+                @include textStyle($openSans, $semiBold, 1.2rem, #7b00ac);
             }
         }
         &--btn {
