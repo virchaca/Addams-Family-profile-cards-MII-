@@ -53,8 +53,8 @@
         border-radius: 2rem;
         border: solid 0.1rem $whiteTwo;
         // background-color: $silver;
-        @include boxGlow($whiteFour, $white);
-        @include textGlow($white);
+        @include boxGlowTwo($whiteFour, $whiteTwo);
+        @include textGlow(#d5b9c9);
         transition-duration: 0.8s;
         text-transform: uppercase;
         cursor: pointer;
