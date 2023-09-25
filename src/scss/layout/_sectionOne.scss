@@ -44,6 +44,7 @@
 }
 .card{
     padding: 4rem 4rem 4rem 4rem;
+    
     &__button{
         @include textStyle ($openSans,$blackBold,1.2rem,$darkPurple);
         width: 8rem;
@@ -203,4 +204,7 @@
         }
     }
         
+}
+.ghost {
+    @include boxGlow($darkPurple, $white);
 }
