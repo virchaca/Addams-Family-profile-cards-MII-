@@ -138,6 +138,9 @@
         border:solid 0.2rem $pink;
         &--item{
             color: $darkPurple;
+            &:hover{ 
+            color: $violet;
+            }
         }
     }
         
@@ -159,6 +162,9 @@
         border:solid 0.2rem $greenHojas;
         &--item{
             color: $driedBlood;
+            &:hover{ 
+                color: $rustyRed;
+                }
         }
     }
         
@@ -180,6 +186,9 @@
         border:solid 0.2rem $yellowF;
         &--item{
             color: $redF;
+            &:hover{ 
+                color: $beigeF;
+                }
         }
     }
         
@@ -201,6 +210,9 @@
         border:solid 0.2rem $hospitalGreen;
         &--item{
             color: $darkGreenBlue;
+            &:hover{ 
+                color: $dirtyBlue;
+                }
         }
     }
         
