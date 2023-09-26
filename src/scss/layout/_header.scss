@@ -10,7 +10,6 @@
     width: 25rem;
     border: none;
     @include center-column;
-    margin: 2rem 5rem 0;
     border-radius: 1rem;
     @media (min-width: 768px) {
       width: 40rem;

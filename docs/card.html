@@ -16,50 +16,64 @@
 
   <header>
     <header class="headerCard">
-        <a href="./index.html"><img class="imgIndex imgCard" src="./assets/images/logo-awesome-profile-cards.svg" alt="awsome-cards-logo"></a>
+        <div>
+            <a href="./index.html"><img class="imgIndex imgCard" src="./assets/images/logo-fondo.png" alt="awsome-cards-logo"></a>
+        </div>
     </header>
   </header>
 
   <main class="main">
-        <section class="card paletteOne js-card-preview">
-
-            <button class="card__button js-btn-reset" value="reset"><i class="fa-regular fa-trash-can"></i>Reset</button>
-            
-          <article class="card__box">
-            <div class="card__container">
-              <h2 class="card__container--name js-name" id="nameh2">Nombre Apellido</h2>
-              <h3 class="card__container--profession js-job" id="job">Front-end developer</h3>
-            </div>
+    <section class="sectionOne paletteOne js-card-preview">
       
-            <div class="card__box--img js__profile-image"> </div>
-            
-            <nav>
-              <ul class="icons">
-                <li class="icons__border">
-                  <a class="icons__border--item js-phone" href="#"  target="_blank"><i class="fa-solid fa-mobile-screen-button fa-2xl"></i></a>
-                </li>
-                <li class="icons__border">
-                  <a class="icons__border--item js-email" href="#"  target="_blank">
-                  <i class="fa-regular fa-envelope fa-2xl"></i></a>
-                </li>
-                <li class="icons__border">
-                  <a class="icons__border--item js-linkedin" href="#" target="_blank"
-                    ><i class="fa-brands fa-linkedin-in fa-2xl"></i></a>
-                </li>
-                <li class="icons__border">
-                  <a class="icons__border--item js-gitHub" href="#"  target="_blank"
-                    ><i class="fa-brands fa-github-alt fa-2xl"></i></a>
-                </li>
-              </ul>
-            </nav>
-          </article>
+    <section class="card">
+      <button class="card__button js-btn-reset" value="reset">
+        <i class="fa-regular fa-trash-can"></i>Reset
+      </button>
+
+      <div class="ghost">
+        <section class="card__box">
+          <div class="card__container">
+            <h2 class="card__container--name js-name" id="nameh2">Nombre Apellido</h2>
+            <h3 class="card__container--profession js-job" id="job">
+              Front-end developer
+            </h3>
+          </div>
+          <div class="card__box--img js__profile-image"></div>
+          <nav>
+            <ul class="icons">
+              <li class="icons__border">
+                <a class="icons__border--item js-phone" href="#" target="_blank"
+                  ><i class="fa-solid fa-mobile-screen-button fa-2xl"></i
+                ></a>
+              </li>
+              <li class="icons__border">
+                <a class="icons__border--item js-email" href="#" target="_blank">
+                  <i class="fa-regular fa-envelope fa-2xl"></i
+                ></a>
+              </li>
+              <li class="icons__border">
+                <a class="icons__border--item js-linkedin" href="#" target="_blank"
+                  ><i class="fa-brands fa-linkedin-in fa-2xl"></i
+                ></a>
+              </li>
+              <li class="icons__border">
+                <a class="icons__border--item js-gitHub" href="#" target="_blank"
+                  ><i class="fa-brands fa-github-alt fa-2xl"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </section>
+      </div>
+      </section>
+    </section>
+
     <section class="sectionIncludes">
       <fieldset class="desing js-design-form">
 
           <section class="des__cont js-designLegend">
               <legend class="des__cont--icon">
-                  <i class="fa-regular fa-object-ungroup"></i>
+                  <i class="fa-regular fa-solid fa-wand-sparkles"></i>
                   <h2 class="des__cont--title">DISEÑA</h2>
               </legend>
               <div class="des__cont--up">
@@ -96,6 +110,13 @@
                       <div class="palette__3--color2"></div>
                       <div class="palette__3--color3"></div>
                   </label>
+
+                  <label class="palette__4">
+                      <input class="rad js-palette-four" type="radio" value="paletteFour" name="palette" id="yellow" np/>
+                      <div class="palette__4--color1"></div>
+                      <div class="palette__4--color2"></div>
+                      <div class="palette__4--color3"></div>
+                  </label>
               </div>
 
              
@@ -108,7 +129,9 @@
 
           <div class="titleF js-fillLegend">  
             <legend class="titleF__img">
-              <i class="fa-regular fa-keyboard titleF__img--icon"></i>
+              <i class="fa-solid fa-book-skull 
+              titleF__img--icon
+              " ></i>
             <h3 class="titleF__title">RELLENA</h3>
           </legend>
             <figure>
@@ -150,43 +173,43 @@
           
       <fieldset class="section collapsed js-share-form">
         
-              <div class="section__div js-shareLegend ">
-                  <legend class="section__div__pack">
-                      <figure class="section__div__pack--fig">
-                          <i class="fa fa-solid fa-share-nodes section__div__pack--fig--icon"></i>
-                      </figure>
-                      <h2 class="section__div__pack--h2">Comparte</h2>
-                  </legend>
-                  <figure class="section__div__pack--fig">
-                    <i class="fa-solid fa-chevron-up section__div__pack--fig--arrow"></i>
-                  </figure>
-              </div>
-        
-              <div class="section__button js-btn-share">
-                <button type="submit" value="Enviar" class="section__button__link js-createdTarget">
-                  <i class="far fa-address-card section__button__link--target"></i> Crear tarjeta
-                </button>
-                <button type="submit" value="Enviar" class="section__button__linkGrey hidden js-createdTargetWhite">
-                  <i class="far fa-address-card section__button__linkGrey--targetGrey"></i> Crear tarjeta
-                </button>
-              </div>
-              
-              <div class="section__line"></div>
+        <div class="section__div js-shareLegend ">
+            <legend class="section__div__pack">
+                <figure class="section__div__pack--fig">
+                    <i class="fa-solid fa-ghost section__div__pack--fig--icon"></i>
+                </figure>
+                <h2 class="section__div__pack--h2">Comparte</h2>
+            </legend>
+            <figure class="section__div__pack--fig">
+              <i class="fa-solid fa-chevron-up flechas section__div__pack--fig--arrow"></i>
+            </figure>
+        </div>
 
-            <article class="section__share hidden js-hidden">
-            <div class="">
-              <h2 class="section__share--h2">La tarjeta ha sido creada:</h2>
-              <a
-                class="section__share--link"
-                href="https://awesome-profile-card.com?id=A456DF0001"> https://awesome-profile-card.com?id=A456DF0001
-              </a>
-            </div>
-            <div class="section__share--btn">
-              <span class="section__share--btn--icon fa-brands fa-twitter"></span>
-              <span class="section__share--btn--tw"> Compartir en twitter </span>
-            </div>
-            <div class="section__line"></div>
-          </article>
+        <div class="section__button js-btn-share">
+          <button type="submit" value="Enviar" class="section__button__link js-createdTarget">
+            <i class="far fa-address-card section__button__link--target"></i> Crear tarjeta
+          </button>
+          <button type="submit" value="Enviar" class="section__button__linkGrey hidden js-createdTargetWhite">
+            <i class="far fa-address-card section__button__linkGrey--targetGrey"></i> Crear tarjeta
+          </button>
+        </div>
+        
+        <div class="section__line"></div>
+
+        <article class="section__share hidden js-hidden">
+        <div class="">
+          <h2 class="section__share--h2">La tarjeta ha sido creada:</h2>
+          <a
+            class="section__share--link js-message"
+            href="">
+          </a>
+        </div>
+        <div class="section__share--btn">
+          <span class="section__share--btn--icon fa-brands fa-twitter"></span>
+          <span class="section__share--btn--tw"> Compartir en twitter </span>
+        </div>
+        <div class="section__line"></div>
+        </article>
 
       </fieldset>
 
@@ -195,7 +218,7 @@
 
   <footer class="footer">
       <span class="footer__copy">Awesome profile-cards @2023</span>
-      <img class="footer__logo" src="./assets/images/logo-adalab.png" alt="logo-adalab">
+      <img class="footer__logo" src="./assets/images/logotipo-footer.png" alt="logo-adalab">
   </footer>
   
   <script src="./assets/js/main.js"></script>

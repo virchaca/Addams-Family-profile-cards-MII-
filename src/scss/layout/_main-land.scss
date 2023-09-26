@@ -2,12 +2,18 @@
   background-image: url(../images/arboles.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 .main-land {
   @include textGlow($whiteFour);
   @include center-column;
   justify-content: space-evenly;
   height: 51vh;
+  
+
+  @media (orientation: landscape) {
+    gap:5rem;
+ }
   .box-land {
     @include boxGlow($whiteFour, $whiteTwo);
     @include textGlow(#d5b9c9);

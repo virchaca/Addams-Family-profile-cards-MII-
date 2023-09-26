@@ -7,6 +7,12 @@
   gap: 1.2rem;
   background-image: linear-gradient(to right bottom, #9981f0, #ffffff);
   padding: 1.9rem;
+  // position: absolute;
+  // bottom: 0;
+  @media (orientation: landscape) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
   @media all and (min-width: 768px) {
     flex-direction: row;

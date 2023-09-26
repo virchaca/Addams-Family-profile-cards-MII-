@@ -42,6 +42,17 @@ const createdTarget = document.querySelector('.js-createdTarget');
 const targetWhite = document.querySelector('.js-createdTargetWhite');
 const shareHidden = document.querySelector('.js-hidden');
 
+const data = {
+  palette: '',
+  name: '',
+  job: '',
+  phone: '',
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: '',
+};
+
 
 /************* Colapsables*************/
 
@@ -69,6 +80,35 @@ function openShare(){
 }
 
 // Tarjeta creada y twitter
+
+// const btnShare = document.querySelector('.js-btn-share');
+
+// const createdTarget = document.querySelector('.js-createdTarget');
+// const targetWhite = document.querySelector('.js-createdTargetWhite');
+// const shareHidden = document.querySelector('.js-hidden');
+const messageBox = document.querySelector('.js-message');
+
+function handlesClickShareBtn(){
+  fetch ('https://dev.adalab.es/api/card/', {
+    method: 'POST',
+    headers:{'Content-Type': 'application/json'},
+    body: JSON.stringify(data)
+  })
+    .then (response => response.json())
+    .then (responseJSON => {
+      if (responseJSON.sucess === false){
+        messageBox.innerHTML = 'Oye, revisa los campos...';
+      }else{
+        createdTargetWhite.classList.remove ('hidden');
+        messageBox.href = responseJSON.cardURL;
+        messageBox.innerHTML = responseJSON.cardURL;
+      }
+    });
+}
+
+createdTarget.addEventListener('click', handlesClickShareBtn);
+
+
 function hiddenTarget(){
   createdTarget.classList.add('hidden');
 }
@@ -128,17 +168,6 @@ share.addEventListener('click',handleClickShare);
 createdTarget.addEventListener('click', handleClickTarget);
 
 /*************preview*************/
-
-const data = {
-  palette: '',
-  name: '',
-  job: '',
-  phone: '',
-  email: '',
-  linkedin: '',
-  github: '',
-  photo: '',
-};
 
 
 function updatepreview(){
