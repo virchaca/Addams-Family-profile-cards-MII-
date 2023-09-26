@@ -41,6 +41,7 @@ const btnShare = document.querySelector('.js-btn-share');
 const createdTarget = document.querySelector('.js-createdTarget');
 const targetWhite = document.querySelector('.js-createdTargetWhite');
 const shareHidden = document.querySelector('.js-hidden');
+const messageBox = document.querySelector('.js-message');
 
 const data = {
   palette: '',
@@ -54,31 +55,6 @@ const data = {
 };
 
 
-/************* Colapsables*************/
-
-function collapseDesign(){
-  designForm.classList.add('collapsed');
-}
-function openDesign(){
-  designForm.classList.remove('collapsed');
-}
-
-
-function collapseFill(){
-  fillForm.classList.add('collapsed');
-}
-function openFill(){
-  fillForm.classList.remove('collapsed');
-}
-
-
-function collapseShare(){
-  shareForm.classList.add('collapsed');
-}
-function openShare(){
-  shareForm.classList.remove('collapsed');
-}
-
 // Tarjeta creada y twitter
 
 // const btnShare = document.querySelector('.js-btn-share');
@@ -86,7 +62,7 @@ function openShare(){
 // const createdTarget = document.querySelector('.js-createdTarget');
 // const targetWhite = document.querySelector('.js-createdTargetWhite');
 // const shareHidden = document.querySelector('.js-hidden');
-const messageBox = document.querySelector('.js-message');
+//const messageBox = document.querySelector('.js-message');
 
 function handlesClickShareBtn(){
   fetch ('https://dev.adalab.es/api/card/', {
@@ -131,156 +107,10 @@ function hiddenTwitter(){
 }
 
 
-function handleClickDesign(event){
-  collapseFill();
-  collapseShare();
-  hiddenTwitter();
-  hiddenTargetWhite();
-  viewTarget();
-  openDesign();
-}
-
-function handleClickFill(event){
-  openFill();
-  collapseDesign();
-  collapseShare();
-  hiddenTwitter();
-  hiddenTargetWhite();
-  viewTarget();
-}
-
-function handleClickShare(event){
-  collapseDesign();
-  collapseFill();
-  openShare();
-}
-
 function handleClickTarget(){
   hiddenTarget();
   viewTargetWhite();
   viewTwitter();
 }
 
-design.addEventListener('click',handleClickDesign);
-fill.addEventListener('click',handleClickFill);
-share.addEventListener('click',handleClickShare);
-
 createdTarget.addEventListener('click', handleClickTarget);
-
-/*************preview*************/
-
-
-function updatepreview(){
-  namePreview.innerHTML = data.name;
-  if (nameInput.value === ''){
-    namePreview.innerHTML = 'Nombre Apellido';
-  }
-  jobPreview.innerHTML = data.job;
-  if (jobInput.value === ''){
-    jobPreview.innerHTML = 'Front-end developer';
-  }
-  telephonePreview.href = `tel:${data.phone}`;
-  emailPreview.href = `mailto:${data.email}`;
-  linkedinPreview.href = `https://www.linkedin.com/in/${data.linkedin}/`;
-  gitPreview.href = `https://www.github.com/${data.github}`;
-}
-
-function handleInputName() {
-  data.name = nameInput.value;
-  updatepreview();
-}
-
-function handleInputJob() {
-  data.job = jobInput.value;
-  updatepreview();
-}
-function handleInputPhone() {
-  data.phone = telephoneInput.value;
-  updatepreview();
-}
-function handleInputEmail() {
-  data.email = emailInput.value;
-  updatepreview();
-}
-function handleInputLinkedin() {
-  data.linkedin = linkedinInput.value;
-  updatepreview();
-}
-function handleInputGit() {
-  data.github = gitInput.value;
-  updatepreview();
-}
-
-nameInput.addEventListener('input', handleInputName);
-jobInput.addEventListener('input', handleInputJob);
-telephoneInput.addEventListener('input', handleInputPhone);
-emailInput.addEventListener('input', handleInputEmail);
-linkedinInput.addEventListener('input', handleInputLinkedin);
-gitInput.addEventListener('input', handleInputGit);
-
-/*************** Colores ************* */
-
-// 1.hacer click addEventlistener sobre los tres botones
-// 2. hacer la funcion manejadora
-// 3. dentro de cada funcion manejadora quitar dos clase y poner una
-
-
-function handlepaletteOne(event){
-  event.preventDefault();
-  cardPreview.classList.add ('paletteOne');
-  cardPreview.classList.remove ('paletteTwo');
-  cardPreview.classList.remove ('paletteThree');
-  cardPreview.classList.remove ('paletteFour');
-}
-function handlepaletteTwo(event){
-  event.preventDefault();
-  cardPreview.classList.remove ('paletteOne');
-  cardPreview.classList.add ('paletteTwo');
-  cardPreview.classList.remove ('paletteThree');
-  cardPreview.classList.remove ('paletteFour');
-}
-function handlepaletteThree(event){
-  event.preventDefault();
-  cardPreview.classList.remove ('paletteOne');
-  cardPreview.classList.remove('paletteTwo');
-  cardPreview.classList.add ('paletteThree');
-  cardPreview.classList.remove ('paletteFour');
-}
-
-function handlepaletteFour(event){
-  event.preventDefault();
-  cardPreview.classList.remove ('paletteOne');
-  cardPreview.classList.remove('paletteTwo');
-  cardPreview.classList.remove ('paletteThree');
-  cardPreview.classList.add ('paletteFour');
-}
-
-paletteOne.addEventListener('change', handlepaletteOne);
-paletteTwo.addEventListener('change', handlepaletteTwo);
-paletteThree.addEventListener('change', handlepaletteThree);
-paletteFour.addEventListener('change', handlepaletteFour);
-
-
-/************* Botón Reset *************/
-
-function handleClickDelete(event) {
-  event.preventDefault();
-  nameInput.value = '';
-  jobInput.value = '';
-  telephoneInput.value = '';
-  telephonePreview.href ='#';
-  emailInput.value = '';
-  emailPreview.href ='#';
-  linkedinInput.value = '';
-  linkedinPreview.href ='#';
-  gitInput.value = '';
-  gitPreview.href = '#';
-  namePreview.innerHTML ='Nombre Apellido';
-  jobPreview.innerHTML = 'Front-end developer';
-  handlepaletteOne(event); 
-  paletteOne.checked=true;
-  profileImage.style.backgroundImage = '';
-  profilePreview.style.backgroundImage = '';
-}
-
-btnReset.addEventListener('click', handleClickDelete);
