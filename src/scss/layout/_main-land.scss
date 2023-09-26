@@ -8,7 +8,8 @@
   @include textGlow($whiteFour);
   @include center-column;
   justify-content: space-evenly;
-  height: 65vh;
+  // height: 65vh;
+  gap:5rem;
   
   @media (min-width: 768px){justify-content: flex-start; }
   @media (orientation: landscape) {
