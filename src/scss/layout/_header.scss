@@ -11,6 +11,7 @@
     border: none;
     @include center-column;
     border-radius: 1rem;
+    filter: drop-shadow( 5px 5px 1px $black);
     @media (min-width: 768px) {
       width: 40rem;
     }
