@@ -10,7 +10,7 @@
   justify-content: space-evenly;
   height: 65vh;
   
-
+  @media (min-width: 768px){justify-content: flex-start; }
   @media (orientation: landscape) {
     gap:5rem;
  }
