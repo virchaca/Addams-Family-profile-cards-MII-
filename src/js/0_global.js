@@ -12,7 +12,6 @@ const designForm = document.querySelector('.js-design-form');
 const fillForm = document.querySelector('.js-fill-form');
 const shareForm = document.querySelector('.js-share-form');
 
-
 const nameInput = document.querySelector('.js-input-name');
 const jobInput = document.querySelector('.js-input-job');
 const telephoneInput = document.querySelector('.js-input-phone');
@@ -27,13 +26,11 @@ const emailPreview = document.querySelector('.js-email');
 const linkedinPreview = document.querySelector('.js-linkedin');
 const gitPreview = document.querySelector('.js-gitHub');
 
-
-const cardPreview = document.querySelector ('.js-card-preview');
-const paletteOne = document.querySelector ('.js-palette-one');
-const paletteTwo = document.querySelector ('.js-palette-two');
-const paletteThree = document.querySelector ('.js-palette-three');
-const paletteFour = document.querySelector ('.js-palette-four');
-
+const cardPreview = document.querySelector('.js-card-preview');
+const paletteOne = document.querySelector('.js-palette-one');
+const paletteTwo = document.querySelector('.js-palette-two');
+const paletteThree = document.querySelector('.js-palette-three');
+const paletteFour = document.querySelector('.js-palette-four');
 
 const btnReset = document.querySelector('.js-btn-reset');
 const btnShare = document.querySelector('.js-btn-share');
@@ -44,7 +41,7 @@ const shareHidden = document.querySelector('.js-hidden');
 const messageBox = document.querySelector('.js-message');
 
 const data = {
-  palette: '',
+  palette: '1',
   name: '',
   job: '',
   phone: '',
@@ -53,7 +50,6 @@ const data = {
   github: '',
   photo: '',
 };
-
 
 // Tarjeta creada y twitter
 
@@ -64,53 +60,54 @@ const data = {
 // const shareHidden = document.querySelector('.js-hidden');
 //const messageBox = document.querySelector('.js-message');
 
-function handlesClickShareBtn(){
-  fetch ('https://dev.adalab.es/api/card/', {
+function handleClickTarget() {
+  fetch('https://dev.adalab.es/api/card/', {
     method: 'POST',
-    headers:{'Content-Type': 'application/json'},
-    body: JSON.stringify(data)
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(data),
   })
-    .then (response => response.json())
-    .then (responseJSON => {
-      if (responseJSON.sucess === false){
-        messageBox.innerHTML = 'Oye, revisa los campos...';
-      }else{
-        createdTargetWhite.classList.remove ('hidden');
+    .then((response) => response.json())
+    .then((responseJSON) => {
+      console.log(responseJSON);
+      if (responseJSON.sucess === false) {
+        messageBox.innerHTML = 'Algo ha ido mal, revisa los campos...';
+      } else {
+        targetWhite.classList.remove('hidden');
         messageBox.href = responseJSON.cardURL;
         messageBox.innerHTML = responseJSON.cardURL;
       }
     });
-}
 
-createdTarget.addEventListener('click', handlesClickShareBtn);
-
-
-function hiddenTarget(){
-  createdTarget.classList.add('hidden');
-}
-function viewTarget(){
-  createdTarget.classList.remove('hidden');
-}
-
-function viewTargetWhite(){
-  targetWhite.classList.remove('hidden');
-}
-function hiddenTargetWhite(){
-  targetWhite.classList.add('hidden');
-}
-
-function viewTwitter(){
-  shareHidden.classList.remove('hidden');
-}
-function hiddenTwitter(){
-  shareHidden.classList.add('hidden');
-}
-
-
-function handleClickTarget(){
   hiddenTarget();
   viewTargetWhite();
   viewTwitter();
 }
+
+function hiddenTarget() {
+  createdTarget.classList.add('hidden');
+}
+function viewTarget() {
+  createdTarget.classList.remove('hidden');
+}
+
+function viewTargetWhite() {
+  targetWhite.classList.remove('hidden');
+}
+function hiddenTargetWhite() {
+  targetWhite.classList.add('hidden');
+}
+
+function viewTwitter() {
+  shareHidden.classList.remove('hidden');
+}
+function hiddenTwitter() {
+  shareHidden.classList.add('hidden');
+}
+
+// function handleClickTarget() {
+//   hiddenTarget();
+//   viewTargetWhite();
+//   viewTwitter();
+// }
 
 createdTarget.addEventListener('click', handleClickTarget);
