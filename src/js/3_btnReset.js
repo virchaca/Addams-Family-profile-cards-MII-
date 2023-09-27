@@ -20,6 +20,9 @@ function handleClickDelete(event) {
   paletteOne.checked = true;
   profileImage.style.backgroundImage = '';
   profilePreview.style.backgroundImage = '';
+  targetWhite.classList.add('hidden');
+  createdTarget.classList.remove('hidden');
+  shareHidden.classList.add('hidden');
 }
 
 btnReset.addEventListener('click', handleClickDelete);
