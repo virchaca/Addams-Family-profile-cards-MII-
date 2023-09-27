@@ -68,28 +68,35 @@ function handleClickTarget() {
   })
     .then((response) => response.json())
     .then((responseJSON) => {
-      console.log(responseJSON);
-      if (responseJSON.success === false) {
+      if (responseJSON.sucess === false) {
         messageBox.innerHTML = 'Algo ha ido mal, revisa los campos...';
       } else {
         targetWhite.classList.remove('hidden');
-        messageBox.href = responseJSON.cardURL;
-        messageBox.innerHTML = responseJSON.cardURL;
-        const twiterBtn = document.querySelector('.js-btnTw');
-        twiterBtn.addEventListener('click', function () {
-          const cardURL = encodeURIComponent(responseJSON.cardURL);
-          const twitterShareURL = `https://twitter.com/intent/tweet?url=${cardURL}`;
-          // Abre una ventana emergente para compartir en Twitter
-          window.open(twitterShareURL, '_blank', 'width=550,height=350');
-        });
+        const cardURLString = responseJSON.cardURL.toString();
+        messageBox.href = cardURLString;
+        generateTweetURL (cardURLString);
+        messageBox.innerHTML = cardURLString;
       }
     });
-
 
   hiddenTarget();
   viewTargetWhite();
   viewTwitter();
 }
+
+function generateTweetURL(enlaceGenerado){
+
+  if(typeof enlaceGenerado === 'string') {
+    const textoTweet = 'Mira mi tarjeta de visita digital: ' + enlaceGenerado;
+    const tweetURL = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(textoTweet);
+    const twitterShareLink = document.getElementById('twitterShareLink');
+    twitterShareLink.href = tweetURL;
+  }
+}
+
+twitterShareLink.addEventListener('click', generateTweetURL);
+
+generateTweetURL();
 
 function hiddenTarget() {
   createdTarget.classList.add('hidden');

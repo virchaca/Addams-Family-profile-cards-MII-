@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="icon" href="./assets/images/favicon.png">
   <script src="https://kit.fontawesome.com/d65782632e.js" crossorigin="anonymous"></script>
 </head>
 
@@ -141,11 +142,11 @@
           
           <div class="formF">
 
-            <label class="formF__label" for="fullName">Nombre completo</label>
-            <input class="formF__input js-input-name" id="fullName" type="text" name="fullName" placeholder="Ej: Sally Jill">
+            <label class="formF__label" for="name">Nombre completo</label>
+            <input class="formF__input js-input-name" id="fullName" type="text" name="name" placeholder="Ej: Sally Jill">
           
-            <label class="formF__label" for="jobPosition">Puesto</label>
-            <input class="formF__input js-input-job" id="jobPosition" type="text" name="jobPosition" placeholder="Ej: Front-end unicorn">
+            <label class="formF__label" for="job">Puesto</label>
+            <input class="formF__input js-input-job" id="jobPosition" type="text" name="job" placeholder="Ej: Front-end unicorn">
           
             <div class="formF__img">      
               <label class="formF__img--btnF" for="image">Imagen de perfil</label>      
@@ -153,17 +154,17 @@
               <input type="file" id="image"  class="formF__img--hiddenFile js__profile-upload-btn"/>
             </div>
           
-            <label class="formF__label" for="mail">Email</label>
-            <input class="formF__input js-input-email" id="mail" type="mail" name="mail" placeholder="Ej: sally-hill@gmail.com">
+            <label class="formF__label" for="email">Email</label>
+            <input class="formF__input js-input-email" id="mail" type="mail" name="email" placeholder="Ej: sally-hill@gmail.com">
             
-            <label class="formF__label" for="phoneNumber">Teléfono</label>
-            <input class="formF__input js-input-phone" id="phoneNumber" type="number" name="phoneNumber" placeholder="Ej: 555-55-55-55">
+            <label class="formF__label" for="phone">Teléfono</label>
+            <input class="formF__input js-input-phone" id="phoneNumber" type="number" name="phone" placeholder="Ej: 555-55-55-55">
             
-            <label class="formF__label" for="Linkedin">Linkedin</label>      
-            <input class="formF__input js-input-linkedin" id="Linkedin" type="text" name="Linkedin" placeholder="Nombre de usuario">      
+            <label class="formF__label" for="linkedin">Linkedin</label>      
+            <input class="formF__input js-input-linkedin" id="Linkedin" type="text" name="linkedin" placeholder="Nombre de usuario">      
             
-            <label class="formF__label" for="gitHub">GitHub</label>
-            <input class="formF__input js-input-git" id="gitHub" type="text" name="gitHub" placeholder="Nombre de usuario">
+            <label class="formF__label" for="github">GitHub</label>
+            <input class="formF__input js-input-git" id="gitHub" type="text" name="github" placeholder="Nombre de usuario">
             
           </div>
         
@@ -201,24 +202,27 @@
           <h2 class="section__share--h2">La tarjeta ha sido creada:</h2>
           <a
             class="section__share--link js-message"
-            href="">
+            href="#" target="_blank">
           </a>
         </div>
         <div class="section__share--btn">
           <span class="section__share--btn--icon fa-brands fa-twitter"></span>
-          <span class="section__share--btn--tw"> Compartir en twitter </span>
+          <a class="twitter-share-button section__share--btn--tw"
+          href="https://twitter.com/intent/tweet" target="_blank" id="twitterShareLink">
+        Compartir en Twitter</a>
         </div>
         <div class="section__line"></div>
         </article>
 
       </fieldset>
 
+
     </section>
   </main>
 
-  <footer class="footer">
-      <span class="footer__copy">Awesome profile-cards @2023</span>
-      <img class="footer__logo" src="./assets/images/logotipo-footer.png" alt="logo-adalab">
+  <footer class="footerCard">
+      <span class="footerCard__copyRight">Awesome profile-cards @2023</span>
+      <img class="footerCard__logoCard" src="./assets/images/logotipo-footer.png" alt="logo-adalab">
   </footer>
   
   <script src="./assets/js/main.js"></script>
