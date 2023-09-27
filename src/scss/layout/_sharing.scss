@@ -106,7 +106,6 @@
             margin-bottom: 3rem;
             background-color: $azure;
             border-radius: 0.3rem;
-            text-decoration: none;
             box-shadow: 0 0 4px 0 #00000052;
         &--icon {
             @include textStyle($openSans, $regular, 1.8rem, $whiteTwo);
@@ -114,8 +113,9 @@
         &--tw {
             @include textStyle($openSans, $regular, 1.4rem, $whiteTwo);
             padding-bottom: 0.4rem;
+            text-decoration: none;
             }
         }
     
     }
-}   
+} 
