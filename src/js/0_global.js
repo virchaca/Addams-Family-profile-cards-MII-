@@ -39,6 +39,7 @@ const createdTarget = document.querySelector('.js-createdTarget');
 const targetWhite = document.querySelector('.js-createdTargetWhite');
 const shareHidden = document.querySelector('.js-hidden');
 const messageBox = document.querySelector('.js-message');
+const errorText = document.querySelector('.js-text');
 
 const data = {
   palette: '1',
@@ -68,10 +69,12 @@ function handleClickTarget() {
   })
     .then((response) => response.json())
     .then((responseJSON) => {
-      if (responseJSON.sucess === false) {
+      if (responseJSON.success === false) {
+        errorText.classList.add('hidden');
         messageBox.innerHTML = 'Algo ha ido mal, revisa los campos...';
       } else {
         targetWhite.classList.remove('hidden');
+        errorText.classList.remove('hidden');
         const cardURLString = responseJSON.cardURL.toString();
         messageBox.href = cardURLString;
         generateTweetURL (cardURLString);

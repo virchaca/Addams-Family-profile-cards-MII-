@@ -12,6 +12,7 @@ function handlepaletteOne(event) {
   cardPreview.classList.remove('paletteTwo');
   cardPreview.classList.remove('paletteThree');
   cardPreview.classList.remove('paletteFour');
+  data.palette = 1;
 }
 function handlepaletteTwo(event) {
   event.preventDefault();
@@ -19,6 +20,7 @@ function handlepaletteTwo(event) {
   cardPreview.classList.add('paletteTwo');
   cardPreview.classList.remove('paletteThree');
   cardPreview.classList.remove('paletteFour');
+  data.palette = 2;
 }
 function handlepaletteThree(event) {
   event.preventDefault();
@@ -26,6 +28,7 @@ function handlepaletteThree(event) {
   cardPreview.classList.remove('paletteTwo');
   cardPreview.classList.add('paletteThree');
   cardPreview.classList.remove('paletteFour');
+  data.palette = 3;
 }
 
 function handlepaletteFour(event) {
@@ -34,6 +37,7 @@ function handlepaletteFour(event) {
   cardPreview.classList.remove('paletteTwo');
   cardPreview.classList.remove('paletteThree');
   cardPreview.classList.add('paletteFour');
+  data.palette = 4;
 }
 
 paletteOne.addEventListener('change', handlepaletteOne);
