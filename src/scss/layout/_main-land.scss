@@ -10,7 +10,6 @@
   justify-content: space-evenly;
   // height: 65vh;
   gap:5rem;
-  
   @media (min-width: 768px){justify-content: flex-start; }
   @media (orientation: landscape) {
     gap:5rem;
@@ -66,5 +65,9 @@
     @include textStyle($openSans, $blackBold, 1.6rem, $darkPurple);
     @include boxGlowTwo($whiteFour, $whiteTwo);
     @include textGlow(#d5b9c9);
+    &:hover{ 
+      background-color: $whiteTwo;
+      transform: scale(1.2);
+      box-shadow: 0 0.1rem 1rem 0 $black20, 0 0.1rem 3rem 0 $black20;
   }
 }
