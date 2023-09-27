@@ -65,6 +65,7 @@
     @include textStyle($openSans, $blackBold, 1.6rem, $darkPurple);
     @include boxGlowTwo($whiteFour, $whiteTwo);
     @include textGlow(#d5b9c9);
+    transition-duration: 0.8s;
     &:hover{ 
       background-color: $whiteTwo;
       transform: scale(1.2);
