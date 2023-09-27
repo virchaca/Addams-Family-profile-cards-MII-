@@ -69,14 +69,22 @@ function handleClickTarget() {
     .then((response) => response.json())
     .then((responseJSON) => {
       console.log(responseJSON);
-      if (responseJSON.sucess === false) {
+      if (responseJSON.success === false) {
         messageBox.innerHTML = 'Algo ha ido mal, revisa los campos...';
       } else {
         targetWhite.classList.remove('hidden');
         messageBox.href = responseJSON.cardURL;
         messageBox.innerHTML = responseJSON.cardURL;
+        const twiterBtn = document.querySelector('.js-btnTw');
+        twiterBtn.addEventListener('click', function () {
+          const cardURL = encodeURIComponent(responseJSON.cardURL);
+          const twitterShareURL = `https://twitter.com/intent/tweet?url=${cardURL}`;
+          // Abre una ventana emergente para compartir en Twitter
+          window.open(twitterShareURL, '_blank', 'width=550,height=350');
+        });
       }
     });
+
 
   hiddenTarget();
   viewTargetWhite();
