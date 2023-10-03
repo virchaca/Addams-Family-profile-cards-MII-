@@ -72,6 +72,7 @@ function handleClickTarget() {
       if (responseJSON.success === false) {
         errorText.classList.add('hidden');
         messageBox.innerHTML = 'Algo ha ido mal, revisa los campos...';
+        document.querySelector('.js-twitter-button').classList.add('hidden');
       } else {
         targetWhite.classList.remove('hidden');
         errorText.classList.remove('hidden');
