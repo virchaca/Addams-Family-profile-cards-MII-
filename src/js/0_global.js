@@ -73,7 +73,7 @@ function handleClickTarget() {
     .then((responseJSON) => {
       if (responseJSON.success === false) {
         errorText.classList.add('hidden');
-        messageBox.innerHTML = 'Algo ha ido mal, revisa los campos...';
+        messageBox.innerHTML = '¡Algo ha ido mal! Cuidado, Miércoles está preparando la guillotina asi que revisa los campos...';
         document.querySelector('.js-twitter-button').classList.add('hidden');
         if (responseJSON.error === 'Database error: ER_DATA_TOO_LONG') {
           errorMessage.textContent = 'La imagen es demasiado grande. Prueba con una de 40kb o menos';
