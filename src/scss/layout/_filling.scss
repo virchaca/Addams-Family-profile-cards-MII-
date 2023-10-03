@@ -63,7 +63,10 @@
           background-size: cover;
           background-position: center;
         }
-
+        &--error{
+          @include textStyle($openSans, $bold, 1.2rem, $purple);
+          padding-bottom: 0.8rem;
+        }
         &--hiddenFile {
         display: none;
         } 

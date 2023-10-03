@@ -41,6 +41,8 @@ const shareHidden = document.querySelector('.js-hidden');
 const messageBox = document.querySelector('.js-message');
 const errorText = document.querySelector('.js-text');
 
+const errorMessage = document.querySelector('.js-error-message');
+
 const data = {
   palette: '1',
   name: '',
@@ -73,6 +75,9 @@ function handleClickTarget() {
         errorText.classList.add('hidden');
         messageBox.innerHTML = 'Algo ha ido mal, revisa los campos...';
         document.querySelector('.js-twitter-button').classList.add('hidden');
+        if (responseJSON.error === 'Database error: ER_DATA_TOO_LONG') {
+          errorMessage.textContent = 'La imagen es demasiado grande. Prueba con una de 40kb o menos';
+        }
       } else {
         targetWhite.classList.remove('hidden');
         errorText.classList.remove('hidden');
