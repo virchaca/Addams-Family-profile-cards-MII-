@@ -76,7 +76,7 @@ function handleClickTarget() {
         messageBox.innerHTML = '¡Algo ha ido mal! Cuidado, Miércoles está preparando la guillotina asi que revisa los campos...';
         document.querySelector('.js-twitter-button').classList.add('hidden');
         if (responseJSON.error === 'Database error: ER_DATA_TOO_LONG') {
-          errorMessage.textContent = 'La imagen es demasiado grande. Prueba con una de 40kb o menos';
+          errorMessage.innerHTML = 'La imagen es demasiado grande. Prueba con una de 40kb o menos';
         }
       } else {
         targetWhite.classList.remove('hidden');
