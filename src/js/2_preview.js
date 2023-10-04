@@ -1,6 +1,19 @@
 /* eslint-disable no-undef */
 /* eslint-disable strict */
 /*************preview*************/
+const previewLStorage = JSON.parse(localStorage.getItem("previewLS"));
+
+if (previewLStorage!== null){
+  nameInput.value = previewLStorage.name;
+  jobInput.value = previewLStorage.job;
+  telephoneInput.value = previewLStorage.phone;
+  emailInput.value = previewLStorage.email;
+  linkedinInput.value = previewLStorage.linkedin;
+  gitInput.value = previewLStorage.github;
+  data.photo = previewLStorage.photo;
+  data.palette = previewLStorage.palette;
+
+}
 
 function updatepreview() {
   namePreview.innerHTML = data.name;
@@ -15,6 +28,8 @@ function updatepreview() {
   emailPreview.href = `mailto:${data.email}`;
   linkedinPreview.href = `https://www.linkedin.com/in/${data.linkedin}/`;
   gitPreview.href = `https://www.github.com/${data.github}`;
+
+  localStorage.setItem("previewLS", JSON.stringify(data));
 }
 
 function handleInputName() {

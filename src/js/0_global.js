@@ -44,7 +44,7 @@ const errorText = document.querySelector('.js-text');
 const errorMessage = document.querySelector('.js-error-message');
 
 const data = {
-  palette: '1',
+  palette: 1,
   name: '',
   job: '',
   phone: '',

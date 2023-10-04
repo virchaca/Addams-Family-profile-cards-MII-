@@ -13,6 +13,7 @@ function handlepaletteOne(event) {
   cardPreview.classList.remove('paletteThree');
   cardPreview.classList.remove('paletteFour');
   data.palette = 1;
+  localStorage.setItem("previewLS", JSON.stringify(data));
 }
 function handlepaletteTwo(event) {
   event.preventDefault();
@@ -21,6 +22,7 @@ function handlepaletteTwo(event) {
   cardPreview.classList.remove('paletteThree');
   cardPreview.classList.remove('paletteFour');
   data.palette = 2;
+  localStorage.setItem("previewLS", JSON.stringify(data));
 }
 function handlepaletteThree(event) {
   event.preventDefault();
@@ -29,6 +31,7 @@ function handlepaletteThree(event) {
   cardPreview.classList.add('paletteThree');
   cardPreview.classList.remove('paletteFour');
   data.palette = 3;
+  localStorage.setItem("previewLS", JSON.stringify(data));
 }
 
 function handlepaletteFour(event) {
@@ -38,6 +41,7 @@ function handlepaletteFour(event) {
   cardPreview.classList.remove('paletteThree');
   cardPreview.classList.add('paletteFour');
   data.palette = 4;
+  localStorage.setItem("previewLS", JSON.stringify(data));
 }
 
 paletteOne.addEventListener('change', handlepaletteOne);

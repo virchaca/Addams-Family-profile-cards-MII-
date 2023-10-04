@@ -12,7 +12,9 @@
 }
 
 #introSong {
-    width: 200px;   
+    margin-top: 1rem;
+    width: 200px;
+    height: 35px;  
     @media(min-width: 1024px){
         width: 350px;
     }
