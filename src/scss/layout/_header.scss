@@ -9,6 +9,7 @@
   .imgIndex {
     width: 25rem;
     border: none;
+    cursor: url(../images/cuchillo.png), auto;  
     @include center-column;
     border-radius: 1rem;
     filter: drop-shadow( 5px 5px 1px $black);
@@ -29,6 +30,7 @@
   .imgCard {
     width: 15rem;
     margin: 0.5rem 1.5rem;
+    cursor: url(../images/cuchillo.png), auto;  
     @media (min-width: 768px) {
       width: 20rem;
     }

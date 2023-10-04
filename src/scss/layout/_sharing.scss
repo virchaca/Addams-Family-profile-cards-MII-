@@ -1,11 +1,11 @@
 .section {
     border: none;
-    cursor: pointer;
+    cursor: url(../images/cuchillo.png), auto;
     &__div{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        cursor: pointer;  
+        cursor: url(../images/cuchillo.png), auto;
         &__pack{
             display: flex;
             align-items: center;
@@ -44,7 +44,7 @@
         padding-bottom: 3rem;
         &__link{
             background-color: #7b00ac;
-            cursor: pointer;
+            cursor: url(../images/cuchillo.png), auto;
             width: 19.9rem;
             height: 5rem;
             border-radius: 1.2rem;
@@ -58,7 +58,7 @@
         }
         &__linkGrey {
             background-color: $white;
-            cursor: pointer;
+            cursor: url(../images/cuchillo.png), auto;
             width: 19.9rem;
             height: 5rem;
             border-radius: 1.2rem;

@@ -57,7 +57,7 @@
         @include textGlow(#d5b9c9);
         transition-duration: 0.8s;
         text-transform: uppercase;
-        cursor: pointer;
+        cursor: url(../images/cuchillo.png), auto;
         &:hover{ 
             background-color: $whiteTwo;
             transform: scale(1.2);
@@ -102,7 +102,7 @@
     margin-top: 1rem;
     margin-left: 2rem;
     gap: 1rem;
-    
+    cursor: url(../images/cuchillo.png), auto;    
     &__border{
         border-radius: 50%;
         border: solid 0.2rem /*$hospitalGreen*/;
@@ -114,6 +114,7 @@
 
         &--item{
             @include textStyle (0,0,0.9rem,color/*$darkGreenBlue*/);
+            cursor: url(../images/cuchillo.png), auto;  
         }
     }
     

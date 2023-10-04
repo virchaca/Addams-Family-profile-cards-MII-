@@ -5,7 +5,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    cursor: pointer;
+    cursor: url(../images/cuchillo.png), auto;
 
     &--icon {
       display: flex;
@@ -48,6 +48,7 @@
       width: 1.7rem;
       height: 1.7rem;
       margin: 1rem;
+      cursor: url(../images/cuchillo.png), auto;  
     }
     &__1 {
       display: flex;

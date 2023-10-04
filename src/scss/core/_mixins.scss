@@ -43,7 +43,7 @@
 }
 
 @mixin boxGlow($color, $color2) {
-  background: radial-gradient(transparent, $color);
+  background: radial-gradient(rgba(255, 255, 255, 0.658), $color);
   box-shadow:
   0.25rem 0.25rem 1rem $color2, 
   0.25rem -0.25rem 1rem $color,

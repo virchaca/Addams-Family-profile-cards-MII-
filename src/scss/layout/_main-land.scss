@@ -10,7 +10,9 @@
   justify-content: space-evenly;
   // height: 65vh;
   gap:5rem;
-  @media (min-width: 768px){justify-content: flex-start; }
+  @media (min-width: 768px){
+    justify-content: flex-start; 
+  }
   @media (orientation: landscape) {
     gap:5rem;
  }
@@ -57,7 +59,7 @@
   }
 
   &__btn {
-    cursor: pointer;
+    cursor: url(../images/cuchillo.png), auto;
     padding: 1rem;
     border-radius: 20rem;
     text-decoration: none;

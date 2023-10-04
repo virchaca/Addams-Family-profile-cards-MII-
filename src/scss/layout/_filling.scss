@@ -6,7 +6,7 @@
   .titleF {
     display: flex;
     justify-content: space-between;
-    cursor: pointer;   
+    cursor: url(../images/cuchillo.png), auto;
 
     &__img{
       display: flex;
@@ -53,7 +53,7 @@
         border-radius: 3px;
         border: 1px solid $purple;
         box-shadow: 0 0 4px 0 $black32;
-        cursor: pointer;        
+        cursor: url(../images/cuchillo.png), auto;        
         }
       
         &--img {             
