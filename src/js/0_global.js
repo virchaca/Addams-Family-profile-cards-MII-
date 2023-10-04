@@ -43,6 +43,8 @@ const errorText = document.querySelector('.js-text');
 
 const errorMessage = document.querySelector('.js-error-message');
 
+const previewLStorage = JSON.parse(localStorage.getItem('previewLS'));
+
 const data = {
   palette: '',
   name: '',
@@ -53,9 +55,42 @@ const data = {
   github: '',
   photo: '',
 };
-
+//Local Storage
+function formStorage() {
+  if (previewLStorage) {
+    nameInput.value = previewLStorage.name;
+    namePreview.innerHTML = previewLStorage.name;
+    if (nameInput.value === '') {
+      namePreview.innerHTML = 'Nombre Apellido';
+    }
+    jobInput.value = previewLStorage.job;
+    jobPreview.innerHTML = previewLStorage.job;
+    if (jobInput.value === '') {
+      jobPreview.innerHTML = 'Front-end developer';
+    }
+    telephoneInput.value = previewLStorage.phone;
+    emailInput.value = previewLStorage.email;
+    linkedinInput.value = previewLStorage.linkedin;
+    gitInput.value = previewLStorage.github;
+    data.photo = previewLStorage.photo;
+    data.palette = previewLStorage.palette;
+    if (previewLStorage.palette === 1) {
+      handlepaletteOne();
+      paletteOne.checked = true;
+    } else if (previewLStorage.palette === 2) {
+      handlepaletteTwo();
+      paletteTwo.checked = true;
+    } else if (previewLStorage.palette === 3) {
+      handlepaletteThree();
+      paletteThree.checked = true;
+    } else {
+      handlepaletteFour();
+      paletteFour.checked = true;
+    }
+  }
+}
+formStorage();
 // Tarjeta creada y twitter
-
 
 function handleClickTarget() {
   fetch('https://dev.adalab.es/api/card/', {
@@ -67,17 +102,21 @@ function handleClickTarget() {
     .then((responseJSON) => {
       if (responseJSON.success === false) {
         errorText.classList.add('hidden');
-        messageBox.innerHTML = '¡Algo ha ido mal! Cuidado, Miércoles está preparando la guillotina asi que revisa los campos...';
+        messageBox.innerHTML =
+          '¡Algo ha ido mal! Cuidado, Miércoles está preparando la guillotina asi que revisa los campos...';
         document.querySelector('.js-twitter-button').classList.add('hidden');
         if (responseJSON.error === 'Database error: ER_DATA_TOO_LONG') {
-          errorMessage.innerHTML = 'La imagen es demasiado grande. Prueba con una de 40kb o menos';
+          errorMessage.innerHTML =
+            'La imagen es demasiado grande. Prueba con una de 40kb o menos';
         }
       } else {
+        localStorage.setItem('previewLS', JSON.stringify(data));
         targetWhite.classList.remove('hidden');
         errorText.classList.remove('hidden');
+        document.querySelector('.js-twitter-button').classList.remove('hidden');
         const cardURLString = responseJSON.cardURL.toString();
         messageBox.href = cardURLString;
-        generateTweetURL (cardURLString);
+        generateTweetURL(cardURLString);
         messageBox.innerHTML = cardURLString;
       }
     });
@@ -87,11 +126,11 @@ function handleClickTarget() {
   viewTwitter();
 }
 
-function generateTweetURL(enlaceGenerado){
-
-  if(typeof enlaceGenerado === 'string') {
+function generateTweetURL(enlaceGenerado) {
+  if (typeof enlaceGenerado === 'string') {
     const textoTweet = 'Mira mi tarjeta de visita digital: ' + enlaceGenerado;
-    const tweetURL = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(textoTweet);
+    const tweetURL =
+      'https://twitter.com/intent/tweet?text=' + encodeURIComponent(textoTweet);
     const twitterShareLink = document.getElementById('twitterShareLink');
     twitterShareLink.href = tweetURL;
   }

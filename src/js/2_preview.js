@@ -2,32 +2,6 @@
 /* eslint-disable strict */
 /*************preview*************/
 
-const previewLStorage = JSON.parse(localStorage.getItem("previewLS"));
-
-if (previewLStorage!== null){
-  nameInput.value = previewLStorage.name;
-  jobInput.value = previewLStorage.job;
-  telephoneInput.value = previewLStorage.phone;
-  emailInput.value = previewLStorage.email;
-  linkedinInput.value = previewLStorage.linkedin;
-  gitInput.value = previewLStorage.github;
-  data.photo = previewLStorage.photo;
-  data.palette = previewLStorage.palette;
-  if (previewLStorage.palette === 1) {
-    handlepaletteOne();
-    paletteOne.checked = true;
-  } else if (previewLStorage.palette === 2) {
-    handlepaletteTwo();
-    paletteTwo.checked = true;
-  } else if (previewLStorage.palette === 3) {
-    handlepaletteThree();
-    paletteThree.checked = true;
-  } else {
-    handlepaletteFour();
-    paletteFour.checked = true;
-  }
-}
-
 function updatepreview() {
   namePreview.innerHTML = data.name;
   if (nameInput.value === '') {

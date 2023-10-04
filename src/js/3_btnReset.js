@@ -23,6 +23,7 @@ function handleClickDelete(event) {
   targetWhite.classList.add('hidden');
   createdTarget.classList.remove('hidden');
   shareHidden.classList.add('hidden');
+  localStorage.setItem('previewLS', JSON.stringify(data));
 }
 
 btnReset.addEventListener('click', handleClickDelete);

@@ -1,6 +1,6 @@
   const introSong = document.getElementById('introSong');
 
-  introSong.volume = 0.2;
+  introSong.volume = 0.1;
 
 document.addEventListener('click', function () {
   
