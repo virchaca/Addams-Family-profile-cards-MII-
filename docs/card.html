@@ -13,7 +13,7 @@
   <script src="https://kit.fontawesome.com/d65782632e.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="bodyCard">
 
   <header>
     <header class="headerCard">
@@ -70,6 +70,11 @@
     </section>
 
     <section class="sectionIncludes">
+      <div class="songDesign"> ¿Te gustaría rellenar tu tarjeta mientras escuchas nuestra increíble canción? ¡Dale al play!
+          <audio id="introSong" controls>
+              <source src="../assets/images/intro.mp3" type="audio/mpeg">
+          </audio>
+      </div>
       <fieldset class="desing js-design-form">
 
           <section class="des__cont js-designLegend">
@@ -143,28 +148,30 @@
           <div class="formF">
 
             <label class="formF__label" for="name">Nombre completo</label>
-            <input class="formF__input js-input-name" id="fullName" type="text" name="name" placeholder="Ej: Sally Jill">
+            <input class="formF__input js-input-name" id="fullName" type="text" name="name" placeholder="Ej: Sally Jill" required>
           
             <label class="formF__label" for="job">Puesto</label>
-            <input class="formF__input js-input-job" id="jobPosition" type="text" name="job" placeholder="Ej: Front-end unicorn">
+            <input class="formF__input js-input-job" id="jobPosition" type="text" name="job" placeholder="Ej: Front-end unicorn" required>
           
             <div class="formF__img">      
               <label class="formF__img--btnF" for="image">Imagen de perfil</label>      
               <div class="formF__img--img js__profile-preview"> </div>
-              <input type="file" id="image"  class="formF__img--hiddenFile js__profile-upload-btn"/>
+              <input type="file" id="image"  class="formF__img--hiddenFile js__profile-upload-btn" required>
             </div>
+
+            <div class="js-error-message formF__img--error"></div>
           
             <label class="formF__label" for="email">Email</label>
-            <input class="formF__input js-input-email" id="mail" type="mail" name="email" placeholder="Ej: sally-hill@gmail.com">
+            <input class="formF__input js-input-email" id="mail" type="mail" name="email" placeholder="Ej: sally-hill@gmail.com" required>
             
             <label class="formF__label" for="phone">Teléfono</label>
-            <input class="formF__input js-input-phone" id="phoneNumber" type="number" name="phone" placeholder="Ej: 555-55-55-55">
+            <input class="formF__input js-input-phone" id="phoneNumber" type="number" name="phone" placeholder="Ej: 555-55-55-55" required>
             
             <label class="formF__label" for="linkedin">Linkedin</label>      
-            <input class="formF__input js-input-linkedin" id="Linkedin" type="text" name="linkedin" placeholder="Nombre de usuario">      
+            <input class="formF__input js-input-linkedin" id="Linkedin" type="text" name="linkedin" placeholder="Nombre de usuario" required>      
             
             <label class="formF__label" for="github">GitHub</label>
-            <input class="formF__input js-input-git" id="gitHub" type="text" name="github" placeholder="Nombre de usuario">
+            <input class="formF__input js-input-git" id="gitHub" type="text" name="github" placeholder="Nombre de usuario" required>
             
           </div>
         
@@ -205,7 +212,7 @@
             href="#" target="_blank">
           </a>
         </div>
-        <div class="section__share--btn">
+        <div class="section__share--btn js-twitter-button">
           <span class="section__share--btn--icon fa-brands fa-twitter"></span>
           <a class="twitter-share-button section__share--btn--tw"
           href="https://twitter.com/intent/tweet" target="_blank" id="twitterShareLink">
