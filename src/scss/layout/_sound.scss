@@ -1,0 +1,19 @@
+.songDesign {
+    @include textStyle($openSans, $semiBold, 1.3rem, $purple);
+    text-align: center;
+    margin-bottom: 3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    @media(min-width: 1024px){
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+#introSong {
+    width: 200px;   
+    @media(min-width: 1024px){
+        width: 350px;
+    }
+}

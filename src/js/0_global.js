@@ -56,12 +56,6 @@ const data = {
 
 // Tarjeta creada y twitter
 
-// const btnShare = document.querySelector('.js-btn-share');
-
-// const createdTarget = document.querySelector('.js-createdTarget');
-// const targetWhite = document.querySelector('.js-createdTargetWhite');
-// const shareHidden = document.querySelector('.js-hidden');
-//const messageBox = document.querySelector('.js-message');
 
 function handleClickTarget() {
   fetch('https://dev.adalab.es/api/card/', {
