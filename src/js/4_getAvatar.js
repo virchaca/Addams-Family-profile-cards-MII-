@@ -1,13 +1,13 @@
 /* eslint-disable no-undef */
 'use strict';
 
-const fr = new FileReader();
+// const fr = new FileReader();
 
-const fileField = document.querySelector('.js__profile-upload-btn');
+// const fileField = document.querySelector('.js__profile-upload-btn');
 
-const profileImage = document.querySelector('.js__profile-image');
+// const profileImage = document.querySelector('.js__profile-image');
 
-const profilePreview = document.querySelector('.js__profile-preview');
+// const profilePreview = document.querySelector('.js__profile-preview');
 
 
 /**

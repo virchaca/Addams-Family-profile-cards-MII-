@@ -44,6 +44,11 @@ const errorText = document.querySelector('.js-text');
 const errorMessage = document.querySelector('.js-error-message');
 
 const previewLStorage = JSON.parse(localStorage.getItem('previewLS'));
+const fr = new FileReader();
+
+const fileField = document.querySelector('.js__profile-upload-btn');
+const profileImage = document.querySelector('.js__profile-image');
+const profilePreview = document.querySelector('.js__profile-preview');
 
 const data = {
   palette: '',
@@ -73,6 +78,8 @@ function formStorage() {
     linkedinInput.value = previewLStorage.linkedin;
     gitInput.value = previewLStorage.github;
     data.photo = previewLStorage.photo;
+    profileImage.style.backgroundImage = `url(${previewLStorage.photo})`;
+    profilePreview.style.backgroundImage = `url(${previewLStorage.photo})`;
     data.palette = previewLStorage.palette;
     if (previewLStorage.palette === 1) {
       handlepaletteOne();
@@ -87,6 +94,7 @@ function formStorage() {
       handlepaletteFour();
       paletteFour.checked = true;
     }
+    //writeImage();
   }
 }
 formStorage();
