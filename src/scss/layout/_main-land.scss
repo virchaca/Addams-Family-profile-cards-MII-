@@ -24,7 +24,7 @@
     border-radius: 1rem;
     &__title {
       padding: 1.5rem 0 0.3rem;
-      @include textStyle($merriweather, $blackBold, 2rem, $darkgreen);
+      @include textStyle($merriweather, $blackBold, 2rem, $darkPurple);
       @media (min-width: 768px) {
         font-size: 2.4rem;
       }
@@ -50,7 +50,7 @@
         text-align: center;
         @include textStyle($openSans, $regular, 1.5rem, $darkgreen);
         .fa {
-          color: $darkgreen;
+          color: $darkPurple;
           font-size: 2.5rem;
           @include textGlow($white);
         }
@@ -64,7 +64,7 @@
     border-radius: 20rem;
     text-decoration: none;
     text-transform: uppercase;
-    @include textStyle($openSans, $blackBold, 1.6rem, $darkgreen);
+    @include textStyle($openSans, $blackBold, 1.6rem, $darkPurple);
     // @include boxGlowTwo($whiteFour, $whiteTwo);
     background-color: $whiteTwo;
     @include textGlow(#d5b9c9);

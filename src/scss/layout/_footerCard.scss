@@ -14,7 +14,10 @@
     height: 6vh;
     }
     &__copyRight {
-        @include textStyle($openSans, $bold, 1.4rem, black);
+        @include textStyle($openSans, $bold, 1.4rem, $darkgreen);
+        .icons{
+            color: $darkgreen;
+        }
     }
     &__logoCard {
         width: 15rem;

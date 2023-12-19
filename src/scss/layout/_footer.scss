@@ -5,7 +5,7 @@
   @include center-column;
   gap: 1.2rem;
   // background-image: linear-gradient(to right bottom, #48435c, #ffffff);
-  background-image: linear-gradient(to right top, #704974, #ffffff);
+  // background-image: linear-gradient(to right bottom, #704974, #ffffff);
   padding: 1.9rem;
   position: absolute;
   bottom: 0;
@@ -22,10 +22,14 @@
   }
 
   &__copy {
-    @include textStyle($openSans, $bold, 1.4rem, $darkgreen);
+    @include textStyle($openSans, $bold, 1.4rem, $darkPurple);
+    background-image: linear-gradient(to right bottom, #704974, #ffffff);
+    padding: 5px;
   }
   &__logo {
     width: 15rem;
+    background-image: linear-gradient(to right bottom, #704974, #ffffff);
+    padding: 5px;
   }
 }
 
