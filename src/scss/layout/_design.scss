@@ -5,18 +5,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    cursor: url(../images/cuchillo.png), auto;
+    cursor: url(../images/cuchillo.png), auto; //que el cursor tenga imagen cuchillo
 
     &--icon {
       display: flex;
       align-items: baseline;
-      color: $purple;
+      color: $darkgreen;
       font-size: 2rem;
     }
 
     &--title {
       display: flex;
-      @include textStyle($openSans, $semiBold, 1.8rem, $gunmetal);
+      @include textStyle($openSans, $semiBold, 1.8rem, $darkgreen);
       padding-left: 1rem;
     }
 
@@ -24,13 +24,13 @@
       display: flex;
       justify-content: flex-end;
       font-size: 2rem;
-      color: $purple;
+      color: $darkgreen;
     }
   }
 
   .sub__text {
     &--ti {
-      @include textStyle($openSans, $regular, 1.4rem, $gunmetal);
+      @include textStyle($openSans, $regular, 1.4rem, $darkgreen);
       padding-left: 1.9rem;
       padding-top: 2.2rem;
     }

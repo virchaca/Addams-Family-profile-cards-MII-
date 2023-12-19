@@ -24,7 +24,7 @@
     border-radius: 1rem;
     &__title {
       padding: 1.5rem 0 0.3rem;
-      @include textStyle($merriweather, $blackBold, 2rem, $darkPurple);
+      @include textStyle($merriweather, $blackBold, 2rem, $darkgreen);
       @media (min-width: 768px) {
         font-size: 2.4rem;
       }
@@ -48,9 +48,9 @@
       figure {
         width: 6rem;
         text-align: center;
-        @include textStyle($openSans, $regular, 1.5rem, $darkPurple);
+        @include textStyle($openSans, $regular, 1.5rem, $darkgreen);
         .fa {
-          color: $darkPurple;
+          color: $darkgreen;
           font-size: 2.5rem;
           @include textGlow($white);
         }
@@ -64,8 +64,9 @@
     border-radius: 20rem;
     text-decoration: none;
     text-transform: uppercase;
-    @include textStyle($openSans, $blackBold, 1.6rem, $darkPurple);
-    @include boxGlowTwo($whiteFour, $whiteTwo);
+    @include textStyle($openSans, $blackBold, 1.6rem, $darkgreen);
+    // @include boxGlowTwo($whiteFour, $whiteTwo);
+    background-color: $whiteTwo;
     @include textGlow(#d5b9c9);
     transition-duration: 0.8s;
     &:hover{ 

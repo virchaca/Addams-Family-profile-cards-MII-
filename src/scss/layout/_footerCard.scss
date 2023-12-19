@@ -4,7 +4,8 @@
     justify-content: center;
     @include center-column;
     gap: 1.2rem;
-    background-image: linear-gradient(to right bottom, #9981f0, #ffffff);
+    // background-image: linear-gradient(to right bottom, #9981f0, #ffffff);
+    background-image: linear-gradient(to right top, #704974, #ffffff);
     padding: 1.9rem;
     @media all and (min-width: 768px) {
     flex-direction: row;
@@ -13,7 +14,7 @@
     height: 6vh;
     }
     &__copyRight {
-        @include textStyle($openSans, $regular, 1.4rem, $brownishGrey);
+        @include textStyle($openSans, $bold, 1.4rem, black);
     }
     &__logoCard {
         width: 15rem;

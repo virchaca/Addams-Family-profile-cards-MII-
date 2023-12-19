@@ -1,5 +1,8 @@
 .main{
-    background-image: linear-gradient(to right bottom,#f8effca6,#7152e2ad);
+    // background-image: linear-gradient(to right bottom,#f8effca6,#7152e2ad);
+    // background-image: linear-gradient(to right bottom, #48435c, #ffffff);
+    // background-image: linear-gradient(to right bottom, #704974, #ffffff);
+    background-image: linear-gradient(to right bottom, #704974, #ffffff, #704974);
     @media (min-width: 768px) {
         display: flex;
         flex-direction: row-reverse;
@@ -46,17 +49,18 @@
     padding: 4rem 4rem 4rem 4rem;
     
     &__button{
-        @include textStyle ($openSans,$blackBold,1.2rem,$darkPurple);
+        @include textStyle ($openSans,$blackBold,1.2rem,$darkgreen);
         width: 8rem;
         height: 3rem;
         margin-bottom: 2rem;
         border-radius: 2rem;
         border: solid 0.1rem $whiteTwo;
         // background-color: $silver;
-        @include boxGlowTwo($whiteFour, $whiteTwo);
+        // @include boxGlowTwo($whiteFour, $whiteTwo);
+        
         @include textGlow(#d5b9c9);
         transition-duration: 0.8s;
-        text-transform: uppercase;
+        text-transform: uppercase; //escribimos en html en minuscula y aqwui lo pasamos a mayusc
         cursor: url(../images/cuchillo.png), auto;
         &:hover{ 
             background-color: $whiteTwo;
