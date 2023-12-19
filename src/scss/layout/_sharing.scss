@@ -89,7 +89,7 @@
             }
         }
         &--link {
-            @include textStyle($openSans, $semiBold, 1.2rem, $paleGrey);
+            @include textStyle($openSans, $semiBold, 1.2rem, $darkgreen);
             text-decoration: none;
             @media (min-width: 1024px) {
                 @include textStyle($openSans, $semiBold, 1.2rem, $darkgreen);
